@@ -1,0 +1,120 @@
+[0.034s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager
+[0.107s] -- The C compiler identification is GNU 9.4.0
+[0.176s] -- The CXX compiler identification is GNU 9.4.0
+[0.182s] -- Check for working C compiler: /usr/bin/cc
+[0.271s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.272s] -- Detecting C compiler ABI info
+[0.358s] -- Detecting C compiler ABI info - done
+[0.373s] -- Detecting C compile features
+[0.373s] -- Detecting C compile features - done
+[0.376s] -- Check for working CXX compiler: /usr/bin/c++
+[0.477s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.478s] -- Detecting CXX compiler ABI info
+[0.578s] -- Detecting CXX compiler ABI info - done
+[0.593s] -- Detecting CXX compile features
+[0.594s] -- Detecting CXX compile features - done
+[0.598s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.632s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.632s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.702s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.733s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.779s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.871s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.912s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.071s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.193s] -- Found lifecycle_msgs: 1.0.3 (/opt/ros/galactic/share/lifecycle_msgs/cmake)
+[1.206s] -- Found nav2_common: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_common/share/nav2_common/cmake)
+[1.207s] -- Found nav2_msgs: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/share/nav2_msgs/cmake)
+[1.661s] -- Found nav2_util: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_util/share/nav2_util/cmake)
+[1.788s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.793s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.824s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.826s] -- Looking for pthread.h
+[1.933s] -- Looking for pthread.h - found
+[1.934s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.036s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.036s] -- Looking for pthread_create in pthreads
+[2.113s] -- Looking for pthread_create in pthreads - not found
+[2.114s] -- Looking for pthread_create in pthread
+[2.232s] -- Looking for pthread_create in pthread - found
+[2.234s] -- Found Threads: TRUE  
+[2.847s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[2.851s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[3.095s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[3.108s] -- Setting build type to Release as none was specified.
+[3.890s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[3.990s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.993s] -- Check if compiler accepts -pthread
+[4.086s] -- Check if compiler accepts -pthread - yes
+[4.924s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.925s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.926s] -- Configured cppcheck include dirs: /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_lifecycle_manager/include
+[4.926s] -- Configured cppcheck exclude dirs and/or files: 
+[4.928s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.928s] -- Configured cpplint exclude dirs and/or files: 
+[4.929s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.930s] -- Added test 'lint_cmake' to check CMake code style
+[4.931s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.932s] -- Added test 'uncrustify' to check C / C++ code style
+[4.933s] -- Configured uncrustify additional arguments: 
+[4.933s] -- Added test 'xmllint' to check XML markup files
+[4.943s] -- Configuring done
+[5.085s] -- Generating done
+[5.088s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager
+[5.109s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_lifecycle_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager
+[5.110s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager -- -j2 -l2
+[5.169s] [35m[1mScanning dependencies of target nav2_lifecycle_manager_core[0m
+[5.246s] [  7%] [32mBuilding CXX object CMakeFiles/nav2_lifecycle_manager_core.dir/src/lifecycle_manager.cpp.o[0m
+[12.145s] [ 15%] [32mBuilding CXX object CMakeFiles/nav2_lifecycle_manager_core.dir/src/lifecycle_manager_client.cpp.o[0m
+[18.726s] [ 23%] [32m[1mLinking CXX shared library libnav2_lifecycle_manager_core.so[0m
+[18.942s] [ 23%] Built target nav2_lifecycle_manager_core
+[18.958s] [35m[1mScanning dependencies of target gtest[0m
+[18.978s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[29.287s] [ 38%] [32m[1mLinking CXX static library libgtest.a[0m
+[29.340s] [ 38%] Built target gtest
+[29.354s] [35m[1mScanning dependencies of target gtest_main[0m
+[29.372s] [ 46%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[30.752s] [ 53%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[30.793s] [ 53%] Built target gtest_main
+[30.807s] [35m[1mScanning dependencies of target lifecycle_manager[0m
+[30.864s] [ 61%] [32mBuilding CXX object CMakeFiles/lifecycle_manager.dir/src/main.cpp.o[0m
+[34.695s] [ 69%] [32m[1mLinking CXX executable lifecycle_manager[0m
+[34.892s] [ 69%] Built target lifecycle_manager
+[34.909s] [35m[1mScanning dependencies of target test_bond_gtest[0m
+[35.000s] [ 76%] [32mBuilding CXX object test/CMakeFiles/test_bond_gtest.dir/test_bond.cpp.o[0m
+[40.748s] [ 84%] [32m[1mLinking CXX executable test_bond_gtest[0m
+[41.032s] [ 84%] Built target test_bond_gtest
+[41.047s] [35m[1mScanning dependencies of target test_lifecycle_gtest[0m
+[41.121s] [ 92%] [32mBuilding CXX object test/CMakeFiles/test_lifecycle_gtest.dir/test_lifecycle_manager.cpp.o[0m
+[46.172s] [100%] [32m[1mLinking CXX executable test_lifecycle_gtest[0m
+[46.430s] [100%] Built target test_lifecycle_gtest
+[46.451s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager -- -j2 -l2
+[46.501s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager
+[46.516s] -- Install configuration: "Release"
+[46.517s] -- Execute custom install script
+[46.518s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/lib/libnav2_lifecycle_manager_core.so
+[46.532s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/lib/nav2_lifecycle_manager/lifecycle_manager
+[46.545s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/include//nav2_lifecycle_manager/lifecycle_manager.hpp
+[46.559s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/include//nav2_lifecycle_manager/lifecycle_manager_client.hpp
+[46.573s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/library_path.sh
+[46.585s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/library_path.dsv
+[46.598s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/ament_index/resource_index/package_run_dependencies/nav2_lifecycle_manager
+[46.610s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/ament_index/resource_index/parent_prefix_path/nav2_lifecycle_manager
+[46.623s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/ament_prefix_path.sh
+[46.634s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/ament_prefix_path.dsv
+[46.648s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/path.sh
+[46.662s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/environment/path.dsv
+[46.675s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/local_setup.bash
+[46.687s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/local_setup.sh
+[46.701s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/local_setup.zsh
+[46.713s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/local_setup.dsv
+[46.725s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/package.dsv
+[46.736s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/ament_index/resource_index/packages/nav2_lifecycle_manager
+[46.749s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.762s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake/ament_cmake_export_libraries-extras.cmake
+[46.775s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.787s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake/nav2_lifecycle_managerConfig.cmake
+[46.801s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake/nav2_lifecycle_managerConfig-version.cmake
+[46.813s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/package.xml
+[46.829s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_lifecycle_manager

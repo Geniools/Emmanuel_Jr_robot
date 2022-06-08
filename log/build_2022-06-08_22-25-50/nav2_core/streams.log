@@ -1,0 +1,87 @@
+[0.034s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_core
+[0.116s] -- The C compiler identification is GNU 9.4.0
+[0.182s] -- The CXX compiler identification is GNU 9.4.0
+[0.188s] -- Check for working C compiler: /usr/bin/cc
+[0.291s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.291s] -- Detecting C compiler ABI info
+[0.376s] -- Detecting C compiler ABI info - done
+[0.388s] -- Detecting C compile features
+[0.389s] -- Detecting C compile features - done
+[0.392s] -- Check for working CXX compiler: /usr/bin/c++
+[0.499s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.499s] -- Detecting CXX compiler ABI info
+[0.603s] -- Detecting CXX compiler ABI info - done
+[0.621s] -- Detecting CXX compile features
+[0.622s] -- Detecting CXX compile features - done
+[0.627s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.663s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.663s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.735s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.762s] -- Found nav2_common: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_common/share/nav2_common/cmake)
+[0.764s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.830s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.839s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.938s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.975s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.086s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.176s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.180s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.206s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.208s] -- Looking for pthread.h
+[1.315s] -- Looking for pthread.h - found
+[1.315s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.405s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.405s] -- Looking for pthread_create in pthreads
+[1.483s] -- Looking for pthread_create in pthreads - not found
+[1.483s] -- Looking for pthread_create in pthread
+[1.571s] -- Looking for pthread_create in pthread - found
+[1.572s] -- Found Threads: TRUE  
+[1.767s] -- Found rclcpp_lifecycle: 9.2.1 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[1.810s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[1.860s] -- Found nav2_costmap_2d: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake)
+[3.221s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[4.075s] -- Setting build type to Release as none was specified.
+[4.077s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[4.205s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.205s] -- Configured cppcheck include dirs: 
+[4.205s] -- Configured cppcheck exclude dirs and/or files: 
+[4.206s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.206s] -- Configured cpplint exclude dirs and/or files: 
+[4.207s] -- Added test 'lint_cmake' to check CMake code style
+[4.209s] -- Added test 'uncrustify' to check C / C++ code style
+[4.209s] -- Configured uncrustify additional arguments: 
+[4.210s] -- Added test 'xmllint' to check XML markup files
+[4.218s] -- Configuring done
+[4.221s] -- Generating done
+[4.223s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/nav2_core
+[4.239s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_core
+[4.243s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_core -- -j2 -l2
+[4.307s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_core -- -j2 -l2
+[4.343s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_core
+[4.356s] -- Install configuration: "Release"
+[4.356s] -- Execute custom install script
+[4.357s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/controller.hpp
+[4.370s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/exceptions.hpp
+[4.383s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/global_planner.hpp
+[4.394s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/goal_checker.hpp
+[4.406s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/progress_checker.hpp
+[4.418s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/recovery.hpp
+[4.432s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/include//nav2_core/waypoint_task_executor.hpp
+[4.444s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/ament_index/resource_index/package_run_dependencies/nav2_core
+[4.457s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/ament_index/resource_index/parent_prefix_path/nav2_core
+[4.472s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/environment/ament_prefix_path.sh
+[4.484s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/environment/ament_prefix_path.dsv
+[4.498s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/environment/path.sh
+[4.511s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/environment/path.dsv
+[4.523s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/local_setup.bash
+[4.537s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/local_setup.sh
+[4.551s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/local_setup.zsh
+[4.563s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/local_setup.dsv
+[4.609s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/package.dsv
+[4.624s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/ament_index/resource_index/packages/nav2_core
+[4.637s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.651s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.666s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/cmake/nav2_coreConfig.cmake
+[4.679s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/cmake/nav2_coreConfig-version.cmake
+[4.692s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/package.xml
+[4.706s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_core' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_core

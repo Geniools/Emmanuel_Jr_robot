@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_regulated_pure_pursuit_controller/include/nav2_regulated_pure_pursuit_controller/regulated_pure_pursuit_controller.hpp

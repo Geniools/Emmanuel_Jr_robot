@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/build/nav2_msgs/rosidl_cmake/srv/ManageLifecycleNodes_Request.msg

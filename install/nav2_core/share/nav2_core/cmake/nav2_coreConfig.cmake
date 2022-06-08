@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/build/nav2_core/ament_cmake_core/nav2_coreConfig.cmake

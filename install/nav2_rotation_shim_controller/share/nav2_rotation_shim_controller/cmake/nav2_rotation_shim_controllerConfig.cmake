@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/build/nav2_rotation_shim_controller/ament_cmake_core/nav2_rotation_shim_controllerConfig.cmake

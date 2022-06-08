@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/build/nav2_msgs/ament_cmake_core/nav2_msgsConfig-version.cmake

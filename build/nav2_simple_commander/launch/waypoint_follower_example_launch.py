@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_simple_commander/launch/waypoint_follower_example_launch.py

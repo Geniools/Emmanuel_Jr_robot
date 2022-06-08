@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_smac_planner/include/nav2_smac_planner/smac_planner_2d.hpp

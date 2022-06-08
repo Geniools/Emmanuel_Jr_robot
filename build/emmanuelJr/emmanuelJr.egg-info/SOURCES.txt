@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+emmanuelJr/__init__.py
+emmanuelJr.egg-info/PKG-INFO
+emmanuelJr.egg-info/SOURCES.txt
+emmanuelJr.egg-info/dependency_links.txt
+emmanuelJr.egg-info/requires.txt
+emmanuelJr.egg-info/top_level.txt
+emmanuelJr.egg-info/zip-safe
+resource/emmanuelJr

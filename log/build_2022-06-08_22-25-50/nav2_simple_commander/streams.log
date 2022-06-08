@@ -1,0 +1,52 @@
+[6.447s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_simple_commander': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander --editable --build-directory /home/snake/Emmanuel_Jr_robot/build/nav2_simple_commander/build --no-deps install_data --install-dir /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander
+[7.221s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[7.221s]   warnings.warn(
+[7.221s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:772: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[7.221s]   warnings.warn(
+[8.858s] running develop
+[8.860s] /usr/local/lib/python3.8/dist-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[8.861s]   warnings.warn(
+[9.196s] /usr/local/lib/python3.8/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.196s]   warnings.warn(
+[9.827s] /usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: 0.23ubuntu1 is an invalid version and will not be supported in a future release
+[9.827s]   warnings.warn(
+[9.828s] /usr/local/lib/python3.8/dist-packages/pkg_resources/__init__.py:123: PkgResourcesDeprecationWarning: 0.1.36ubuntu1 is an invalid version and will not be supported in a future release
+[9.828s]   warnings.warn(
+[10.099s] running egg_info
+[10.100s] creating nav2_simple_commander.egg-info
+[10.337s] writing nav2_simple_commander.egg-info/PKG-INFO
+[10.455s] writing dependency_links to nav2_simple_commander.egg-info/dependency_links.txt
+[11.413s] writing entry points to nav2_simple_commander.egg-info/entry_points.txt
+[12.043s] writing requirements to nav2_simple_commander.egg-info/requires.txt
+[12.213s] writing top-level names to nav2_simple_commander.egg-info/top_level.txt
+[12.226s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[12.465s] reading manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[12.468s] writing manifest file 'nav2_simple_commander.egg-info/SOURCES.txt'
+[12.855s] running build_ext
+[12.855s] Creating /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/python3.8/site-packages/nav2-simple-commander.egg-link (link to .)
+[12.857s] Installing demo_inspection script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.857s] Installing demo_picking script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.858s] Installing demo_recoveries script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.858s] Installing demo_security script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.859s] Installing example_follow_path script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.860s] Installing example_nav_through_poses script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.863s] Installing example_nav_to_pose script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.863s] Installing example_waypoint_follower script to /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/nav2_simple_commander
+[12.864s] 
+[12.865s] Installed /home/snake/Emmanuel_Jr_robot/build/nav2_simple_commander
+[12.866s] running install_data
+[12.867s] creating /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/ament_index
+[12.871s] creating /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/ament_index/resource_index
+[12.871s] creating /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[12.872s] copying resource/nav2_simple_commander -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[12.873s] copying package.xml -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.873s] copying launch/inspection_demo_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.874s] copying launch/waypoint_follower_example_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.875s] copying launch/recoveries_example_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.875s] copying launch/nav_to_pose_example_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.876s] copying launch/nav_through_poses_example_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.877s] copying launch/picking_demo_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.877s] copying launch/follow_path_example_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.878s] copying launch/warehouse.world -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[12.879s] copying launch/security_demo_launch.py -> /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/share/nav2_simple_commander
+[13.065s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_simple_commander' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander --editable --build-directory /home/snake/Emmanuel_Jr_robot/build/nav2_simple_commander/build --no-deps install_data --install-dir /home/snake/Emmanuel_Jr_robot/install/nav2_simple_commander

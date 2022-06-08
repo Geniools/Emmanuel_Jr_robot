@@ -1,0 +1,146 @@
+[0.056s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_critics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/dwb_critics
+[0.141s] -- The C compiler identification is GNU 9.4.0
+[0.209s] -- The CXX compiler identification is GNU 9.4.0
+[0.216s] -- Check for working C compiler: /usr/bin/cc
+[0.311s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.311s] -- Detecting C compiler ABI info
+[0.395s] -- Detecting C compiler ABI info - done
+[0.411s] -- Detecting C compile features
+[0.411s] -- Detecting C compile features - done
+[0.415s] -- Check for working CXX compiler: /usr/bin/c++
+[0.523s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.523s] -- Detecting CXX compiler ABI info
+[0.627s] -- Detecting CXX compiler ABI info - done
+[0.636s] -- Detecting CXX compile features
+[0.637s] -- Detecting CXX compile features - done
+[0.640s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.677s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.677s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.749s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.786s] -- Found nav2_common: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_common/share/nav2_common/cmake)
+[0.789s] -- Found angles: 1.12.4 (/opt/ros/galactic/share/angles/cmake)
+[0.791s] -- Found nav2_costmap_2d: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake)
+[0.838s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.848s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.995s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.033s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.826s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.832s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.859s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.860s] -- Looking for pthread.h
+[1.959s] -- Looking for pthread.h - found
+[1.959s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.059s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.059s] -- Looking for pthread_create in pthreads
+[2.179s] -- Looking for pthread_create in pthreads - not found
+[2.180s] -- Looking for pthread_create in pthread
+[2.283s] -- Looking for pthread_create in pthread - found
+[2.283s] -- Found Threads: TRUE  
+[3.442s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[4.199s] -- Found costmap_queue: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/costmap_queue/share/costmap_queue/cmake)
+[4.201s] -- Found dwb_core: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/dwb_core/share/dwb_core/cmake)
+[7.689s] -- Setting build type to Release as none was specified.
+[13.800s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[13.915s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[13.919s] -- Check if compiler accepts -pthread
+[14.024s] -- Check if compiler accepts -pthread - yes
+[14.047s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.047s] -- Configured cppcheck include dirs: /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_critics/include
+[14.048s] -- Configured cppcheck exclude dirs and/or files: 
+[14.050s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[14.050s] -- Configured cpplint exclude dirs and/or files: 
+[14.051s] -- Added test 'lint_cmake' to check CMake code style
+[14.053s] -- Added test 'uncrustify' to check C / C++ code style
+[14.054s] -- Configured uncrustify additional arguments: 
+[14.055s] -- Added test 'xmllint' to check XML markup files
+[14.066s] -- Configuring done
+[14.287s] -- Generating done
+[14.291s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/dwb_critics
+[14.308s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_critics -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/dwb_critics
+[14.310s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/dwb_critics -- -j2 -l2
+[14.376s] [35m[1mScanning dependencies of target dwb_critics[0m
+[14.551s] [  3%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/alignment_util.cpp.o[0m
+[15.476s] [  7%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/map_grid.cpp.o[0m
+[21.878s] [ 11%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/goal_dist.cpp.o[0m
+[27.793s] [ 14%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/path_dist.cpp.o[0m
+[33.856s] [ 18%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/goal_align.cpp.o[0m
+[39.941s] [ 22%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/path_align.cpp.o[0m
+[46.168s] [ 25%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/base_obstacle.cpp.o[0m
+[52.465s] [ 29%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/obstacle_footprint.cpp.o[0m
+[58.761s] [ 33%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/oscillation.cpp.o[0m
+[65.581s] [ 37%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/prefer_forward.cpp.o[0m
+[72.084s] [ 40%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/rotate_to_goal.cpp.o[0m
+[78.110s] [ 44%] [32mBuilding CXX object CMakeFiles/dwb_critics.dir/src/twirling.cpp.o[0m
+[83.883s] [ 48%] [32m[1mLinking CXX shared library libdwb_critics.so[0m
+[84.173s] [ 48%] Built target dwb_critics
+[84.188s] [35m[1mScanning dependencies of target gtest[0m
+[84.209s] [ 51%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[94.086s] [ 55%] [32m[1mLinking CXX static library libgtest.a[0m
+[94.139s] [ 55%] Built target gtest
+[94.154s] [35m[1mScanning dependencies of target gtest_main[0m
+[94.173s] [ 59%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[95.608s] [ 62%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[95.654s] [ 62%] Built target gtest_main
+[95.670s] [35m[1mScanning dependencies of target twirling_tests[0m
+[95.764s] [ 66%] [32mBuilding CXX object test/CMakeFiles/twirling_tests.dir/twirling_test.cpp.o[0m
+[102.971s] [ 70%] [32m[1mLinking CXX executable twirling_tests[0m
+[103.289s] [ 70%] Built target twirling_tests
+[103.305s] [35m[1mScanning dependencies of target alignment_util_tests[0m
+[103.388s] [ 74%] [32mBuilding CXX object test/CMakeFiles/alignment_util_tests.dir/alignment_util_test.cpp.o[0m
+[107.594s] [ 77%] [32m[1mLinking CXX executable alignment_util_tests[0m
+[107.873s] [ 77%] Built target alignment_util_tests
+[107.888s] [35m[1mScanning dependencies of target obstacle_footprint_tests[0m
+[107.981s] [ 81%] [32mBuilding CXX object test/CMakeFiles/obstacle_footprint_tests.dir/obstacle_footprint_test.cpp.o[0m
+[116.005s] [ 85%] [32m[1mLinking CXX executable obstacle_footprint_tests[0m
+[116.327s] [ 85%] Built target obstacle_footprint_tests
+[116.361s] [35m[1mScanning dependencies of target base_obstacle_tests[0m
+[116.458s] [ 88%] [32mBuilding CXX object test/CMakeFiles/base_obstacle_tests.dir/base_obstacle_test.cpp.o[0m
+[123.970s] [ 92%] [32m[1mLinking CXX executable base_obstacle_tests[0m
+[124.313s] [ 92%] Built target base_obstacle_tests
+[124.329s] [35m[1mScanning dependencies of target prefer_forward_tests[0m
+[124.435s] [ 96%] [32mBuilding CXX object test/CMakeFiles/prefer_forward_tests.dir/prefer_forward_test.cpp.o[0m
+[133.102s] [100%] [32m[1mLinking CXX executable prefer_forward_tests[0m
+[133.413s] [100%] Built target prefer_forward_tests
+[133.432s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/dwb_critics -- -j2 -l2
+[133.493s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/dwb_critics
+[133.508s] -- Install configuration: "Release"
+[133.509s] -- Execute custom install script
+[133.510s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/lib/libdwb_critics.so
+[133.524s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/alignment_util.hpp
+[133.537s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/base_obstacle.hpp
+[133.550s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/goal_align.hpp
+[133.564s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/goal_dist.hpp
+[133.577s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/line_iterator.hpp
+[133.589s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/map_grid.hpp
+[133.602s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/obstacle_footprint.hpp
+[133.615s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/oscillation.hpp
+[133.629s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/path_align.hpp
+[133.641s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/path_dist.hpp
+[133.655s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/prefer_forward.hpp
+[133.669s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/rotate_to_goal.hpp
+[133.681s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/include//dwb_critics/twirling.hpp
+[133.694s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/default_critics.xml
+[133.707s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/library_path.sh
+[133.721s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/library_path.dsv
+[133.735s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics//default_critics.xml
+[133.735s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/ament_index/resource_index/package_run_dependencies/dwb_critics
+[133.749s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/ament_index/resource_index/parent_prefix_path/dwb_critics
+[133.763s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/ament_prefix_path.sh
+[133.776s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/ament_prefix_path.dsv
+[133.796s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/path.sh
+[133.812s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/environment/path.dsv
+[133.825s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/local_setup.bash
+[133.837s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/local_setup.sh
+[133.851s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/local_setup.zsh
+[133.864s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/local_setup.dsv
+[133.878s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/package.dsv
+[133.891s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/ament_index/resource_index/packages/dwb_critics
+[133.904s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/ament_index/resource_index/dwb_core__pluginlib__plugin/dwb_critics
+[133.917s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/cmake/ament_cmake_export_include_directories-extras.cmake
+[133.930s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/cmake/ament_cmake_export_libraries-extras.cmake
+[133.944s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/cmake/ament_cmake_export_dependencies-extras.cmake
+[133.957s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/cmake/dwb_criticsConfig.cmake
+[133.971s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/cmake/dwb_criticsConfig-version.cmake
+[133.986s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_critics/share/dwb_critics/package.xml
+[134.005s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_critics' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core:/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/costmap_queue:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/dwb_core/lib:/home/snake/Emmanuel_Jr_robot/install/costmap_queue/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_utils/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/dwb_critics

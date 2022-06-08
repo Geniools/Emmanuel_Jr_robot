@@ -1,0 +1,1 @@
+/home/snake/Emmanuel_Jr_robot/build/nav2_regulated_pure_pursuit_controller/ament_cmake_core/nav2_regulated_pure_pursuit_controllerConfig.cmake

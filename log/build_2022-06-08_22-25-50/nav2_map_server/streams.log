@@ -1,0 +1,171 @@
+[0.032s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_map_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server
+[0.158s] -- The C compiler identification is GNU 9.4.0
+[0.234s] -- The CXX compiler identification is GNU 9.4.0
+[0.239s] -- Check for working C compiler: /usr/bin/cc
+[0.329s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.331s] -- Detecting C compiler ABI info
+[0.415s] -- Detecting C compiler ABI info - done
+[0.430s] -- Detecting C compile features
+[0.431s] -- Detecting C compile features - done
+[0.434s] -- Check for working CXX compiler: /usr/bin/c++
+[0.530s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.532s] -- Detecting CXX compiler ABI info
+[0.631s] -- Detecting CXX compiler ABI info - done
+[0.645s] -- Detecting CXX compile features
+[0.646s] -- Detecting CXX compile features - done
+[0.649s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.679s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.680s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.752s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.780s] -- Found nav2_common: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_common/share/nav2_common/cmake)
+[0.782s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.845s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.854s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.950s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.984s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.082s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.162s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.167s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.193s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.194s] -- Looking for pthread.h
+[1.284s] -- Looking for pthread.h - found
+[1.285s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.441s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.441s] -- Looking for pthread_create in pthreads
+[1.515s] -- Looking for pthread_create in pthreads - not found
+[1.515s] -- Looking for pthread_create in pthread
+[1.603s] -- Looking for pthread_create in pthread - found
+[1.605s] -- Found Threads: TRUE  
+[1.800s] -- Found rclcpp_lifecycle: 9.2.1 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[1.843s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[1.996s] -- Found nav2_msgs: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/share/nav2_msgs/cmake)
+[2.370s] -- Found yaml_cpp_vendor: 7.1.1 (/opt/ros/galactic/share/yaml_cpp_vendor/cmake)
+[2.379s] -- Found tf2: 0.17.3 (/opt/ros/galactic/share/tf2/cmake)
+[2.394s] -- Found nav2_util: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_util/share/nav2_util/cmake)
+[2.865s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[2.869s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[3.109s] -- Found GRAPHICSMAGICKCPP: /usr/include/GraphicsMagick  
+[3.110s] -- Setting build type to Release as none was specified.
+[4.936s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[5.064s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.067s] -- Check if compiler accepts -pthread
+[5.173s] -- Check if compiler accepts -pthread - yes
+[5.183s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.192s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.208s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.210s] -- Configured cppcheck include dirs: /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_map_server/include
+[5.210s] -- Configured cppcheck exclude dirs and/or files: 
+[5.215s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.215s] -- Configured cpplint exclude dirs and/or files: 
+[5.217s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.219s] -- Added test 'lint_cmake' to check CMake code style
+[5.220s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.223s] -- Added test 'uncrustify' to check C / C++ code style
+[5.223s] -- Configured uncrustify additional arguments: 
+[5.224s] -- Added test 'xmllint' to check XML markup files
+[5.234s] -- Configuring done
+[5.600s] -- Generating done
+[5.605s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/nav2_map_server
+[5.624s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_map_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server
+[5.626s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_map_server -- -j2 -l2
+[5.687s] [35m[1mScanning dependencies of target map_io[0m
+[5.777s] [  2%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_mode.cpp.o[0m
+[6.132s] [  5%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_io.cpp.o[0m
+[12.294s] [  8%] [32m[1mLinking CXX shared library libmap_io.so[0m
+[12.533s] [  8%] Built target map_io
+[12.548s] [35m[1mScanning dependencies of target gtest[0m
+[12.570s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[22.770s] [ 13%] [32m[1mLinking CXX static library libgtest.a[0m
+[22.821s] [ 13%] Built target gtest
+[22.837s] [35m[1mScanning dependencies of target gtest_main[0m
+[22.855s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[24.278s] [ 19%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[24.329s] [ 19%] Built target gtest_main
+[24.348s] [35m[1mScanning dependencies of target test_map_saver_publisher[0m
+[24.406s] [ 22%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/test_map_saver_publisher.cpp.o[0m
+[31.067s] [ 25%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/__/test_constants.cpp.o[0m
+[31.223s] [ 27%] [32m[1mLinking CXX executable test_map_saver_publisher[0m
+[31.508s] [ 27%] Built target test_map_saver_publisher
+[31.523s] [35m[1mScanning dependencies of target map_server_core[0m
+[31.614s] [ 30%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_server/map_server.cpp.o[0m
+[40.468s] [ 33%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_saver/map_saver.cpp.o[0m
+[54.537s] [ 36%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/costmap_filter_info/costmap_filter_info_server.cpp.o[0m
+[61.465s] [ 38%] [32m[1mLinking CXX shared library libmap_server_core.so[0m
+[61.848s] [ 38%] Built target map_server_core
+[61.865s] [35m[1mScanning dependencies of target test_map_io[0m
+[61.939s] [ 41%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/test_map_io.cpp.o[0m
+[68.968s] [ 44%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/__/test_constants.cpp.o[0m
+[69.132s] [ 47%] [32m[1mLinking CXX executable test_map_io[0m
+[69.445s] [ 47%] Built target test_map_io
+[69.459s] [35m[1mScanning dependencies of target test_map_saver_cli[0m
+[69.514s] [ 50%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/test_map_saver_cli.cpp.o[0m
+[78.268s] [ 52%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/__/test_constants.cpp.o[0m
+[78.618s] [ 55%] [32m[1mLinking CXX executable test_map_saver_cli[0m
+[78.938s] [ 55%] Built target test_map_saver_cli
+[78.962s] [35m[1mScanning dependencies of target map_server[0m
+[79.036s] [ 58%] [32mBuilding CXX object CMakeFiles/map_server.dir/src/map_server/main.cpp.o[0m
+[83.980s] [ 61%] [32m[1mLinking CXX executable map_server[0m
+[84.373s] [ 61%] Built target map_server
+[84.390s] [35m[1mScanning dependencies of target map_saver_cli[0m
+[84.462s] [ 63%] [32mBuilding CXX object CMakeFiles/map_saver_cli.dir/src/map_saver/main_cli.cpp.o[0m
+[88.259s] [ 66%] [32m[1mLinking CXX executable map_saver_cli[0m
+[88.618s] [ 66%] Built target map_saver_cli
+[88.633s] [35m[1mScanning dependencies of target map_saver_server[0m
+[88.697s] [ 69%] [32mBuilding CXX object CMakeFiles/map_saver_server.dir/src/map_saver/main_server.cpp.o[0m
+[92.341s] [ 72%] [32m[1mLinking CXX executable map_saver_server[0m
+[92.671s] [ 72%] Built target map_saver_server
+[92.687s] [35m[1mScanning dependencies of target costmap_filter_info_server[0m
+[92.749s] [ 75%] [32mBuilding CXX object CMakeFiles/costmap_filter_info_server.dir/src/costmap_filter_info/main.cpp.o[0m
+[96.340s] [ 77%] [32m[1mLinking CXX executable costmap_filter_info_server[0m
+[96.662s] [ 77%] Built target costmap_filter_info_server
+[96.677s] [35m[1mScanning dependencies of target test_costmap_filter_info_server[0m
+[96.793s] [ 80%] [32mBuilding CXX object test/unit/CMakeFiles/test_costmap_filter_info_server.dir/test_costmap_filter_info_server.cpp.o[0m
+[110.112s] [ 83%] [32m[1mLinking CXX executable test_costmap_filter_info_server[0m
+[110.491s] [ 83%] Built target test_costmap_filter_info_server
+[110.508s] [35m[1mScanning dependencies of target test_map_saver_node[0m
+[110.577s] [ 86%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/test_map_saver_node.cpp.o[0m
+[117.812s] [ 88%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/__/test_constants.cpp.o[0m
+[118.023s] [ 91%] [32m[1mLinking CXX executable test_map_saver_node[0m
+[118.367s] [ 91%] Built target test_map_saver_node
+[118.386s] [35m[1mScanning dependencies of target test_map_server_node[0m
+[118.467s] [ 94%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/test_map_server_node.cpp.o[0m
+[126.482s] [ 97%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/__/test_constants.cpp.o[0m
+[126.642s] [100%] [32m[1mLinking CXX executable test_map_server_node[0m
+[126.907s] [100%] Built target test_map_server_node
+[126.922s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_map_server -- -j2 -l2
+[126.986s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_map_server
+[126.997s] -- Install configuration: "Release"
+[126.998s] -- Execute custom install script
+[126.999s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/libmap_server_core.so
+[127.014s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/libmap_io.so
+[127.027s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/nav2_map_server/map_server
+[127.039s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/nav2_map_server/map_saver_cli
+[127.051s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/nav2_map_server/map_saver_server
+[127.063s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib/nav2_map_server/costmap_filter_info_server
+[127.077s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/include//nav2_map_server/costmap_filter_info_server.hpp
+[127.088s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/include//nav2_map_server/map_io.hpp
+[127.100s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/include//nav2_map_server/map_mode.hpp
+[127.111s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/include//nav2_map_server/map_saver.hpp
+[127.123s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/include//nav2_map_server/map_server.hpp
+[127.136s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/launch/map_saver_server.launch.py
+[127.147s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/library_path.sh
+[127.160s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/library_path.dsv
+[127.172s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/ament_index/resource_index/package_run_dependencies/nav2_map_server
+[127.185s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/ament_index/resource_index/parent_prefix_path/nav2_map_server
+[127.197s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.sh
+[127.208s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.dsv
+[127.220s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/path.sh
+[127.232s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/environment/path.dsv
+[127.249s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/local_setup.bash
+[127.262s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/local_setup.sh
+[127.275s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/local_setup.zsh
+[127.291s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/local_setup.dsv
+[127.309s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/package.dsv
+[127.323s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/ament_index/resource_index/packages/nav2_map_server
+[127.337s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_include_directories-extras.cmake
+[127.349s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_libraries-extras.cmake
+[127.361s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_dependencies-extras.cmake
+[127.374s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig.cmake
+[127.388s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig-version.cmake
+[127.401s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_map_server/share/nav2_map_server/package.xml
+[127.417s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_map_server
