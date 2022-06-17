@@ -99,12 +99,24 @@ class EmmanuelMotionMotors(Node):
         self.get_logger().info("Encoder data: {}".format(data))
 
     def callback_received_coordinates(self, msg):
+        self.get_logger().info("Received coordinates: {}".format(msg))
+
+        gp.setup(self.F_P1, gp.OUT)
+        gp.setup(self.F_P2, gp.OUT)
+        gp.setup(self.F_P3, gp.OUT)
+        gp.setup(self.F_P4, gp.OUT)
+
+        gp.setup(self.S_P1, gp.OUT)
+        gp.setup(self.S_P2, gp.OUT)
+        gp.setup(self.S_P3, gp.OUT)
+        gp.setup(self.S_P4, gp.OUT)
+
         # Getting the linear and angular velocity
         linear_velocity = msg.linear.x
         angular_velocity = msg.angular.z
 
-        self.f_LM.ChangeDutyCycle(75)
-        self.f_RM.ChangeDutyCycle(75)
+        self.f_LM.ChangeDutyCycle(50)
+        self.f_RM.ChangeDutyCycle(50)
 
         self.s_LM.ChangeDutyCycle(75)
         self.s_RM.ChangeDutyCycle(75)
@@ -129,16 +141,19 @@ class EmmanuelMotionMotors(Node):
         # self.set_motor_speed(left_motor_speed_pwm, right_motor_speed_pwm)
 
     def moveForward(self):
-        gp.setup(self.F_P1, gp.OUT)
-        gp.setup(self.F_P2, gp.OUT)
-        gp.setup(self.F_P3, gp.OUT)
-        gp.setup(self.F_P4, gp.OUT)
-        
+        # Setup first motor go forward
         gp.output(self.F_P1, True)
         gp.output(self.F_P2, False)
 
-        gp.output(self.F_P3, True)
-        gp.output(self.F_P4, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, True)
+
+        # Setup first motor go forward
+        gp.output(self.S_P1, True)
+        gp.output(self.S_P2, False)
+
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, True)
 
     def moveBackward(self):
         gp.output(self.F_P1, False)
@@ -147,12 +162,25 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.F_P3, False)
         gp.output(self.F_P4, True)
 
+        # Setup first motor go forward
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, True)
+
+        gp.output(self.S_P3, True)
+        gp.output(self.S_P4, False)
+
     def stopRobot(self):
         gp.output(self.F_P1, False)
         gp.output(self.F_P2, False)
 
         gp.output(self.F_P3, False)
         gp.output(self.F_P4, False)
+
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, False)
+
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, False)
 
 
 def main(args=None):
