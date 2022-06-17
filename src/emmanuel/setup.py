@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_run = emmanuel.motor_run:main',
+            'motor_run = emmanuel.motors:main',
         ],
     },
 )
