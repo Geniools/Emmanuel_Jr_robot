@@ -13,11 +13,6 @@ from gpiozero import Servo
 from .encoder import Encoder
 
 
-def clearGPIO():
-    # Clearing the GPIO
-    gp.cleanup()
-
-
 class EmmanuelMotionMotors(Node):
     def __init__(self):
         # Setting up the node
@@ -48,10 +43,16 @@ class EmmanuelMotionMotors(Node):
         # Setting up GPIO and initializing first the motors
         gp.setmode(gp.BCM)
         gp.setwarnings(False)
+
         gp.setup(self.F_P1, gp.OUT)
         gp.setup(self.F_P2, gp.OUT)
         gp.setup(self.F_P3, gp.OUT)
         gp.setup(self.F_P4, gp.OUT)
+
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, False)
 
         gp.setup(self.F_ENA, gp.OUT)
         gp.setup(self.F_ENB, gp.OUT)
@@ -61,6 +62,11 @@ class EmmanuelMotionMotors(Node):
         gp.setup(self.S_P2, gp.OUT)
         gp.setup(self.S_P3, gp.OUT)
         gp.setup(self.S_P4, gp.OUT)
+
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, False)
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, False)
 
         gp.setup(self.S_ENA, gp.OUT)
         gp.setup(self.S_ENB, gp.OUT)
@@ -96,6 +102,7 @@ class EmmanuelMotionMotors(Node):
         # Getting the linear and angular velocity
         linear_velocity = msg.linear.x
         angular_velocity = msg.angular.z
+
         self.f_LM.ChangeDutyCycle(75)
         self.f_RM.ChangeDutyCycle(75)
 
