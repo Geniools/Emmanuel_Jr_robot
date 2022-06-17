@@ -159,8 +159,8 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.F_P1, False)
         gp.output(self.F_P2, True)
 
-        gp.output(self.F_P3, False)
-        gp.output(self.F_P4, True)
+        gp.output(self.F_P3, True)
+        gp.output(self.F_P4, False)
 
         # Setup first motor go forward
         gp.output(self.S_P1, False)
