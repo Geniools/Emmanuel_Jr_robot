@@ -47,6 +47,7 @@ class EmmanuelMotionMotors(Node):
 
         # Setting up GPIO and initializing first the motors
         gp.setmode(gp.BCM)
+        gp.setwarnings(False)
         gp.setup(self.F_P1, gp.OUT)
         gp.setup(self.F_P2, gp.OUT)
         gp.setup(self.F_P3, gp.OUT)
@@ -152,7 +153,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    clearGPIO()
+
     motorNode.destroy_node()
     rclpy.shutdown()
 
