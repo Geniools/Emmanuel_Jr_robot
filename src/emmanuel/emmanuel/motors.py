@@ -129,6 +129,11 @@ class EmmanuelMotionMotors(Node):
         # self.set_motor_speed(left_motor_speed_pwm, right_motor_speed_pwm)
 
     def moveForward(self):
+        gp.setup(self.F_P1, gp.OUT)
+        gp.setup(self.F_P2, gp.OUT)
+        gp.setup(self.F_P3, gp.OUT)
+        gp.setup(self.F_P4, gp.OUT)
+        
         gp.output(self.F_P1, True)
         gp.output(self.F_P2, False)
 
