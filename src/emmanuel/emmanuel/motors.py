@@ -121,25 +121,25 @@ class EmmanuelMotionMotors(Node):
         # self.set_motor_speed(left_motor_speed_pwm, right_motor_speed_pwm)
 
     def moveForward(self):
-        self.gp.output(self.F_P1, True)
-        self.gp.output(self.F_P2, False)
+        gp.output(self.F_P1, True)
+        gp.output(self.F_P2, False)
 
-        self.gp.output(self.F_P3, True)
-        self.gp.output(self.F_P4, False)
+        gp.output(self.F_P3, True)
+        gp.output(self.F_P4, False)
 
     def moveBackward(self):
-        self.gp.output(self.F_P1, False)
-        self.gp.output(self.F_P2, True)
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, True)
 
-        self.gp.output(self.F_P3, False)
-        self.gp.output(self.F_P4, True)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, True)
 
     def stopRobot(self):
-        self.gp.output(self.F_P1, False)
-        self.gp.output(self.F_P2, False)
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, False)
 
-        self.gp.output(self.F_P3, False)
-        self.gp.output(self.F_P4, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, False)
 
 
 def main(args=None):
