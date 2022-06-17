@@ -75,3 +75,76 @@
 [665.320s] [ 87%] [32m[1mLinking CXX executable obstacle_tests_exec[0m
 [665.656s] [ 87%] Built target obstacle_tests_exec
 [665.706s] [ 89%] [32mBuilding CXX object test/integration/CMakeFiles/inflation_tests_exec.dir/inflation_tests.cpp.o[0m
+[673.852s] [ 90%] [32m[1mLinking CXX executable inflation_tests_exec[0m
+[674.204s] [ 90%] Built target inflation_tests_exec
+[674.267s] [ 92%] [32mBuilding CXX object test/integration/CMakeFiles/test_collision_checker_exec.dir/test_costmap_topic_collision_checker.cpp.o[0m
+[683.671s] [ 93%] [32m[1mLinking CXX executable test_collision_checker_exec[0m
+[684.064s] [ 93%] Built target test_collision_checker_exec
+[684.103s] [ 95%] [32mBuilding CXX object test/integration/CMakeFiles/footprint_tests_exec.dir/footprint_tests.cpp.o[0m
+[688.650s] [ 96%] [32m[1mLinking CXX executable footprint_tests_exec[0m
+[688.948s] [ 96%] Built target footprint_tests_exec
+[688.977s] [ 98%] [32mBuilding CXX object test/regression/CMakeFiles/costmap_bresenham_2d.dir/costmap_bresenham_2d.cpp.o[0m
+[690.528s] [100%] [32m[1mLinking CXX executable costmap_bresenham_2d[0m
+[690.729s] [100%] Built target costmap_bresenham_2d
+[690.744s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d -- -j2 -l2
+[690.812s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d
+[690.820s] -- Install configuration: "Release"
+[690.821s] -- Execute custom install script
+[690.823s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/libnav2_costmap_2d_core.so
+[690.823s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/liblayers.so
+[690.824s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/libfilters.so
+[690.824s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/libnav2_costmap_2d_client.so
+[690.825s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/nav2_costmap_2d/nav2_costmap_2d
+[690.825s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/nav2_costmap_2d/nav2_costmap_2d_markers
+[690.826s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib/nav2_costmap_2d/nav2_costmap_2d_cloud
+[690.826s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/costmap_plugins.xml
+[690.827s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/array_parser.hpp
+[690.828s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/clear_costmap_service.hpp
+[690.828s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/cost_values.hpp
+[690.829s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_2d.hpp
+[690.829s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_2d_publisher.hpp
+[690.830s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_2d_ros.hpp
+[690.830s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_filters/costmap_filter.hpp
+[690.830s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_filters/filter_values.hpp
+[690.831s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_filters/keepout_filter.hpp
+[690.831s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_filters/speed_filter.hpp
+[690.832s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_layer.hpp
+[690.832s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_math.hpp
+[690.832s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_subscriber.hpp
+[690.833s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/costmap_topic_collision_checker.hpp
+[690.833s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/exceptions.hpp
+[690.834s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/footprint.hpp
+[690.834s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/footprint_collision_checker.hpp
+[690.834s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/footprint_subscriber.hpp
+[690.835s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/inflation_layer.hpp
+[690.835s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/layer.hpp
+[690.835s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/layered_costmap.hpp
+[690.836s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/observation.hpp
+[690.836s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/observation_buffer.hpp
+[690.837s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/obstacle_layer.hpp
+[690.837s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/range_sensor_layer.hpp
+[690.837s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/static_layer.hpp
+[690.838s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/include//nav2_costmap_2d/voxel_layer.hpp
+[690.840s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/library_path.sh
+[690.840s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/library_path.dsv
+[690.841s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d//costmap_plugins.xml
+[690.841s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/ament_index/resource_index/package_run_dependencies/nav2_costmap_2d
+[690.842s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/ament_index/resource_index/parent_prefix_path/nav2_costmap_2d
+[690.843s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/ament_prefix_path.sh
+[690.844s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/ament_prefix_path.dsv
+[690.844s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/path.sh
+[690.845s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/environment/path.dsv
+[690.845s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/local_setup.bash
+[690.845s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/local_setup.sh
+[690.846s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/local_setup.zsh
+[690.846s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/local_setup.dsv
+[690.846s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/package.dsv
+[690.856s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/ament_index/resource_index/packages/nav2_costmap_2d
+[690.857s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/ament_index/resource_index/nav2_costmap_2d__pluginlib__plugin/nav2_costmap_2d
+[690.858s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake/ament_cmake_export_include_directories-extras.cmake
+[690.858s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake/ament_cmake_export_libraries-extras.cmake
+[690.859s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake/ament_cmake_export_dependencies-extras.cmake
+[690.859s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake/nav2_costmap_2dConfig.cmake
+[690.860s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/cmake/nav2_costmap_2dConfig-version.cmake
+[690.860s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/share/nav2_costmap_2d/package.xml
+[690.866s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_map_server/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_lifecycle_manager/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_costmap_2d

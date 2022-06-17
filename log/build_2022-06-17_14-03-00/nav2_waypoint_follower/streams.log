@@ -1,0 +1,84 @@
+[0.018s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_waypoint_follower -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower
+[0.051s] -- Found OpenCV version 4.2.0
+[0.054s] -- Found image_transport: 2.3.1 (/opt/ros/galactic/share/image_transport/cmake)
+[0.080s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.131s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.177s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.180s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.285s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.342s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.344s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.362s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.652s] -- Found cv_bridge: 2.2.1 (/opt/ros/galactic/share/cv_bridge/cmake)
+[0.657s] -- Found nav2_common: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_common/share/nav2_common/cmake)
+[0.658s] -- Found rclcpp_action: 9.2.1 (/opt/ros/galactic/share/rclcpp_action/cmake)
+[0.736s] -- Found rclcpp_lifecycle: 9.2.1 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[0.781s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[0.861s] -- Found nav2_msgs: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/share/nav2_msgs/cmake)
+[1.066s] -- Found nav2_util: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_util/share/nav2_util/cmake)
+[1.331s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[1.491s] -- Found nav2_core: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav2_core/share/nav2_core/cmake)
+[8.310s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[8.311s] -- Found ament_cmake_gtest: 1.1.5 (/opt/ros/galactic/share/ament_cmake_gtest/cmake)
+[8.376s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[9.531s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.533s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.534s] -- Configured cppcheck include dirs: /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_waypoint_follower/include
+[9.534s] -- Configured cppcheck exclude dirs and/or files: 
+[9.535s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.535s] -- Configured cpplint exclude dirs and/or files: 
+[9.536s] -- Added test 'lint_cmake' to check CMake code style
+[9.537s] -- Added test 'uncrustify' to check C / C++ code style
+[9.537s] -- Configured uncrustify additional arguments: 
+[9.537s] -- Added test 'xmllint' to check XML markup files
+[9.547s] -- Configuring done
+[9.922s] -- Generating done
+[9.926s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower
+[9.938s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_waypoint_follower -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower
+[9.939s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower -- -j2 -l2
+[10.015s] [ 12%] Built target waypoint_follower_core
+[10.057s] [ 25%] Built target photo_at_waypoint
+[10.092s] [ 37%] Built target input_at_waypoint
+[10.128s] [ 50%] Built target wait_at_waypoint
+[10.149s] [ 62%] Built target gtest
+[10.170s] [ 75%] Built target gtest_main
+[10.211s] [ 87%] Built target waypoint_follower
+[10.253s] [ 93%] [32mBuilding CXX object test/CMakeFiles/test_task_executors.dir/test_task_executors.cpp.o[0m
+[18.724s] [100%] [32m[1mLinking CXX executable test_task_executors[0m
+[19.482s] [100%] Built target test_task_executors
+[19.495s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower -- -j2 -l2
+[19.523s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower
+[19.531s] -- Install configuration: "Release"
+[19.531s] -- Execute custom install script
+[19.533s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/lib/libwaypoint_follower_core.so
+[19.535s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/lib/libwait_at_waypoint.so
+[19.535s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/lib/libphoto_at_waypoint.so
+[19.535s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/lib/libinput_at_waypoint.so
+[19.536s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/lib/nav2_waypoint_follower/waypoint_follower
+[19.538s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/include//nav2_waypoint_follower/plugins/input_at_waypoint.hpp
+[19.539s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/include//nav2_waypoint_follower/plugins/photo_at_waypoint.hpp
+[19.539s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/include//nav2_waypoint_follower/plugins/wait_at_waypoint.hpp
+[19.540s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/include//nav2_waypoint_follower/waypoint_follower.hpp
+[19.541s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/library_path.sh
+[19.542s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/library_path.dsv
+[19.542s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower//plugins.xml
+[19.543s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/ament_index/resource_index/package_run_dependencies/nav2_waypoint_follower
+[19.544s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/ament_index/resource_index/parent_prefix_path/nav2_waypoint_follower
+[19.545s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/ament_prefix_path.sh
+[19.545s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/ament_prefix_path.dsv
+[19.546s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/path.sh
+[19.547s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/environment/path.dsv
+[19.547s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/local_setup.bash
+[19.548s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/local_setup.sh
+[19.549s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/local_setup.zsh
+[19.549s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/local_setup.dsv
+[19.550s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/package.dsv
+[19.560s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/ament_index/resource_index/packages/nav2_waypoint_follower
+[19.560s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/ament_index/resource_index/nav2_waypoint_follower__pluginlib__plugin/nav2_waypoint_follower
+[19.561s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.562s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/cmake/ament_cmake_export_libraries-extras.cmake
+[19.563s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.563s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/cmake/nav2_waypoint_followerConfig.cmake
+[19.564s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/cmake/nav2_waypoint_followerConfig-version.cmake
+[19.565s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/nav2_waypoint_follower/share/nav2_waypoint_follower/package.xml
+[19.568s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_core:/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d:/home/snake/Emmanuel_Jr_robot/install/nav2_util:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs:/home/snake/Emmanuel_Jr_robot/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav2_costmap_2d/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_util/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_voxel_grid/lib:/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav2_msgs/lib/python3.8/site-packages:/home/snake/Emmanuel_Jr_robot/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower
