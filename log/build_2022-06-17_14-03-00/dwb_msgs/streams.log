@@ -1,0 +1,247 @@
+[0.037s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_msgs -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/dwb_msgs
+[0.058s] -- Found builtin_interfaces: 1.0.3 (/opt/ros/galactic/share/builtin_interfaces/cmake)
+[0.084s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.085s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.152s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.188s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.191s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.347s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.383s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.440s] -- Found nav_2d_msgs: 1.0.12 (/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/share/nav_2d_msgs/cmake)
+[0.505s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[0.577s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[0.614s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.053s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[1.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.545s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.605s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.606s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[1.648s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.648s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.648s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.771s] -- Configuring done
+[1.922s] -- Generating done
+[1.927s] -- Build files have been written to: /home/snake/Emmanuel_Jr_robot/build/dwb_msgs
+[1.937s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_msgs -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/dwb_msgs
+[1.939s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/dwb_msgs -- -j2 -l2
+[2.067s] [  1%] Built target dwb_msgs__cpp
+[2.103s] [ 12%] Built target dwb_msgs__rosidl_generator_c
+[2.148s] [ 24%] Built target dwb_msgs__rosidl_typesupport_cpp
+[2.161s] [ 35%] Built target dwb_msgs__rosidl_typesupport_introspection_cpp
+[2.270s] [ 58%] Built target dwb_msgs__rosidl_typesupport_c
+[2.270s] [ 58%] Built target dwb_msgs__rosidl_typesupport_fastrtps_cpp
+[2.345s] [ 70%] Built target dwb_msgs__rosidl_typesupport_introspection_c
+[2.375s] [ 82%] Built target dwb_msgs__rosidl_typesupport_fastrtps_c
+[2.416s] [ 82%] Built target dwb_msgs
+[2.442s] [ 83%] Built target dwb_msgs__py
+[2.510s] [ 93%] Built target dwb_msgs__python
+[2.602s] [ 95%] Built target dwb_msgs__rosidl_typesupport_introspection_c__pyext
+[2.602s] [ 97%] Built target dwb_msgs__rosidl_typesupport_c__pyext
+[2.689s] [100%] Built target dwb_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.727s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/dwb_msgs -- -j2 -l2
+[3.847s] Invoking command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/dwb_msgs
+[3.857s] -- Install configuration: ""
+[3.857s] -- Execute custom install script
+[3.859s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/ament_index/resource_index/rosidl_interfaces/dwb_msgs
+[3.862s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/critic_score.h
+[3.862s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__functions.h
+[3.863s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__struct.h
+[3.863s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__type_support.h
+[3.864s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__functions.h
+[3.864s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__struct.h
+[3.865s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__type_support.h
+[3.865s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__functions.h
+[3.865s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__struct.h
+[3.866s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__type_support.h
+[3.866s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__functions.h
+[3.867s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__struct.h
+[3.867s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__type_support.h
+[3.867s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/local_plan_evaluation.h
+[3.868s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.868s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/trajectory2_d.h
+[3.869s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/trajectory_score.h
+[3.869s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/debug_local_plan.h
+[3.870s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__functions.h
+[3.871s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__struct.h
+[3.871s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__type_support.h
+[3.871s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__functions.h
+[3.872s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__struct.h
+[3.872s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__type_support.h
+[3.873s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__functions.h
+[3.873s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__struct.h
+[3.873s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__type_support.h
+[3.874s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__functions.h
+[3.874s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__struct.h
+[3.875s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__type_support.h
+[3.875s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__functions.h
+[3.875s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__struct.h
+[3.876s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__type_support.h
+[3.876s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/generate_trajectory.h
+[3.877s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/generate_twists.h
+[3.877s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/get_critic_score.h
+[3.877s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/score_trajectory.h
+[3.878s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/library_path.sh
+[3.879s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/library_path.dsv
+[3.880s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__rosidl_typesupport_fastrtps_c.h
+[3.881s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__rosidl_typesupport_fastrtps_c.h
+[3.881s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__rosidl_typesupport_fastrtps_c.h
+[3.881s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__rosidl_typesupport_fastrtps_c.h
+[3.882s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.882s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__rosidl_typesupport_fastrtps_c.h
+[3.883s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__rosidl_typesupport_fastrtps_c.h
+[3.883s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__rosidl_typesupport_fastrtps_c.h
+[3.884s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__rosidl_typesupport_fastrtps_c.h
+[3.884s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__rosidl_typesupport_fastrtps_c.h
+[3.885s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_fastrtps_c.so
+[3.886s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__rosidl_typesupport_fastrtps_cpp.hpp
+[3.887s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__rosidl_typesupport_fastrtps_cpp.hpp
+[3.887s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[3.888s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__rosidl_typesupport_fastrtps_cpp.hpp
+[3.888s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.889s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__rosidl_typesupport_fastrtps_cpp.hpp
+[3.889s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[3.890s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__rosidl_typesupport_fastrtps_cpp.hpp
+[3.890s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__rosidl_typesupport_fastrtps_cpp.hpp
+[3.890s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[3.891s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.892s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__rosidl_typesupport_introspection_c.h
+[3.892s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__rosidl_typesupport_introspection_c.h
+[3.893s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__rosidl_typesupport_introspection_c.h
+[3.893s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__rosidl_typesupport_introspection_c.h
+[3.893s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.894s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__rosidl_typesupport_introspection_c.h
+[3.894s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__rosidl_typesupport_introspection_c.h
+[3.894s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__rosidl_typesupport_introspection_c.h
+[3.895s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__rosidl_typesupport_introspection_c.h
+[3.895s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__rosidl_typesupport_introspection_c.h
+[3.896s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/critic_score.hpp
+[3.896s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__builder.hpp
+[3.897s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__struct.hpp
+[3.897s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__traits.hpp
+[3.898s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__builder.hpp
+[3.898s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__struct.hpp
+[3.898s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__traits.hpp
+[3.899s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__builder.hpp
+[3.899s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__struct.hpp
+[3.899s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__traits.hpp
+[3.900s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__builder.hpp
+[3.900s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__struct.hpp
+[3.901s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__traits.hpp
+[3.901s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/local_plan_evaluation.hpp
+[3.901s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/trajectory2_d.hpp
+[3.902s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/trajectory_score.hpp
+[3.902s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/debug_local_plan.hpp
+[3.903s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__builder.hpp
+[3.903s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__struct.hpp
+[3.904s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__traits.hpp
+[3.904s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__builder.hpp
+[3.905s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__struct.hpp
+[3.905s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__traits.hpp
+[3.905s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__builder.hpp
+[3.906s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__struct.hpp
+[3.906s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__traits.hpp
+[3.907s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__builder.hpp
+[3.907s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__struct.hpp
+[3.907s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__traits.hpp
+[3.908s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__builder.hpp
+[3.908s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__struct.hpp
+[3.909s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__traits.hpp
+[3.909s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/generate_trajectory.hpp
+[3.910s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/generate_twists.hpp
+[3.910s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/get_critic_score.hpp
+[3.910s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/score_trajectory.hpp
+[3.911s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/critic_score__rosidl_typesupport_introspection_cpp.hpp
+[3.911s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/local_plan_evaluation__rosidl_typesupport_introspection_cpp.hpp
+[3.912s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory2_d__rosidl_typesupport_introspection_cpp.hpp
+[3.912s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/msg/detail/trajectory_score__rosidl_typesupport_introspection_cpp.hpp
+[3.913s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/debug_local_plan__rosidl_typesupport_introspection_cpp.hpp
+[3.913s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[3.914s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/generate_twists__rosidl_typesupport_introspection_cpp.hpp
+[3.914s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/get_critic_score__rosidl_typesupport_introspection_cpp.hpp
+[3.914s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/include/dwb_msgs/srv/detail/score_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[3.915s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/pythonpath.sh
+[3.915s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/pythonpath.dsv
+[3.916s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/__init__.py
+[3.917s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/msg/__init__.py
+[3.918s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/msg/_critic_score.py
+[3.918s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/msg/_local_plan_evaluation.py
+[3.918s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/msg/_trajectory2_d.py
+[3.919s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/msg/_trajectory_score.py
+[3.920s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/__init__.py
+[3.921s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/_debug_local_plan.py
+[3.921s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/_generate_trajectory.py
+[3.922s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/_generate_twists.py
+[3.922s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/_get_critic_score.py
+[3.923s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/srv/_score_trajectory.py
+[3.923s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/dwb_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[3.924s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/dwb_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[3.925s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/dwb_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[3.925s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__python.so
+[3.926s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/CriticScore.idl
+[3.926s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/LocalPlanEvaluation.idl
+[3.927s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/Trajectory2D.idl
+[3.927s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/TrajectoryScore.idl
+[3.928s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/DebugLocalPlan.idl
+[3.929s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTrajectory.idl
+[3.929s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTwists.idl
+[3.929s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GetCriticScore.idl
+[3.930s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/ScoreTrajectory.idl
+[3.930s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/CriticScore.msg
+[3.931s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/LocalPlanEvaluation.msg
+[3.931s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/Trajectory2D.msg
+[3.932s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/msg/TrajectoryScore.msg
+[3.932s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/DebugLocalPlan.srv
+[3.933s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/DebugLocalPlan_Request.msg
+[3.933s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/DebugLocalPlan_Response.msg
+[3.934s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTrajectory.srv
+[3.935s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTrajectory_Request.msg
+[3.935s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTrajectory_Response.msg
+[3.936s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTwists.srv
+[3.936s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTwists_Request.msg
+[3.937s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GenerateTwists_Response.msg
+[3.938s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GetCriticScore.srv
+[3.938s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GetCriticScore_Request.msg
+[3.939s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/GetCriticScore_Response.msg
+[3.939s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/ScoreTrajectory.srv
+[3.940s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/ScoreTrajectory_Request.msg
+[3.940s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/srv/ScoreTrajectory_Response.msg
+[3.941s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/ament_index/resource_index/package_run_dependencies/dwb_msgs
+[3.941s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/ament_index/resource_index/parent_prefix_path/dwb_msgs
+[3.942s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/ament_prefix_path.sh
+[3.942s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/ament_prefix_path.dsv
+[3.943s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/path.sh
+[3.943s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/environment/path.dsv
+[3.944s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/local_setup.bash
+[3.944s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/local_setup.sh
+[3.945s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/local_setup.zsh
+[3.945s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/local_setup.dsv
+[3.945s] -- Symlinking: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/package.dsv
+[3.955s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/ament_index/resource_index/packages/dwb_msgs
+[3.955s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/rosidl_cmake-extras.cmake
+[3.956s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.956s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.957s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.957s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.957s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.959s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.959s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgsConfig.cmake
+[3.960s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgsConfig-version.cmake
+[3.961s] -- Up-to-date symlink: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/package.xml
+[3.962s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_generator_c.so
+[3.963s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_introspection_c.so
+[3.965s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_c.so
+[3.966s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_introspection_cpp.so
+[3.967s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/libdwb_msgs__rosidl_typesupport_cpp.so
+[3.996s] Compiling '/home/snake/Emmanuel_Jr_robot/install/dwb_msgs/lib/python3.8/site-packages/dwb_msgs/__init__.py'...
+[4.001s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_generator_cExport.cmake
+[4.001s] -- Installing: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.001s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.002s] -- Installing: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.002s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_cExport.cmake
+[4.002s] -- Installing: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.003s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_generator_cppExport.cmake
+[4.003s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.003s] -- Installing: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.006s] -- Up-to-date: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_cppExport.cmake
+[4.006s] -- Installing: /home/snake/Emmanuel_Jr_robot/install/dwb_msgs/share/dwb_msgs/cmake/dwb_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.007s] Invoked command in '/home/snake/Emmanuel_Jr_robot/build/dwb_msgs' returned '0': AMENT_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/snake/Emmanuel_Jr_robot/install/nav_2d_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/dwb_msgs
