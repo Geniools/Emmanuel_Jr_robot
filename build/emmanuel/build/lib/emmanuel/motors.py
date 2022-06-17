@@ -1,3 +1,5 @@
+#!/bin/usr/python3
+
 import math
 import time
 from time import sleep
@@ -26,7 +28,7 @@ class EmmanuelMotionMotors(Node):
         self.servo1 = Servo(12)
         self.servo2 = Servo(13)
         self.servo3 = Servo(18)
-        
+
         # Setting up pins for the motors (left motor)
         self.F_P1 = 24
         self.F_P2 = 23
@@ -63,18 +65,18 @@ class EmmanuelMotionMotors(Node):
         gp.setup(self.S_ENB, gp.OUT)
 
         # Giving the frequency to the PWM pins
-        self.f_enA = gp.PWM(self.F_ENA, 100)
-        self.f_enB = gp.PWM(self.F_ENB, 100)
+        self.f_LM = gp.PWM(self.F_ENA, 100)
+        self.f_RM = gp.PWM(self.F_ENB, 100)
 
-        self.s_enA = gp.PWM(self.S_ENA, 100)
-        self.s_enB = gp.PWM(self.S_ENB, 100)
+        self.s_LM = gp.PWM(self.S_ENA, 100)
+        self.s_RM = gp.PWM(self.S_ENB, 100)
 
         # Starting the PWM pi
-        self.F_ENA.start(0)
-        self.F_ENB.start(0)
+        self.f_LM.start(0)
+        self.f_RM.start(0)
 
-        self.S_ENA.start(0)
-        self.S_ENB.start(0)
+        self.s_LM.start(0)
+        self.s_RM.start(0)
 
         # Setting up the encoders
         self.F_leftEncoder = Encoder(self.F_P1, self.F_P2, self.showEncoderData)
@@ -93,11 +95,11 @@ class EmmanuelMotionMotors(Node):
         # Getting the linear and angular velocity
         linear_velocity = msg.linear.x
         angular_velocity = msg.angular.z
-        gp.ChangeDutyCycle(self.F_ENA, 75)
-        gp.ChangeDutyCycle(self.F_ENB, 75)
+        self.f_LM.ChangeDutyCycle(75)
+        self.f_RM.ChangeDutyCycle(75)
 
-        gp.ChangeDutyCycle(self.S_ENA, 75)
-        gp.ChangeDutyCycle(self.S_ENB, 75)
+        self.s_LM.ChangeDutyCycle(75)
+        self.s_RM.ChangeDutyCycle(75)
 
         # Checking if the linear velocity is positive or negative
         if linear_velocity > 0:

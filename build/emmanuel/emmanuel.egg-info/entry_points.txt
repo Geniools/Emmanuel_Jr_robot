@@ -1,0 +1,2 @@
+[console_scripts]
+motor_run = emmanuel.motor_run:main
