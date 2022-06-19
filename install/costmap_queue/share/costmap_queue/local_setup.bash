@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/costmap_queue/ament_cmake_environment_hooks/local_setup.bash

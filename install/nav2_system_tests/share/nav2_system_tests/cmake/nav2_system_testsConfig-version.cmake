@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav2_system_tests/ament_cmake_core/nav2_system_testsConfig-version.cmake

@@ -13,11 +13,6 @@ from gpiozero import Servo
 from .encoder import Encoder
 
 
-def clearGPIO():
-    # Clearing the GPIO
-    gp.cleanup()
-
-
 class EmmanuelMotionMotors(Node):
     def __init__(self):
         # Setting up the node
@@ -47,10 +42,17 @@ class EmmanuelMotionMotors(Node):
 
         # Setting up GPIO and initializing first the motors
         gp.setmode(gp.BCM)
+        gp.setwarnings(False)
+
         gp.setup(self.F_P1, gp.OUT)
         gp.setup(self.F_P2, gp.OUT)
         gp.setup(self.F_P3, gp.OUT)
         gp.setup(self.F_P4, gp.OUT)
+
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, False)
 
         gp.setup(self.F_ENA, gp.OUT)
         gp.setup(self.F_ENB, gp.OUT)
@@ -60,6 +62,11 @@ class EmmanuelMotionMotors(Node):
         gp.setup(self.S_P2, gp.OUT)
         gp.setup(self.S_P3, gp.OUT)
         gp.setup(self.S_P4, gp.OUT)
+
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, False)
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, False)
 
         gp.setup(self.S_ENA, gp.OUT)
         gp.setup(self.S_ENB, gp.OUT)
@@ -92,11 +99,24 @@ class EmmanuelMotionMotors(Node):
         self.get_logger().info("Encoder data: {}".format(data))
 
     def callback_received_coordinates(self, msg):
+        self.get_logger().info("Received coordinates: {}".format(msg))
+
+        gp.setup(self.F_P1, gp.OUT)
+        gp.setup(self.F_P2, gp.OUT)
+        gp.setup(self.F_P3, gp.OUT)
+        gp.setup(self.F_P4, gp.OUT)
+
+        gp.setup(self.S_P1, gp.OUT)
+        gp.setup(self.S_P2, gp.OUT)
+        gp.setup(self.S_P3, gp.OUT)
+        gp.setup(self.S_P4, gp.OUT)
+
         # Getting the linear and angular velocity
         linear_velocity = msg.linear.x
         angular_velocity = msg.angular.z
-        self.f_LM.ChangeDutyCycle(75)
-        self.f_RM.ChangeDutyCycle(75)
+
+        self.f_LM.ChangeDutyCycle(50)
+        self.f_RM.ChangeDutyCycle(50)
 
         self.s_LM.ChangeDutyCycle(75)
         self.s_RM.ChangeDutyCycle(75)
@@ -121,25 +141,46 @@ class EmmanuelMotionMotors(Node):
         # self.set_motor_speed(left_motor_speed_pwm, right_motor_speed_pwm)
 
     def moveForward(self):
-        self.gp.output(self.F_P1, True)
-        self.gp.output(self.F_P2, False)
+        # Setup first motor go forward
+        gp.output(self.F_P1, True)
+        gp.output(self.F_P2, False)
 
-        self.gp.output(self.F_P3, True)
-        self.gp.output(self.F_P4, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, True)
+
+        # Setup first motor go forward
+        gp.output(self.S_P1, True)
+        gp.output(self.S_P2, False)
+
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, True)
 
     def moveBackward(self):
-        self.gp.output(self.F_P1, False)
-        self.gp.output(self.F_P2, True)
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, True)
 
-        self.gp.output(self.F_P3, False)
-        self.gp.output(self.F_P4, True)
+        gp.output(self.F_P3, True)
+        gp.output(self.F_P4, False)
+
+        # Setup first motor go forward
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, True)
+
+        gp.output(self.S_P3, True)
+        gp.output(self.S_P4, False)
 
     def stopRobot(self):
-        self.gp.output(self.F_P1, False)
-        self.gp.output(self.F_P2, False)
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, False)
 
-        self.gp.output(self.F_P3, False)
-        self.gp.output(self.F_P4, False)
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, False)
+
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, False)
+
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, False)
 
 
 def main(args=None):
@@ -152,7 +193,7 @@ def main(args=None):
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    clearGPIO()
+
     motorNode.destroy_node()
     rclpy.shutdown()
 

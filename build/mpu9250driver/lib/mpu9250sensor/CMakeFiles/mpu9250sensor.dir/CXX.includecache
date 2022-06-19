@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib/i2c/include/i2c_comm_interface/I2cCommunicator.h
+
+/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib/mpu9250sensor/include/mpu9250sensor/mpu9250sensor.h
+memory
+-
+string
+-
+unordered_map
+-
+I2cCommunicator.h
+/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib/mpu9250sensor/include/mpu9250sensor/I2cCommunicator.h
+
+/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib/mpu9250sensor/src/mpu9250sensor.cpp
+mpu9250sensor.h
+/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib/mpu9250sensor/src/mpu9250sensor.h
+linux/i2c-dev.h
+-
+sys/ioctl.h
+-
+iostream
+-
+thread
+-
+

@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_rviz_plugins/include/nav2_rviz_plugins/goal_tool.hpp

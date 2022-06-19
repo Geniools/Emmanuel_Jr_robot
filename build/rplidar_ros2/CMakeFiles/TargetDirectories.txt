@@ -1,0 +1,10 @@
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/install/strip.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/install/local.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/install.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/list_install_components.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/rebuild_cache.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/edit_cache.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/test.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/rplidar_scan_publisher.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/rplidar_ros2_uninstall.dir
+/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2/CMakeFiles/uninstall.dir

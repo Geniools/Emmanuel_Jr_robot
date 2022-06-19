@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_bringup/bringup/launch/localization_launch.py

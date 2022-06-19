@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav2_waypoint_follower/ament_cmake_core/nav2_waypoint_followerConfig-version.cmake

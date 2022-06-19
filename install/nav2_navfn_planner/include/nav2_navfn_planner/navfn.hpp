@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_navfn_planner/include/nav2_navfn_planner/navfn.hpp

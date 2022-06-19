@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav2_bt_navigator/ament_cmake_core/nav2_bt_navigatorConfig.cmake

@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_simple_commander/launch/picking_demo_launch.py

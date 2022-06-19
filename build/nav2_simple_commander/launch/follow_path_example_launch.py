@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_simple_commander/launch/follow_path_example_launch.py

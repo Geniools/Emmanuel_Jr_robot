@@ -1,0 +1,49 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation
+-- Install configuration: ""
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/launch
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/launch/navigation.launch.py
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/launch/slam.launch.py
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/rviz
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/rviz/linorobot2_navigation_minimal.rviz
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/rviz/linorobot2_slam.rviz
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/rviz/linorobot2_navigation.rviz
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/config
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/config/slam.yaml
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/config/navigation.yaml
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/maps
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/maps/playground.yaml
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/maps/playground.pgm
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/ament_index/resource_index/package_run_dependencies/linorobot2_navigation
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/ament_index/resource_index/parent_prefix_path/linorobot2_navigation
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/environment/ament_prefix_path.sh
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/environment/ament_prefix_path.dsv
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/environment/path.sh
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/environment/path.dsv
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/local_setup.bash
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/local_setup.sh
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/local_setup.zsh
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/local_setup.dsv
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/package.dsv
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/ament_index/resource_index/packages/linorobot2_navigation
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/cmake/linorobot2_navigationConfig.cmake
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/cmake/linorobot2_navigationConfig-version.cmake
+-- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation/share/linorobot2_navigation/package.xml

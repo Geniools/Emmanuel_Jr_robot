@@ -1,6 +1,0 @@
-Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_common -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_common
-Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_common -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/snake/Emmanuel_Jr_robot/install/nav2_common
-Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_common -- -j2 -l2
-Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/snake/Emmanuel_Jr_robot/build/nav2_common -- -j2 -l2
-Invoking command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_common
-Invoked command in '/home/snake/Emmanuel_Jr_robot/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/snake/Emmanuel_Jr_robot/build/nav2_common

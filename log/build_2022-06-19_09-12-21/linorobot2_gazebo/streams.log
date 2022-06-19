@@ -1,0 +1,76 @@
+[0.037s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_gazebo -DCMAKE_INSTALL_PREFIX=/home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo
+[0.106s] -- The C compiler identification is GNU 9.4.0
+[0.173s] -- The CXX compiler identification is GNU 9.4.0
+[0.180s] -- Check for working C compiler: /usr/bin/cc
+[0.262s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.263s] -- Detecting C compiler ABI info
+[0.345s] -- Detecting C compiler ABI info - done
+[0.356s] -- Detecting C compile features
+[0.357s] -- Detecting C compile features - done
+[0.359s] -- Check for working CXX compiler: /usr/bin/c++
+[0.450s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.451s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.566s] -- Detecting CXX compile features
+[0.566s] -- Detecting CXX compile features - done
+[0.570s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.601s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.601s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.706s] -- Found rclpy: 1.9.1 (/opt/ros/galactic/share/rclpy/cmake)
+[0.873s] -- Configuring done
+[0.876s] -- Generating done
+[0.878s] -- Build files have been written to: /home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo
+[0.884s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_gazebo -DCMAKE_INSTALL_PREFIX=/home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo
+[0.885s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo -- -j2 -l2
+[0.952s] [35m[1mScanning dependencies of target ament_cmake_python_copy_scripts[0m
+[0.977s] Built target ament_cmake_python_copy_scripts
+[0.993s] [35m[1mScanning dependencies of target ament_cmake_python_build_scripts_egg[0m
+[1.217s] running egg_info
+[1.218s] creating scripts.egg-info
+[1.219s] writing scripts.egg-info/PKG-INFO
+[1.219s] writing dependency_links to scripts.egg-info/dependency_links.txt
+[1.219s] writing top-level names to scripts.egg-info/top_level.txt
+[1.221s] writing manifest file 'scripts.egg-info/SOURCES.txt'
+[1.254s] reading manifest file 'scripts.egg-info/SOURCES.txt'
+[1.255s] writing manifest file 'scripts.egg-info/SOURCES.txt'
+[1.284s] Built target ament_cmake_python_build_scripts_egg
+[1.298s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo -- -j2 -l2
+[1.338s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo
+[1.349s] -- Install configuration: ""
+[1.349s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/pythonpath.sh
+[1.349s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/pythonpath.dsv
+[1.349s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages//scripts.egg-info
+[1.349s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages//scripts.egg-info/top_level.txt
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages//scripts.egg-info/SOURCES.txt
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages//scripts.egg-info/PKG-INFO
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages//scripts.egg-info/dependency_links.txt
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts/command_timeout.py
+[1.350s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts/__init__.py
+[1.385s] Listing '/home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts'...
+[1.386s] Compiling '/home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts/__init__.py'...
+[1.386s] Compiling '/home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/python3.8/site-packages/scripts/command_timeout.py'...
+[1.390s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/launch
+[1.390s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/launch/gazebo.launch.py
+[1.390s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/rviz
+[1.390s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/rviz/view_urdf.rviz
+[1.391s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/worlds
+[1.391s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/worlds/playground.world
+[1.391s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/worlds/gas_station.world
+[1.391s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/lib/linorobot2_gazebo/command_timeout.py
+[1.391s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/ament_index/resource_index/package_run_dependencies/linorobot2_gazebo
+[1.392s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/ament_index/resource_index/parent_prefix_path/linorobot2_gazebo
+[1.392s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/ament_prefix_path.sh
+[1.392s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/ament_prefix_path.dsv
+[1.392s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/path.sh
+[1.393s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/environment/path.dsv
+[1.393s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/local_setup.bash
+[1.393s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/local_setup.sh
+[1.393s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/local_setup.zsh
+[1.393s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/local_setup.dsv
+[1.394s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/package.dsv
+[1.394s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/ament_index/resource_index/packages/linorobot2_gazebo
+[1.394s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/cmake/linorobot2_gazeboConfig.cmake
+[1.394s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/cmake/linorobot2_gazeboConfig-version.cmake
+[1.395s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/linorobot2_gazebo/share/linorobot2_gazebo/package.xml
+[1.397s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/rex/Emmanuel_Jr_robot/build/linorobot2_gazebo

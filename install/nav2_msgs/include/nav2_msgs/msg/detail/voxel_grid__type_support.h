@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav2_msgs/rosidl_generator_c/nav2_msgs/msg/detail/voxel_grid__type_support.h

@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav2_recoveries/ament_cmake_core/nav2_recoveriesConfig-version.cmake

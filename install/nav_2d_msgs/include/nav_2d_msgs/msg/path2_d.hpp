@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/path2_d.hpp

@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/src/navigation2/nav2_dwb_controller/dwb_plugins/include/dwb_plugins/kinematic_parameters.hpp

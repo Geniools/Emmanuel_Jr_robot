@@ -1,1 +1,0 @@
-/home/snake/Emmanuel_Jr_robot/build/dwb_core/ament_cmake_core/dwb_coreConfig-version.cmake

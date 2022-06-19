@@ -1,0 +1,260 @@
+[0.018s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/rex/Emmanuel_Jr_robot/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/rex/Emmanuel_Jr_robot/install/rplidar_ros2
+[0.090s] -- The C compiler identification is GNU 9.4.0
+[0.159s] -- The CXX compiler identification is GNU 9.4.0
+[0.167s] -- Check for working C compiler: /usr/bin/cc
+[0.255s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.256s] -- Detecting C compiler ABI info
+[0.342s] -- Detecting C compiler ABI info - done
+[0.353s] -- Detecting C compile features
+[0.353s] -- Detecting C compile features - done
+[0.356s] -- Check for working CXX compiler: /usr/bin/c++
+[0.454s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.455s] -- Detecting CXX compiler ABI info
+[0.549s] -- Detecting CXX compiler ABI info - done
+[0.561s] -- Detecting CXX compile features
+[0.562s] -- Detecting CXX compile features - done
+[0.565s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.592s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.593s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.688s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.748s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.757s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.867s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.898s] -- Found FastRTPS: /opt/ros/galactic/include  
+[0.987s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.075s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.075s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.088s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.089s] -- Looking for pthread.h
+[1.174s] -- Looking for pthread.h - found
+[1.174s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.254s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.254s] -- Looking for pthread_create in pthreads
+[1.320s] -- Looking for pthread_create in pthreads - not found
+[1.320s] -- Looking for pthread_create in pthread
+[1.403s] -- Looking for pthread_create in pthread - found
+[1.404s] -- Found Threads: TRUE  
+[1.571s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.793s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[1.942s] -- Configuring done
+[1.952s] -- Generating done
+[1.953s] -- Build files have been written to: /home/rex/Emmanuel_Jr_robot/build/rplidar_ros2
+[1.970s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/rex/Emmanuel_Jr_robot/src/rplidar_ros -DCMAKE_INSTALL_PREFIX=/home/rex/Emmanuel_Jr_robot/install/rplidar_ros2
+[1.973s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/rex/Emmanuel_Jr_robot/build/rplidar_ros2 -- -j2 -l2
+[2.031s] [35m[1mScanning dependencies of target rplidar_scan_publisher[0m
+[2.083s] [ 14%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[2.094s] [ 28%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/src/rplidar_scan_publisher.cpp.o[0m
+[2.998s] [ 42%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[3.621s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:39[m[K,
+[3.621s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/sdkcommon.h:48[m[K,
+[3.621s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[3.621s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[3.621s]    59 |     _u8 data[[01;35m[K0[m[K];
+[3.621s]       |              [01;35m[K^[m[K
+[3.621s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:40[m[K,
+[3.621s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/sdkcommon.h:48[m[K,
+[3.622s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[3.622s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[3.622s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[3.622s]       |                  [01;35m[K^[m[K
+[3.935s] [ 57%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[4.610s] [ 71%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/hal/thread.cpp.o[0m
+[5.088s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:39[m[K,
+[5.088s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:38[m[K:
+[5.088s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[5.088s]    59 |     _u8 data[[01;35m[K0[m[K];
+[5.088s]       |              [01;35m[K^[m[K
+[5.088s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:40[m[K,
+[5.088s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:38[m[K:
+[5.088s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[5.088s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[5.088s]       |                  [01;35m[K^[m[K
+[5.113s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:[m[K In member function ‘[01m[Kvoid RPLidarScanPublisher::init_param()[m[K’:
+[5.114s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:67:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.114s]    67 |         this->declare_parameter("channel_type"[01;35m[K)[m[K;
+[5.114s]       |                                               [01;35m[K^[m[K
+[5.114s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.114s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.114s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.114s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.114s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.114s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.114s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.115s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:68:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.115s]    68 |         this->declare_parameter("tcp_ip"[01;35m[K)[m[K;
+[5.115s]       |                                         [01;35m[K^[m[K
+[5.115s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.115s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.115s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.115s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.115s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.115s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.115s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.115s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:69:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.115s]    69 |         this->declare_parameter("tcp_port"[01;35m[K)[m[K;
+[5.115s]       |                                           [01;35m[K^[m[K
+[5.116s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.116s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.116s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.116s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.116s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.116s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.116s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.116s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:70:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.116s]    70 |         this->declare_parameter("serial_port"[01;35m[K)[m[K;
+[5.116s]       |                                              [01;35m[K^[m[K
+[5.116s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.116s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.116s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.116s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.116s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.117s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.117s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.117s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:71:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.117s]    71 |         this->declare_parameter("serial_baudrate"[01;35m[K)[m[K;
+[5.117s]       |                                                  [01;35m[K^[m[K
+[5.117s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.117s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.117s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.117s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.117s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.117s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.117s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.117s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:72:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.117s]    72 |         this->declare_parameter("frame_id"[01;35m[K)[m[K;
+[5.117s]       |                                           [01;35m[K^[m[K
+[5.117s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.118s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.118s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.118s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.118s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.118s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.118s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.118s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:73:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.118s]    73 |         this->declare_parameter("inverted"[01;35m[K)[m[K;
+[5.118s]       |                                           [01;35m[K^[m[K
+[5.118s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.118s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.118s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.118s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.118s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.118s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.118s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.119s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:74:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.119s]    74 |         this->declare_parameter("angle_compensate"[01;35m[K)[m[K;
+[5.119s]       |                                                   [01;35m[K^[m[K
+[5.119s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.119s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.119s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.119s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.119s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.119s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.119s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.119s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:75:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[5.119s]    75 |         this->declare_parameter("scan_mode"[01;35m[K)[m[K;
+[5.119s]       |                                            [01;35m[K^[m[K
+[5.119s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.119s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[5.119s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.119s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.119s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.120s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[5.120s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.172s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[5.173s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[5.173s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:35[m[K:
+[5.173s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:[m[K In member function ‘[01m[Kint RPLidarScanPublisher::work_loop()[m[K’:
+[5.173s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:336:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 8 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+[5.173s]   336 |             RCLCPP_INFO(this->get_logger(),[01;35m[K"current scan mode: %s, max_distance: %.1f m, Point number: %.1fK , angle_compensate: %d"[m[K,current_scan_mode.scan_mode,
+[5.173s]       |                                            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.173s]   337 |                     current_scan_mode.max_distance, (1000/current_scan_mode.us_per_sample), [32m[Kangle_compensate_multiple[m[K);
+[5.173s]       |                                                                                             [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.173s]       |                                                                                             [32m[K|[m[K
+[5.174s]       |                                                                                             [32m[Ksize_t {aka long unsigned int}[m[K
+[5.174s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/src/rplidar_scan_publisher.cpp:336:131:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.174s]   336 |             RCLCPP_INFO(this->get_logger(),"current scan mode: %s, max_distance: %.1f m, Point number: %.1fK , angle_compensate: [01;36m[K%d[m[K",current_scan_mode.scan_mode,
+[5.174s]       |                                                                                                                                  [01;36m[K~^[m[K
+[5.174s]       |                                                                                                                                   [01;36m[K|[m[K
+[5.174s]       |                                                                                                                                   [01;36m[Kint[m[K
+[5.174s]       |                                                                                                                                  [32m[K%ld[m[K
+[5.254s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:39[m[K,
+[5.254s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/sdkcommon.h:48[m[K,
+[5.254s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/hal/thread.cpp:35[m[K:
+[5.254s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[5.254s]    59 |     _u8 data[[01;35m[K0[m[K];
+[5.254s]       |              [01;35m[K^[m[K
+[5.255s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:40[m[K,
+[5.255s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/sdkcommon.h:48[m[K,
+[5.255s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/hal/thread.cpp:35[m[K:
+[5.255s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[5.255s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[5.255s]       |                  [01;35m[K^[m[K
+[5.259s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/hal/thread.cpp:43[m[K:
+[5.259s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[5.259s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/src/arch/linux/thread.hpp:48:77:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K-Wcast-function-type[m[K]
+[5.259s]    48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))[01;35m[Kproc[m[K, data);
+[5.259s]       |                                                                             [01;35m[K^~~~[m[K
+[5.490s] [ 85%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/rplidar_driver.cpp.o[0m
+[6.080s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:39[m[K,
+[6.080s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/sdkcommon.h:48[m[K,
+[6.081s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/rplidar_driver.cpp:35[m[K:
+[6.081s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_protocol.h:59:14:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[6.081s]    59 |     _u8 data[[01;35m[K0[m[K];
+[6.081s]       |              [01;35m[K^[m[K
+[6.082s] In file included from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar.h:40[m[K,
+[6.082s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/sdkcommon.h:48[m[K,
+[6.082s]                  from [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/rplidar_driver.cpp:35[m[K:
+[6.082s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/./sdk/include/rplidar_cmd.h:260:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[6.082s]   260 |     _u8  payload[[01;35m[K0[m[K];
+[6.082s]       |                  [01;35m[K^[m[K
+[6.341s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual void rp::standalone::rplidar::RPlidarDriverImplCommon::_ultraCapsuleToNormal(const rplidar_response_ultra_capsule_measurement_nodes_t&, rplidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[6.341s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/rplidar_driver.cpp:1208:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[6.341s]  1208 |             if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[6.341s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[6.341s] [01m[K/home/rex/Emmanuel_Jr_robot/src/rplidar_ros/sdk/src/rplidar_driver.cpp:1216:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[6.341s]  1216 |             if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[6.341s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[8.259s] [100%] [32m[1mLinking CXX executable rplidar_scan_publisher[0m
+[8.504s] [100%] Built target rplidar_scan_publisher
+[8.517s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/rex/Emmanuel_Jr_robot/build/rplidar_ros2 -- -j2 -l2
+[8.579s] Invoking command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/rex/Emmanuel_Jr_robot/build/rplidar_ros2
+[8.592s] -- Install configuration: ""
+[8.592s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_a3_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_tcp_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_a3_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_tcp_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_launch.py
+[8.593s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/rviz
+[8.594s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/rviz/rplidar_ros2.rviz
+[8.594s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/lib/rplidar_ros2/rplidar_scan_publisher
+[8.596s] -- Set runtime path of "/home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/lib/rplidar_ros2/rplidar_scan_publisher" to ""
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/ament_index/resource_index/package_run_dependencies/rplidar_ros2
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/ament_index/resource_index/parent_prefix_path/rplidar_ros2
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.sh
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.dsv
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/environment/path.sh
+[8.596s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/environment/path.dsv
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/local_setup.bash
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/local_setup.sh
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/local_setup.zsh
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/local_setup.dsv
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/package.dsv
+[8.597s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/ament_index/resource_index/packages/rplidar_ros2
+[8.598s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.598s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.598s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config.cmake
+[8.598s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config-version.cmake
+[8.598s] -- Installing: /home/rex/Emmanuel_Jr_robot/install/rplidar_ros2/share/rplidar_ros2/package.xml
+[8.602s] Invoked command in '/home/rex/Emmanuel_Jr_robot/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rex/Emmanuel_Jr_robot/install/nav2_simple_commander:/home/rex/Emmanuel_Jr_robot/install/nav2_gazebo_spawner:/home/rex/Emmanuel_Jr_robot/install/emmanuelJr:/home/rex/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/rex/Emmanuel_Jr_robot/build/rplidar_ros2
