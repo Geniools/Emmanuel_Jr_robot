@@ -107,9 +107,11 @@ class EmmanuelMotionMotors(Node):
         self.create_publisher(Odometry, "odom_unfiltered", 10)
         # Publishing timer (how often it will be published)
         publishOdometryPeriod = 0.1
-        displayEncoderDataPeriod = 0.00001
+        displayEncoderDataPeriod = 0.01
+        self.pulseCounter = 0;
         self.timer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
         self.timer2 = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
+        self.timer3 = self.create_timer(1, self.getPulseCounter)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -235,8 +237,14 @@ class EmmanuelMotionMotors(Node):
 
     def getLightSensor(self):
         lightSensorValue = gp.input(self.lightSensor)
-        self.get_logger().info("Light sensor: {}".format(lightSensorValue))
+        if lightSensorValue == 0:
+            self.pulseCounter += 1
+        # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
         return lightSensorValue
+
+    def getPulseCounter(self):
+        self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
+        return self.pulseCounter
 
 
 def main(args=None):
