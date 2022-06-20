@@ -5,7 +5,7 @@ import RPi.GPIO as gp
 gp.setmode(gp.BCM)
 gp.setwarnings(False)
 
-infraRedSensorPin = 7
+infraRedSensorPin = 19
 gp.setup(infraRedSensorPin, gp.IN)
 
 while True:
