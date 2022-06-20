@@ -107,7 +107,7 @@ class EmmanuelMotionMotors(Node):
         self.create_publisher(Odometry, "odom_unfiltered", 10)
         # Publishing timer (how often it will be published)
         publishOdometryPeriod = 0.1
-        displayEncoderDataPeriod = 1
+        displayEncoderDataPeriod = 0.00001
         self.timer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
         self.timer2 = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
         #
