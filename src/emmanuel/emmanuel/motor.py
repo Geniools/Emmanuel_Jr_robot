@@ -190,6 +190,9 @@ class EmmanuelMotionMotors(Node):
             self.isPulseIncreasedRight = False
 
     def updateVelocity(self):
+        self.get_logger().info("Left pulse counter: {}".format(self.leftPulseCounter))
+        self.get_logger().info("Right pulse counter: {}".format(self.rightPulseCounter))
+        
         self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
