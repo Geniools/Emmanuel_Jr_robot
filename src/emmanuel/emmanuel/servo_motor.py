@@ -13,9 +13,9 @@ class EmmanuelServoMotor(Node):
         self.get_logger().info("EmmanuelServoMotor node started")
 
         # Setting up the Servo motors
-        self.head = Servo(13)
+        self.head = Servo(18)
         self.servo1 = Servo(12)
-        self.servo2 = Servo(18)
+        self.servo2 = Servo(13)
 
         # Subscribe to node receiving commands for the front arms and head
         self.create_subscription(String, "servo_command", self.servo_command_callback, 2)
