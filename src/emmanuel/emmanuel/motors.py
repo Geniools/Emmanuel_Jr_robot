@@ -113,6 +113,8 @@ class EmmanuelMotionMotors(Node):
         self.previousPulseCounter = 0
         self.previousLightSensorValue = 0
         self.isPulseIncreased = False
+        self.movingVelocity = 0
+        self.PULSE_WIDTH = 2.5 / 100  # cm / meters
 
         self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
         self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
@@ -264,12 +266,19 @@ class EmmanuelMotionMotors(Node):
         if lightSensorValue == 1 and self.isPulseIncreased is True:
             self.isPulseIncreased = False
 
-        self.get_logger().info("Light sensor: {}".format(lightSensorValue))
+        # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
         return lightSensorValue
+
+    def updateMovingVelocity(self):
+        self.movingVelocity = self.pulseCounter * self.PULSE_WIDTH
 
     def getPulseCounter(self):
         # self.previousPulseCounter = self.pulseCounter
         self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
+        self.updateMovingVelocity()
+        # Reset the pulse counter after the previous counter has been printed
+        self.get_logger().info("Speed is: {}".format(self.movingVelocity))
+        self.pulseCounter = 0
         return self.pulseCounter
 
 
