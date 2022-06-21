@@ -124,7 +124,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(0.01, self.correctSpeed)
+        self.adjustSpeed = self.create_timer(0.5, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -157,8 +157,8 @@ class EmmanuelMotionMotors(Node):
         # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
         # right_motor_speed = linear_velocity + angular_velocity * self.wheelbase / 2
 
-        self.changePWMLeftMotor(75)
-        self.changePWMRightMotor(75)
+        # self.changePWMLeftMotor(75)
+        # self.changePWMRightMotor(75)
 
         # Checking if the linear velocity is positive or negative
         if self.linearVelocity > 0:
@@ -197,6 +197,7 @@ class EmmanuelMotionMotors(Node):
         self.leftPulseCounter = 0
 
     def correctSpeed(self):
+        self.get_logger().info("TARGET SPEED: {}".format(self.linearVelocity))
         error_left = fabs(self.linearVelocity) - self.velocityLeft
         error_right = fabs(self.linearVelocity) + self.velocityRight
 
