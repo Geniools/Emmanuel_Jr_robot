@@ -118,9 +118,9 @@ class EmmanuelMotionMotors(Node):
         # Distance between two pulses
         self.PULSE_WIDTH = 2.5 / 100  # cm / meters
         # PID constants
-        self.KP = 5
-        self.KD = 2.5
-        self.KI = 1.15
+        self.KP = 0.5
+        self.KD = 0.25
+        self.KI = 0.15
         # PID error variables
         self.previousSpeedError = 0
         self.sumSpeedError = 0
@@ -190,8 +190,8 @@ class EmmanuelMotionMotors(Node):
     def correctSpeed(self):
         error = self.linearVelocity - self.movingVelocity
         targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
+        targetPWM = max(min(100, targetPWM), 0)
         self.get_logger().info("Target PWM: {}".format(targetPWM))
-        targetPWM = max(min(100, targetPWM * 100), 0)
 
         self.changePWMLeftMotor(targetPWM)
         self.changePWMRightMotor(targetPWM)
