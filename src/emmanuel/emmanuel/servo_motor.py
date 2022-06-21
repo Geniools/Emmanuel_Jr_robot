@@ -36,6 +36,9 @@ class EmmanuelServoMotor(Node):
         if command == "mid":
             pass
 
+        sleep(2)
+        self.head.mid()
+
     def moveHeadRight(self):
         self.head.max()
 
