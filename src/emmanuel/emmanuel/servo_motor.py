@@ -22,6 +22,7 @@ class EmmanuelServoMotor(Node):
 
     def servo_command_callback(self, msg):
         command = msg.data
+        self.get_logger().info(f"Message received: {command}")
 
         if command == "right":
             self.moveHeadRight()
