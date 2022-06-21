@@ -1,4 +1,0 @@
-Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver': /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver -- -j4 -l4
-Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver' returned '0': /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver -- -j4 -l4
-Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver': /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver
-Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver' returned '0': /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver

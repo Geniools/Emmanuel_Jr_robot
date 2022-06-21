@@ -1,9 +1,0 @@
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/install/strip.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/install.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/list_install_components.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/edit_cache.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/test.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/install/local.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/linorobot2_navigation_uninstall.dir
-/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/CMakeFiles/uninstall.dir
