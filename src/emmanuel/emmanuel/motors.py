@@ -118,9 +118,9 @@ class EmmanuelMotionMotors(Node):
         # Distance between two pulses
         self.PULSE_WIDTH = 2.5 / 100  # cm / meters
         # PID constants
-        self.KP = 0.5
-        self.KD = 0.25
-        self.KI = 0.15
+        self.KP = 8
+        self.KD = 4
+        self.KI = 2
         # PID error variables
         self.previousSpeedError = 0
         self.sumSpeedError = 0
