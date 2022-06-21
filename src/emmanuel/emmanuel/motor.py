@@ -94,21 +94,27 @@ class EmmanuelMotionMotors(Node):
         # Publishing timer (how often it will be published)
         publishOdometryPeriod = 0.1
         displayEncoderDataPeriod = 0.01
-        self.pulseCounter = 0
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
-        self.isPulseIncreased = False
+        self.isPulseIncreasedLeft = False
+        self.isPulseIncreasedRight = False
         # Robot moving speed
-        self.movingVelocity = 0
+        self.velocityLeft = 0
+        self.velocityRight = 0
         # Distance between two pulses
         self.PULSE_WIDTH = 2.5 / 100  # cm / meters
+        # Pulse counters (light sensors will count the pulses)
+        self.leftPulseCounter = 0
+        self.rightPulseCounter = 0
 
         # PID constants
         self.KP = 10
         self.KD = 10
         self.KI = 4
         # PID error variables
-        self.previousSpeedError = 0
-        self.sumSpeedError = 0
+        self.previousSpeedErrorLeft = 0
+        self.previousSpeedErrorRight = 0
+        self.sumSpeedErrorLeft = 0
+        self.sumSpeedErrorRight = 0
         # Linear velocity
         self.linearVelocity = 0
         # Angular velocity
@@ -165,17 +171,25 @@ class EmmanuelMotionMotors(Node):
             self.stopRobot()
 
     def correctSpeed(self):
-        error = fabs(self.linearVelocity) - self.movingVelocity
-        targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
+        error_left = fabs(self.linearVelocity) - self.velocityLeft
+        error_right = fabs(self.linearVelocity) + self.velocityRight
 
-        targetPWM = max(min(100, targetPWM), 0)
-        self.get_logger().info("Target PWM: {}".format(targetPWM))
+        targetPWM_left = (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
+                self.KI * self.sumSpeedErrorLeft)
+        targetPWM_right = (self.KP * error_right) + (self.KD * self.previousSpeedErrorRight) + (
+                self.KI * self.sumSpeedErrorRight)
 
-        self.changePWMLeftMotor(targetPWM)
-        self.changePWMRightMotor(targetPWM)
+        targetPWM_left = max(min(100, targetPWM_left), 0)
+        targetPWM_right = max(min(100, targetPWM_right), 0)
 
-        self.previousSpeedError = error
-        self.sumSpeedError += error
+        self.changePWMLeftMotor(targetPWM_left)
+        self.changePWMRightMotor(targetPWM_right)
+
+        self.previousSpeedErrorLeft = error_left
+        self.previousSpeedErrorRight = error_right
+
+        self.sumSpeedErrorLeft += error_left
+        self.sumSpeedErrorRight += error_right
 
     def changePWMLeftMotor(self, pwm):
         self.s_LM.ChangeDutyCycle(pwm)
@@ -253,40 +267,44 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, False)
 
+    def getPulses(self):
+        lightSensorValueLeft = gp.input(self.lightSensorLeft)
+        lightSensorValueRight = gp.input(self.lightSensorRight)
+
+        # Increasing pulse for the left wheel
+        if lightSensorValueLeft == 0 and self.isPulseIncreasedLeft is False:
+            self.leftPulseCounter += 1
+            self.isPulseIncreasedLeft = True
+        if lightSensorValueLeft == 1 and self.isPulseIncreasedLeft is True:
+            self.isPulseIncreasedLeft = False
+
+        # Increasing pulse for the right wheel
+        if lightSensorValueRight == 0 and self.isPulseIncreasedRight is False:
+            self.rightPulseCounter += 1
+            self.isPulseIncreasedRight = True
+        if lightSensorValueRight == 1 and self.isPulseIncreasedRight is True:
+            self.isPulseIncreasedRight = False
+
+    def updateMovingVelocity(self):
+        self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH
+        self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH
+
+    def getPulseCounter(self):
+        self.updateMovingVelocity()
+
+        # Reset the pulse counter after the previous counter has been printed
+        self.get_logger().info("Speed is: left: {}, right: {}".format(self.velocityLeft, self.velocityRight))
+        self.rightPulseCounter = 0
+        self.leftPulseCounter = 0
+
     def cleanup(self):
         self.get_logger().info("Cleaning up...")
+
         self.f_LM.stop()
         self.f_RM.stop()
 
         self.s_LM.stop()
         self.s_RM.stop()
-
-    def getLightSensor(self):
-        lightSensorValueLeft = gp.input(self.lightSensorLeft)
-        lightSensorValueRight = gp.input(self.lightSensorRight)
-
-        self.get_logger().info(
-            "Light sensor left: {} Light sensor right: {}".format(lightSensorValueLeft, lightSensorValueRight))
-
-        if lightSensorValueLeft == 0 and self.isPulseIncreased is False:
-            self.pulseCounter += 1
-            self.isPulseIncreased = True
-        if lightSensorValueLeft == 1 and self.isPulseIncreased is True:
-            self.isPulseIncreased = False
-
-        # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
-
-    def updateMovingVelocity(self):
-        self.movingVelocity = self.pulseCounter * self.PULSE_WIDTH
-
-    def getPulseCounter(self):
-        # self.previousPulseCounter = self.pulseCounter
-        # self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
-        self.updateMovingVelocity()
-        # Reset the pulse counter after the previous counter has been printed
-        self.get_logger().info("Speed is: {}".format(self.movingVelocity))
-        self.pulseCounter = 0
-        return self.pulseCounter
 
 
 def main(args=None):
