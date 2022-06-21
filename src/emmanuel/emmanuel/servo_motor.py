@@ -25,10 +25,13 @@ class EmmanuelServoMotor(Node):
         self.get_logger().info(f"Message received: {command}")
 
         if command == "right":
+            self.get_logger().info("Moving head right")
             self.moveHeadRight()
         if command == "left":
+            self.get_logger().info("Moving head left")
             self.moveHeadLeft()
         if command == "hmid":
+            self.get_logger().info("Returning initial position")
             self.headMid()
 
         if command == "up":
