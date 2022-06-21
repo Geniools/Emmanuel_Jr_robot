@@ -1,3 +1,5 @@
+#!/bin/usr/python3
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
@@ -52,3 +54,25 @@ class EmmanuelRPLidar(Node):
 
     def startSpinning(self):
         self.lidar.start_motor()
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    motorNode = EmmanuelRPLidar()
+
+    try:
+        rclpy.spin(motorNode)
+
+        # Destroy the node explicitly
+        # (optional - otherwise it will be done automatically
+        # when the garbage collector destroys the node object)
+
+        motorNode.destroy_node()
+        rclpy.shutdown()
+
+    except KeyboardInterrupt:
+        motorNode.destroy_node()
+
+
+if __name__ == '__main__':
+    main()

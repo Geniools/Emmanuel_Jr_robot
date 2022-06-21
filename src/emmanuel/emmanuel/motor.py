@@ -7,7 +7,6 @@ from nav_msgs.msg import Odometry
 from tf2_ros import TransformBroadcaster
 from rclpy.node import Node
 import rclpy
-from gpiozero import Servo
 from math import fabs
 
 
@@ -18,12 +17,8 @@ class EmmanuelMotionMotors(Node):
         self.get_logger().info("EmmanuelMotionMotors node started")
 
         # Setting up the light sensor
-        self.lightSensor = 19
-
-        # Setting up the Servo motors
-        self.servo1 = Servo(12)
-        self.servo2 = Servo(13)
-        self.servo3 = Servo(18)
+        self.lightSensorLeft = 19
+        self.lightSensorRight = 4
 
         # Setting up pins for the motors (left motor)
         self.F_P1 = 24
@@ -46,7 +41,8 @@ class EmmanuelMotionMotors(Node):
         gp.setwarnings(False)
 
         # Setting up the light sensor
-        gp.setup(self.lightSensor, gp.IN)
+        gp.setup(self.lightSensorLeft, gp.IN)
+        gp.setup(self.lightSensorRight, gp.IN)
 
         # Initializing first the motors
         gp.setup(self.F_P1, gp.OUT)
@@ -156,10 +152,6 @@ class EmmanuelMotionMotors(Node):
         # # Converting the linear and angular velocity to the motor speeds
         # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
         # right_motor_speed = linear_velocity + angular_velocity * self.wheelbase / 2
-        #
-        # # Converting the motor speeds to the PWM values
-        # left_motor_speed_pwm = self.convert_velocity_to_pwm(left_motor_speed)
-        # right_motor_speed_pwm = self.convert_velocity_to_pwm(right_motor_speed)
 
         self.changePWMLeftMotor(75)
         self.changePWMRightMotor(75)
@@ -175,6 +167,7 @@ class EmmanuelMotionMotors(Node):
     def correctSpeed(self):
         error = fabs(self.linearVelocity) - self.movingVelocity
         targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
+
         targetPWM = max(min(100, targetPWM), 0)
         self.get_logger().info("Target PWM: {}".format(targetPWM))
 
@@ -269,12 +262,16 @@ class EmmanuelMotionMotors(Node):
         self.s_RM.stop()
 
     def getLightSensor(self):
-        lightSensorValue = gp.input(self.lightSensor)
+        lightSensorValueLeft = gp.input(self.lightSensorLeft)
+        lightSensorValueRight = gp.input(self.lightSensorRight)
 
-        if lightSensorValue == 0 and self.isPulseIncreased is False:
+        self.get_logger().info(
+            "Light sensor left: {} Light sensor right: {}".format(lightSensorValueLeft, lightSensorValueRight))
+
+        if lightSensorValueLeft == 0 and self.isPulseIncreased is False:
             self.pulseCounter += 1
             self.isPulseIncreased = True
-        if lightSensorValue == 1 and self.isPulseIncreased is True:
+        if lightSensorValueLeft == 1 and self.isPulseIncreased is True:
             self.isPulseIncreased = False
 
         # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
