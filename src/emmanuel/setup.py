@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'motor_controller = emmanuel.motor:main',
+            'servo_controller = emmanuel.servo_motor:main'
         ],
     },
 )

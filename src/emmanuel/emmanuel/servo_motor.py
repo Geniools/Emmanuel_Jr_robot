@@ -3,6 +3,8 @@
 from gpiozero import Servo
 import rclpy
 from rclpy.node import Node
+from time import sleep
+from std_msgs.msg import String
 
 
 class EmmanuelServoMotor(Node):
@@ -11,9 +13,45 @@ class EmmanuelServoMotor(Node):
         self.get_logger().info("EmmanuelServoMotor node started")
 
         # Setting up the Servo motors
+        self.head = Servo(13)
         self.servo1 = Servo(12)
-        self.servo2 = Servo(13)
-        self.servo3 = Servo(18)
+        self.servo2 = Servo(18)
+
+        # Subscribe to node receiving commands for the front arms and head
+        self.create_subscription(String, "servo_command", self.servo_command_callback, 2)
+
+    def servo_command_callback(self, msg):
+        command = msg.data
+
+        if command == "right":
+            self.moveHeadRight()
+        if command == "left":
+            self.moveHeadLeft()
+        if command == "hmid":
+            self.headMid()
+
+        if command == "up":
+            self.liftArms()
+        if command == "mid":
+            pass
+
+    def moveHeadRight(self):
+        self.head.max()
+
+    def headMid(self):
+        self.head.mid()
+
+    def moveHeadLeft(self):
+        self.head.min()
+
+    def liftArms(self):
+        for i in range(0, 10):
+            self.servo1.value = i / 10
+            sleep(0.5)
+
+    def midArms(self):
+        self.servo1.mid()
+        self.servo2.mid()
 
 
 def main(args=None):
