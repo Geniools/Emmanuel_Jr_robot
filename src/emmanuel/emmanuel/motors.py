@@ -260,7 +260,7 @@ class EmmanuelMotionMotors(Node):
 
         if lightSensorValue == 0 and self.isPulseIncreased is False:
             self.pulseCounter += 1
-            self.previousLightSensorValue = True
+            self.isPulseIncreased = True
         else:
             self.isPulseIncreased = False
 
@@ -287,6 +287,7 @@ def main(args=None):
         motorNode.cleanup()
         motorNode.destroy_node()
         rclpy.shutdown()
+
     except KeyboardInterrupt:
         motorNode.cleanup()
         motorNode.destroy_node()
