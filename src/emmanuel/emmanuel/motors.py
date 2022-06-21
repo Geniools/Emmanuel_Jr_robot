@@ -111,14 +111,28 @@ class EmmanuelMotionMotors(Node):
         displayEncoderDataPeriod = 0.01
         self.pulseCounter = 0
         self.previousPulseCounter = 0
-        self.previousLightSensorValue = 0
+        # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreased = False
+        # Robot moving speed
         self.movingVelocity = 0
+        # Distance between two pulses
         self.PULSE_WIDTH = 2.5 / 100  # cm / meters
+        # PID constants
+        self.KP = 0.5
+        self.KD = 0.25
+        self.KI = 0.15
+        # PID error variables
+        self.previousSpeedError = 0
+        self.sumSpeedError = 0
+        # Linear velocity
+        self.linearVelocity = 0
+        # Angular velocity
+        self.angularVelocity = 0
 
         self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
         self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
         self.displayPulseCounter = self.create_timer(1, self.getPulseCounter)
+        self.adjustSpeed = self.create_timer(1, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -148,8 +162,8 @@ class EmmanuelMotionMotors(Node):
         gp.setup(self.S_P4, gp.OUT)
 
         # Getting the linear and angular velocity
-        linear_velocity = msg.linear.x
-        angular_velocity = msg.angular.z
+        self.linearVelocity = msg.linear.x
+        self.angularVelocity = msg.angular.z
 
         # self.f_LM.ChangeDutyCycle(50)
         # self.f_RM.ChangeDutyCycle(50)
@@ -166,12 +180,23 @@ class EmmanuelMotionMotors(Node):
         self.changePWMRightMotor(75)
 
         # Checking if the linear velocity is positive or negative
-        if linear_velocity > 0:
+        if self.linearVelocity > 0:
             self.moveForward()
-        elif linear_velocity < 0:
+        elif self.linearVelocity < 0:
             self.moveBackwards()
         else:
             self.stopRobot()
+
+    def correctSpeed(self):
+        error = self.linearVelocity - self.movingVelocity
+        targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
+        targetPWM = max(min(100, targetPWM), 0)
+
+        self.changePWMLeftMotor(targetPWM)
+        self.changePWMRightMotor(targetPWM)
+
+        self.previousSpeedError = error
+        self.sumSpeedError += error
 
     def changePWMLeftMotor(self, pwm):
         self.s_LM.ChangeDutyCycle(pwm)
