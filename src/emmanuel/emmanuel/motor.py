@@ -121,7 +121,7 @@ class EmmanuelMotionMotors(Node):
         self.angularVelocity = 0
 
         self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
-        self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
+        self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getPulses)
         self.displayPulseCounter = self.create_timer(1, self.getPulseCounter)
         self.adjustSpeed = self.create_timer(0.1, self.correctSpeed)
         #
