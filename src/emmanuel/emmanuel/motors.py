@@ -261,7 +261,7 @@ class EmmanuelMotionMotors(Node):
         if lightSensorValue == 0 and self.isPulseIncreased is False:
             self.pulseCounter += 1
             self.isPulseIncreased = True
-        else:
+        if lightSensorValue == 1 and self.isPulseIncreased is True:
             self.isPulseIncreased = False
 
         self.get_logger().info("Light sensor: {}".format(lightSensorValue))
