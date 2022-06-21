@@ -166,7 +166,7 @@ class EmmanuelMotionMotors(Node):
         if linear_velocity > 0:
             self.moveForward()
         elif linear_velocity < 0:
-            self.moveBackward()
+            self.moveBackwards()
         else:
             self.stopRobot()
 
@@ -266,7 +266,7 @@ class EmmanuelMotionMotors(Node):
             self.previousLightSensorValue = lightSensorValue
         else:
             self.previousLightSensorValue = lightSensorValue
-        # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
+        self.get_logger().info("Light sensor: {}".format(lightSensorValue))
         return lightSensorValue
 
     def getPulseCounter(self):
