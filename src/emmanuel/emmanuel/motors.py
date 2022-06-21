@@ -104,14 +104,18 @@ class EmmanuelMotionMotors(Node):
         # Subscribing to the topic "cmd_vel" (getting linear and angular velocity)
         self.create_subscription(Twist, "cmd_vel", self.callback_received_coordinates, 10)
         # Publishing to the topic "odom" (getting the odometry)
-        self.create_publisher(Odometry, "odom_unfiltered", 10)
+        self.create_publisher(Odometry, "odom/unfiltered", 10)
+
         # Publishing timer (how often it will be published)
         publishOdometryPeriod = 0.1
         displayEncoderDataPeriod = 0.01
-        self.pulseCounter = 0;
-        self.timer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
-        self.timer2 = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
-        self.timer3 = self.create_timer(1, self.getPulseCounter)
+        self.pulseCounter = 0
+        self.previousPulseCounter = 0
+        self.previousLightSensorValue = 0
+
+        self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
+        self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
+        self.displayPulseCounter = self.create_timer(1, self.getPulseCounter)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -144,11 +148,19 @@ class EmmanuelMotionMotors(Node):
         linear_velocity = msg.linear.x
         angular_velocity = msg.angular.z
 
-        self.f_LM.ChangeDutyCycle(50)
-        self.f_RM.ChangeDutyCycle(50)
+        # self.f_LM.ChangeDutyCycle(50)
+        # self.f_RM.ChangeDutyCycle(50)
 
-        self.s_LM.ChangeDutyCycle(75)
-        self.s_RM.ChangeDutyCycle(75)
+        # # Converting the linear and angular velocity to the motor speeds
+        # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
+        # right_motor_speed = linear_velocity + angular_velocity * self.wheelbase / 2
+        #
+        # # Converting the motor speeds to the PWM values
+        # left_motor_speed_pwm = self.convert_velocity_to_pwm(left_motor_speed)
+        # right_motor_speed_pwm = self.convert_velocity_to_pwm(right_motor_speed)
+
+        self.changePWMLeftMotor(75)
+        self.changePWMRightMotor(75)
 
         # Checking if the linear velocity is positive or negative
         if linear_velocity > 0:
@@ -158,16 +170,11 @@ class EmmanuelMotionMotors(Node):
         else:
             self.stopRobot()
 
-        # # Converting the linear and angular velocity to the motor speeds
-        # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
-        # right_motor_speed = linear_velocity + angular_velocity * self.wheelbase / 2
-        #
-        # # Converting the motor speeds to the PWM values
-        # left_motor_speed_pwm = self.convert_velocity_to_pwm(left_motor_speed)
-        # right_motor_speed_pwm = self.convert_velocity_to_pwm(right_motor_speed)
-        #
-        # # Setting the PWM values to the motors
-        # self.set_motor_speed(left_motor_speed_pwm, right_motor_speed_pwm)
+    def changePWMLeftMotor(self, pwm):
+        self.s_LM.ChangeDutyCycle(pwm)
+
+    def changePWMRightMotor(self, pwm):
+        self.s_RM.ChangeDutyCycle(pwm)
 
     def moveForward(self):
         # Setup first motor go forward
@@ -184,7 +191,7 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, True)
 
-    def moveBackward(self):
+    def moveBackwards(self):
         gp.output(self.F_P1, False)
         gp.output(self.F_P2, True)
 
@@ -197,6 +204,34 @@ class EmmanuelMotionMotors(Node):
 
         gp.output(self.S_P3, True)
         gp.output(self.S_P4, False)
+
+    def turnRight(self):
+        gp.output(self.F_P1, True)
+        gp.output(self.F_P2, False)
+
+        gp.output(self.F_P3, False)
+        gp.output(self.F_P4, True)
+
+        # Setup first motor go forward
+        gp.output(self.S_P1, False)
+        gp.output(self.S_P2, True)
+
+        gp.output(self.S_P3, True)
+        gp.output(self.S_P4, False)
+
+    def turnLeft(self):
+        gp.output(self.F_P1, False)
+        gp.output(self.F_P2, True)
+
+        gp.output(self.F_P3, True)
+        gp.output(self.F_P4, False)
+
+        # Setup first motor go forward
+        gp.output(self.S_P1, True)
+        gp.output(self.S_P2, False)
+
+        gp.output(self.S_P3, False)
+        gp.output(self.S_P4, True)
 
     def stopRobot(self):
         gp.output(self.F_P1, False)
@@ -211,21 +246,10 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, False)
 
-    # def convert_velocity_to_pwm(self, velocity):
-    #     # Converting the linear velocity to the PWM value
-    #     pwm_value = 0
-    #     if velocity != 0:
-    #         pwm_value = int(velocity * self.max_pwm_value / self.max_linear_velocity)
-    #
-    #     return pwm_value
-
-    def set_motor_speed(self, left_motor_speed, right_motor_speed):
+    def set_motor_speed(self, speed):
         # Setting the PWM values to the motors
-        self.f_LM.ChangeDutyCycle(left_motor_speed)
-        self.f_RM.ChangeDutyCycle(right_motor_speed)
-
-        self.s_LM.ChangeDutyCycle(left_motor_speed)
-        self.s_RM.ChangeDutyCycle(right_motor_speed)
+        self.s_LM.ChangeDutyCycle(speed)
+        self.s_RM.ChangeDutyCycle(speed)
 
     def cleanup(self):
         self.get_logger().info("Cleaning up...")
@@ -237,29 +261,37 @@ class EmmanuelMotionMotors(Node):
 
     def getLightSensor(self):
         lightSensorValue = gp.input(self.lightSensor)
-        if lightSensorValue == 0:
+        if lightSensorValue == 0 and self.previousPulseCounter != 0:
             self.pulseCounter += 1
+            self.previousLightSensorValue = lightSensorValue
+        else:
+            self.previousLightSensorValue = lightSensorValue
         # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
         return lightSensorValue
 
     def getPulseCounter(self):
+        # self.previousPulseCounter = self.pulseCounter
         self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
         return self.pulseCounter
 
 
 def main(args=None):
     rclpy.init(args=args)
-
     motorNode = EmmanuelMotionMotors()
 
-    rclpy.spin(motorNode)
+    try:
+        rclpy.spin(motorNode)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
+        # Destroy the node explicitly
+        # (optional - otherwise it will be done automatically
+        # when the garbage collector destroys the node object)
 
-    motorNode.destroy_node()
-    rclpy.shutdown()
+        motorNode.cleanup()
+        motorNode.destroy_node()
+        rclpy.shutdown()
+    except KeyboardInterrupt:
+        motorNode.cleanup()
+        motorNode.destroy_node()
 
 
 if __name__ == '__main__':
