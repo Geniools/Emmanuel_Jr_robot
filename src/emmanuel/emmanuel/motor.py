@@ -8,6 +8,7 @@ from tf2_ros import TransformBroadcaster
 from rclpy.node import Node
 import rclpy
 from gpiozero import Servo
+from math import fabs
 
 
 class EmmanuelMotionMotors(Node):
@@ -98,7 +99,6 @@ class EmmanuelMotionMotors(Node):
         publishOdometryPeriod = 0.1
         displayEncoderDataPeriod = 0.01
         self.pulseCounter = 0
-        self.previousPulseCounter = 0
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreased = False
         # Robot moving speed
@@ -173,7 +173,7 @@ class EmmanuelMotionMotors(Node):
             self.stopRobot()
 
     def correctSpeed(self):
-        error = self.linearVelocity - self.movingVelocity
+        error = fabs(self.linearVelocity) - self.movingVelocity
         targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
         targetPWM = max(min(100, targetPWM), 0)
         self.get_logger().info("Target PWM: {}".format(targetPWM))
