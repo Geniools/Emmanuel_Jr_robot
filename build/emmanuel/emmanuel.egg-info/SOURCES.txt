@@ -11,6 +11,7 @@ setup.py
 emmanuel/__init__.py
 emmanuel/encoder.py
 emmanuel/motors.py
+emmanuel/rplidar.py
 resource/emmanuel
 test/test_copyright.py
 test/test_flake8.py

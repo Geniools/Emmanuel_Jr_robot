@@ -104,7 +104,7 @@ class EmmanuelMotionMotors(Node):
         # Subscribing to the topic "cmd_vel" (getting linear and angular velocity)
         self.create_subscription(Twist, "cmd_vel", self.callback_received_coordinates, 10)
         # Publishing to the topic "odom" (getting the odometry)
-        self.create_publisher(Odometry, "odom/unfiltered", 10)
+        self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
 
         # Publishing timer (how often it will be published)
         publishOdometryPeriod = 0.1
@@ -117,9 +117,10 @@ class EmmanuelMotionMotors(Node):
         self.movingVelocity = 0
         # Distance between two pulses
         self.PULSE_WIDTH = 2.5 / 100  # cm / meters
+        
         # PID constants
         self.KP = 10
-        self.KD = 8
+        self.KD = 10
         self.KI = 4
         # PID error variables
         self.previousSpeedError = 0
@@ -300,7 +301,7 @@ class EmmanuelMotionMotors(Node):
 
     def getPulseCounter(self):
         # self.previousPulseCounter = self.pulseCounter
-        self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
+        # self.get_logger().info("Pulses per second: {}".format(self.pulseCounter))
         self.updateMovingVelocity()
         # Reset the pulse counter after the previous counter has been printed
         self.get_logger().info("Speed is: {}".format(self.movingVelocity))
