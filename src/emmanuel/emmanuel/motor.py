@@ -91,9 +91,6 @@ class EmmanuelMotionMotors(Node):
         # Publishing to the topic "odom" (getting the odometry)
         self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
 
-        # Publishing timer (how often it will be published)
-        publishOdometryPeriod = 0.1
-        displayEncoderDataPeriod = 0.01
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreasedLeft = False
         self.isPulseIncreasedRight = False
@@ -120,9 +117,12 @@ class EmmanuelMotionMotors(Node):
         # Angular velocity
         self.angularVelocity = 0
 
-        self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
-        self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getPulses)
-        self.displayPulseCounter = self.create_timer(1, self.getPulseCounter)
+        # Publishing the odometry
+        self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
+
+        self.pulseCounterTimer = self.create_timer(0.5, self.updatePulses)
+
+        self.displayPulseCounter = self.create_timer(1, self.updateVelocity)
         self.adjustSpeed = self.create_timer(0.1, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
@@ -170,6 +170,33 @@ class EmmanuelMotionMotors(Node):
         else:
             self.stopRobot()
 
+    def updatePulses(self):
+        lightSensorValueLeft = gp.input(self.lightSensorLeft)
+        lightSensorValueRight = gp.input(self.lightSensorRight)
+
+        # Increasing pulse for the left wheel
+        if lightSensorValueLeft == 0 and self.isPulseIncreasedLeft is False:
+            self.leftPulseCounter += 1
+            self.isPulseIncreasedLeft = True
+        if lightSensorValueLeft == 1 and self.isPulseIncreasedLeft is True:
+            self.isPulseIncreasedLeft = False
+
+        # Increasing pulse for the right wheel
+        if lightSensorValueRight == 0 and self.isPulseIncreasedRight is False:
+            self.rightPulseCounter += 1
+            self.isPulseIncreasedRight = True
+        if lightSensorValueRight == 1 and self.isPulseIncreasedRight is True:
+            self.isPulseIncreasedRight = False
+
+    def updateVelocity(self):
+        self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH
+        self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH
+
+        # Reset the pulse counter after the previous counter has been printed
+        self.get_logger().info("Speed is: left: {}, right: {}".format(self.velocityLeft, self.velocityRight))
+        self.rightPulseCounter = 0
+        self.leftPulseCounter = 0
+
     def correctSpeed(self):
         error_left = fabs(self.linearVelocity) - self.velocityLeft
         error_right = fabs(self.linearVelocity) + self.velocityRight
@@ -181,6 +208,8 @@ class EmmanuelMotionMotors(Node):
 
         targetPWM_left = max(min(100, targetPWM_left), 0)
         targetPWM_right = max(min(100, targetPWM_right), 0)
+
+        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
         self.changePWMLeftMotor(targetPWM_left)
         self.changePWMRightMotor(targetPWM_right)
@@ -266,36 +295,6 @@ class EmmanuelMotionMotors(Node):
 
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, False)
-
-    def getPulses(self):
-        lightSensorValueLeft = gp.input(self.lightSensorLeft)
-        lightSensorValueRight = gp.input(self.lightSensorRight)
-
-        # Increasing pulse for the left wheel
-        if lightSensorValueLeft == 0 and self.isPulseIncreasedLeft is False:
-            self.leftPulseCounter += 1
-            self.isPulseIncreasedLeft = True
-        if lightSensorValueLeft == 1 and self.isPulseIncreasedLeft is True:
-            self.isPulseIncreasedLeft = False
-
-        # Increasing pulse for the right wheel
-        if lightSensorValueRight == 0 and self.isPulseIncreasedRight is False:
-            self.rightPulseCounter += 1
-            self.isPulseIncreasedRight = True
-        if lightSensorValueRight == 1 and self.isPulseIncreasedRight is True:
-            self.isPulseIncreasedRight = False
-
-    def updateMovingVelocity(self):
-        self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH
-        self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH
-
-    def getPulseCounter(self):
-        self.updateMovingVelocity()
-
-        # Reset the pulse counter after the previous counter has been printed
-        self.get_logger().info("Speed is: left: {}, right: {}".format(self.velocityLeft, self.velocityRight))
-        self.rightPulseCounter = 0
-        self.leftPulseCounter = 0
 
     def cleanup(self):
         self.get_logger().info("Cleaning up...")
