@@ -120,7 +120,8 @@ class EmmanuelMotionMotors(Node):
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
 
-        self.pulseCounterTimer = self.create_timer(0.5, self.updatePulses)
+        self.updatePulseTimer = 0.5
+        self.pulseCounterTimer = self.create_timer(self.updatePulseTimer, self.updatePulses)
 
         self.displayPulseCounter = self.create_timer(1, self.updateVelocity)
         self.adjustSpeed = self.create_timer(0.1, self.correctSpeed)
@@ -189,8 +190,8 @@ class EmmanuelMotionMotors(Node):
             self.isPulseIncreasedRight = False
 
     def updateVelocity(self):
-        self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH
-        self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH
+        self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
+        self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
         # Reset the pulse counter after the previous counter has been printed
         self.get_logger().info("Speed is: left: {}, right: {}".format(self.velocityLeft, self.velocityRight))
