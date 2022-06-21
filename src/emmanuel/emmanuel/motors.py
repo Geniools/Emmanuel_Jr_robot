@@ -190,6 +190,7 @@ class EmmanuelMotionMotors(Node):
     def correctSpeed(self):
         error = self.linearVelocity - self.movingVelocity
         targetPWM = (self.KP * error) + (self.KD * self.previousSpeedError) + (self.KI * self.sumSpeedError)
+        self.get_logger().info("Error: {}".format(targetPWM))
         targetPWM = max(min(100, targetPWM), 0)
 
         self.changePWMLeftMotor(targetPWM)
