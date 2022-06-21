@@ -211,7 +211,7 @@ class EmmanuelMotionMotors(Node):
 
         self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
-        # self.changePWMRightMotor(targetPWM_right)
+        self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
 
         self.previousSpeedErrorLeft = error_left
@@ -221,10 +221,10 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight += error_right
 
     def changePWMLeftMotor(self, pwm):
-        self.s_LM.ChangeDutyCycle(pwm)
+        self.s_RM.ChangeDutyCycle(pwm)
 
     def changePWMRightMotor(self, pwm):
-        self.s_RM.ChangeDutyCycle(pwm)
+        self.s_LM.ChangeDutyCycle(pwm)
 
     def moveForward(self):
         gp.output(self.F_P1, True)
