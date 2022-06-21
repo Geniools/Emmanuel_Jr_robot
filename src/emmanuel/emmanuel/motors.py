@@ -112,6 +112,7 @@ class EmmanuelMotionMotors(Node):
         self.pulseCounter = 0
         self.previousPulseCounter = 0
         self.previousLightSensorValue = 0
+        self.isPulseIncreased = False
 
         self.odometryTimer = self.create_timer(publishOdometryPeriod, self.callback_publish_odometry)
         self.pulseCounterTimer = self.create_timer(displayEncoderDataPeriod, self.getLightSensor)
@@ -246,11 +247,6 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, False)
 
-    def set_motor_speed(self, speed):
-        # Setting the PWM values to the motors
-        self.s_LM.ChangeDutyCycle(speed)
-        self.s_RM.ChangeDutyCycle(speed)
-
     def cleanup(self):
         self.get_logger().info("Cleaning up...")
         self.f_LM.stop()
@@ -261,11 +257,13 @@ class EmmanuelMotionMotors(Node):
 
     def getLightSensor(self):
         lightSensorValue = gp.input(self.lightSensor)
-        if lightSensorValue == 0 and self.previousPulseCounter != 0:
+
+        if lightSensorValue == 0 and self.isPulseIncreased is False:
             self.pulseCounter += 1
-            self.previousLightSensorValue = lightSensorValue
+            self.previousLightSensorValue = True
         else:
-            self.previousLightSensorValue = lightSensorValue
+            self.isPulseIncreased = False
+
         self.get_logger().info("Light sensor: {}".format(lightSensorValue))
         return lightSensorValue
 
