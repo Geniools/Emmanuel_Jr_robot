@@ -124,7 +124,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(self.updatePulseTimer, self.correctSpeed)
+        self.adjustSpeed = self.create_timer(0.01, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -152,9 +152,6 @@ class EmmanuelMotionMotors(Node):
         # Getting the linear and angular velocity
         self.linearVelocity = msg.linear.x
         self.angularVelocity = msg.angular.z
-
-        # self.f_LM.ChangeDutyCycle(50)
-        # self.f_RM.ChangeDutyCycle(50)
 
         # # Converting the linear and angular velocity to the motor speeds
         # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
@@ -213,8 +210,8 @@ class EmmanuelMotionMotors(Node):
 
         self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
-        self.changePWMRightMotor(targetPWM_left)
-        self.changePWMLeftMotor(targetPWM_right)
+        self.changePWMRightMotor(targetPWM_right)
+        self.changePWMLeftMotor(targetPWM_left)
 
         self.previousSpeedErrorLeft = error_left
         self.previousSpeedErrorRight = error_right
@@ -229,14 +226,12 @@ class EmmanuelMotionMotors(Node):
         self.s_RM.ChangeDutyCycle(pwm)
 
     def moveForward(self):
-        # Setup first motor go forward
         gp.output(self.F_P1, True)
         gp.output(self.F_P2, False)
 
         gp.output(self.F_P3, False)
         gp.output(self.F_P4, True)
 
-        # Setup first motor go forward
         gp.output(self.S_P1, True)
         gp.output(self.S_P2, False)
 
@@ -250,7 +245,6 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.F_P3, True)
         gp.output(self.F_P4, False)
 
-        # Setup first motor go forward
         gp.output(self.S_P1, False)
         gp.output(self.S_P2, True)
 
@@ -264,7 +258,6 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.F_P3, False)
         gp.output(self.F_P4, True)
 
-        # Setup first motor go forward
         gp.output(self.S_P1, False)
         gp.output(self.S_P2, True)
 
@@ -278,7 +271,6 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.F_P3, True)
         gp.output(self.F_P4, False)
 
-        # Setup first motor go forward
         gp.output(self.S_P1, True)
         gp.output(self.S_P2, False)
 
@@ -314,18 +306,13 @@ def main(args=None):
 
     try:
         rclpy.spin(motorNode)
-
-        # Destroy the node explicitly
-        # (optional - otherwise it will be done automatically
-        # when the garbage collector destroys the node object)
-
-        motorNode.cleanup()
-        motorNode.destroy_node()
-        rclpy.shutdown()
-
     except KeyboardInterrupt:
-        motorNode.cleanup()
-        motorNode.destroy_node()
+        # Prevent error in case of "Ctrl+C"
+        pass
+
+    motorNode.cleanup()
+    motorNode.destroy_node()
+    rclpy.shutdown()
 
 
 if __name__ == '__main__':
