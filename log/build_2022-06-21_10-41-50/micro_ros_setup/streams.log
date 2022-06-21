@@ -1,0 +1,215 @@
+[0.167s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/ubuntu/Emmanuel_Jr_robot/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup
+[0.991s] -- The C compiler identification is GNU 9.4.0
+[1.782s] -- The CXX compiler identification is GNU 9.4.0
+[1.874s] -- Check for working C compiler: /usr/bin/cc
+[3.084s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.107s] -- Detecting C compiler ABI info
+[4.340s] -- Detecting C compiler ABI info - done
+[4.475s] -- Detecting C compile features
+[4.479s] -- Detecting C compile features - done
+[4.523s] -- Check for working CXX compiler: /usr/bin/c++
+[5.739s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.747s] -- Detecting CXX compiler ABI info
+[6.808s] -- Detecting CXX compiler ABI info - done
+[6.903s] -- Detecting CXX compile features
+[6.911s] -- Detecting CXX compile features - done
+[6.981s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[7.426s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.428s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.902s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[10.127s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.654s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.725s] -- Added test 'lint_cmake' to check CMake code style
+[10.763s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[11.031s] -- Added test 'xmllint' to check XML markup files
+[11.059s] -- Configuring done
+[11.088s] -- Generating done
+[11.096s] -- Build files have been written to: /home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup
+[11.159s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/ubuntu/Emmanuel_Jr_robot/src/micro_ros_setup -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup
+[11.162s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup -- -j4 -l4
+[11.711s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup -- -j4 -l4
+[11.832s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup
+[11.883s] -- Install configuration: ""
+[11.885s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup
+[11.886s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup
+[11.888s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh
+[11.890s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv
+[11.891s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh
+[11.893s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv
+[11.894s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash
+[11.896s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh
+[11.897s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh
+[11.899s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv
+[11.900s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/package.dsv
+[11.902s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup
+[11.904s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake
+[11.905s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake
+[11.906s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/share/micro_ros_setup/package.xml
+[11.908s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config
+[11.909s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/agent_uros_packages.repos
+[11.924s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/client_ros2_packages.txt
+[11.988s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host
+[11.989s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/client_ros2_packages.txt
+[11.998s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/dev_uros_packages.repos
+[12.003s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/dev_ros2_packages.txt
+[12.008s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic
+[12.009s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/client_host_packages.repos
+[12.011s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/package.xml
+[12.013s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/build.sh
+[12.016s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/flash.sh
+[12.018s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/create.sh
+[12.019s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta
+[12.021s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian
+[12.022s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos
+[12.040s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt
+[12.043s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic
+[12.044s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/configure.sh
+[12.045s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/build.sh
+[12.047s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/flash.sh
+[12.049s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos
+[12.051s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/supported_platforms
+[12.052s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta
+[12.059s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/raspbian/generic/create.sh
+[12.063s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr
+[12.064s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/list_apps.sh
+[12.065s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos
+[12.071s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt
+[12.073s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic
+[12.074s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/configure.sh
+[12.083s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/package.xml
+[12.087s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/board.repos
+[12.088s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/build.sh
+[12.090s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/flash.sh
+[12.095s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos
+[12.096s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/supported_platforms
+[12.097s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta
+[12.099s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/zephyr/generic/create.sh
+[12.103s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra
+[12.104s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/list_apps.sh
+[12.111s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5
+[12.112s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh
+[12.119s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos
+[12.123s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh
+[12.125s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh
+[12.127s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos
+[12.135s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta
+[12.136s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh
+[12.141s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos
+[12.143s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt
+[12.145s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed
+[12.146s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/list_apps.sh
+[12.147s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/dev_uros_packages.repos
+[12.159s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/dev_ros2_packages.txt
+[12.163s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic
+[12.164s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/package.xml
+[12.171s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/board.repos
+[12.176s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/build.sh
+[12.178s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/flash.sh
+[12.187s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/client_uros_packages.repos
+[12.191s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/supported_platforms
+[12.193s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/mbed/generic/create.sh
+[12.195s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/client_uros_packages.repos
+[12.203s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/utils.sh
+[12.207s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos
+[12.208s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg
+[12.209s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh
+[12.211s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml
+[12.219s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos
+[12.223s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh
+[12.226s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh
+[12.227s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos
+[12.228s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta
+[12.235s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh
+[12.240s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/list_apps.sh
+[12.242s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze
+[12.243s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh
+[12.251s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml
+[12.255s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos
+[12.257s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh
+[12.264s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh
+[12.266s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos
+[12.267s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta
+[12.272s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh
+[12.279s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21
+[12.280s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh
+[12.282s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml
+[12.288s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos
+[12.290s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/patchs
+[12.291s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/patchs/0001-Add-tx-queue-utilities.patch
+[12.299s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/patchs/0001-Remove-assert.patch
+[12.303s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh
+[12.305s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh
+[12.309s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos
+[12.310s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta
+[12.311s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh
+[12.314s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi
+[12.315s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh
+[12.323s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml
+[12.328s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos
+[12.335s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh
+[12.340s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh
+[12.342s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos
+[12.343s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta
+[12.344s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh
+[12.346s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos
+[12.355s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re
+[12.356s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh
+[12.367s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml
+[12.371s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos
+[12.373s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh
+[12.375s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh
+[12.377s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos
+[12.378s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta
+[12.379s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh
+[12.387s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt
+[12.395s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407
+[12.396s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh
+[12.398s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml
+[12.400s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos
+[12.402s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh
+[12.411s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh
+[12.414s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos
+[12.415s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta
+[12.416s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh
+[12.418s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32
+[12.419s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/configure.sh
+[12.422s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/package.xml
+[12.424s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/board.repos
+[12.435s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/README.md
+[12.440s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/build.sh
+[12.442s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/flash.sh
+[12.444s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos
+[12.445s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta
+[12.446s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/freertos/esp32/create.sh
+[12.448s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android
+[12.449s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/dev_uros_packages.repos
+[12.451s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/dev_ros2_packages.txt
+[12.455s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic
+[12.456s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/package.xml
+[12.457s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/build.sh
+[12.463s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/flash.sh
+[12.465s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/client_uros_packages.repos
+[12.467s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/client-colcon.meta
+[12.469s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/android/generic/create.sh
+[12.471s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib
+[12.472s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos
+[12.475s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt
+[12.477s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic
+[12.478s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/package.xml
+[12.483s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/build.sh
+[12.485s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/flash.sh
+[12.487s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos
+[12.488s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake
+[12.491s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta
+[12.493s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/generate_lib/generic/create.sh
+[12.499s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/./config/agent_ros2_packages.txt
+[12.502s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh
+[12.504s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh
+[12.505s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh
+[12.516s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh
+[12.520s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh
+[12.522s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh
+[12.524s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh
+[12.526s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py
+[12.527s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh
+[12.543s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/micro_ros_setup

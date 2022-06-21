@@ -1,0 +1,197 @@
+[0.000000] (-) TimerEvent: {}
+[0.000932] (emmanuel) JobQueued: {'identifier': 'emmanuel', 'dependencies': OrderedDict()}
+[0.001207] (mpu9250driver) JobQueued: {'identifier': 'mpu9250driver', 'dependencies': OrderedDict()}
+[0.001935] (emmanuel) JobStarted: {'identifier': 'emmanuel'}
+[0.052872] (mpu9250driver) JobStarted: {'identifier': 'mpu9250driver'}
+[0.099534] (-) TimerEvent: {}
+[0.200875] (-) TimerEvent: {}
+[0.301535] (-) TimerEvent: {}
+[0.402218] (-) TimerEvent: {}
+[0.502912] (-) TimerEvent: {}
+[0.603517] (-) TimerEvent: {}
+[0.704139] (-) TimerEvent: {}
+[0.804762] (-) TimerEvent: {}
+[0.905361] (-) TimerEvent: {}
+[1.006141] (-) TimerEvent: {}
+[1.046477] (mpu9250driver) JobProgress: {'identifier': 'mpu9250driver', 'progress': 'cmake'}
+[1.047751] (mpu9250driver) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/mpu9250driver'], 'cwd': '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver', 'env': OrderedDict([('LINOROBOT2_BASE', '4wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '10.110.110.112 59913 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/linorobot2_ws/install/micro_ros_agent/lib:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs/lib:/home/ubuntu/linorobot2_ws/install/drive_base_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/Emmanuel_Jr_robot/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/linorobot2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.platformio/penv/bin:/home/ubuntu/.platformio/penv/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/linorobot2_ws/install/micro_ros_setup:/home/ubuntu/linorobot2_ws/install/linorobot2_bringup:/home/ubuntu/linorobot2_ws/install/micro_ros_agent:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs:/home/ubuntu/linorobot2_ws/install/linorobot2_viz:/home/ubuntu/linorobot2_ws/install/linorobot2_navigation:/home/ubuntu/linorobot2_ws/install/linorobot2_description:/home/ubuntu/linorobot2_ws/install/linorobot2_base:/home/ubuntu/linorobot2_ws/install/linorobot2:/home/ubuntu/linorobot2_ws/install/drive_base_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.110.110.112 59913 10.110.110.188 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LINOROBOT2_DEPTH_SENSOR', ''), ('PYTHONPATH', '/home/ubuntu/linorobot2_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/home/ubuntu/linorobot2_ws/install/drive_base_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('LINOROBOT2_LASER_SENSOR', ''), ('CMAKE_PREFIX_PATH', '/home/ubuntu/linorobot2_ws/install/micro_ros_setup:/home/ubuntu/linorobot2_ws/install/linorobot2_bringup:/home/ubuntu/linorobot2_ws/install/micro_ros_agent:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs:/home/ubuntu/linorobot2_ws/install/linorobot2_viz:/home/ubuntu/linorobot2_ws/install/linorobot2_navigation:/home/ubuntu/linorobot2_ws/install/linorobot2_description:/home/ubuntu/linorobot2_ws/install/linorobot2_base:/home/ubuntu/linorobot2_ws/install/linorobot2:/home/ubuntu/linorobot2_ws/install/drive_base_msgs:/opt/ros/galactic')]), 'shell': False}
+[1.106367] (-) TimerEvent: {}
+[1.207439] (-) TimerEvent: {}
+[1.308236] (-) TimerEvent: {}
+[1.409003] (-) TimerEvent: {}
+[1.509734] (-) TimerEvent: {}
+[1.610396] (-) TimerEvent: {}
+[1.711002] (-) TimerEvent: {}
+[1.811805] (-) TimerEvent: {}
+[1.912816] (-) TimerEvent: {}
+[1.963683] (mpu9250driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[2.013015] (-) TimerEvent: {}
+[2.113725] (-) TimerEvent: {}
+[2.214390] (-) TimerEvent: {}
+[2.315070] (-) TimerEvent: {}
+[2.415711] (-) TimerEvent: {}
+[2.516381] (-) TimerEvent: {}
+[2.617186] (-) TimerEvent: {}
+[2.718882] (-) TimerEvent: {}
+[2.724862] (emmanuel) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/emmanuel', 'build', '--build-base', '/home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build', 'install', '--prefix', '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel', '--record', '/home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/Emmanuel_Jr_robot/src/emmanuel', 'env': {'LINOROBOT2_BASE': '4wd', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '10.110.110.112 59913 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/linorobot2_ws/install/micro_ros_agent/lib:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs/lib:/home/ubuntu/linorobot2_ws/install/drive_base_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/Emmanuel_Jr_robot/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/linorobot2_ws/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.platformio/penv/bin:/home/ubuntu/.platformio/penv/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/linorobot2_ws/install/micro_ros_setup:/home/ubuntu/linorobot2_ws/install/linorobot2_bringup:/home/ubuntu/linorobot2_ws/install/micro_ros_agent:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs:/home/ubuntu/linorobot2_ws/install/linorobot2_viz:/home/ubuntu/linorobot2_ws/install/linorobot2_navigation:/home/ubuntu/linorobot2_ws/install/linorobot2_description:/home/ubuntu/linorobot2_ws/install/linorobot2_base:/home/ubuntu/linorobot2_ws/install/linorobot2:/home/ubuntu/linorobot2_ws/install/drive_base_msgs:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/Emmanuel_Jr_robot/build/emmanuel', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.110.110.112 59913 10.110.110.188 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LINOROBOT2_DEPTH_SENSOR': '', 'PYTHONPATH': '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/home/ubuntu/linorobot2_ws/install/drive_base_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'LINOROBOT2_LASER_SENSOR': '', 'CMAKE_PREFIX_PATH': '/home/ubuntu/linorobot2_ws/install/micro_ros_setup:/home/ubuntu/linorobot2_ws/install/linorobot2_bringup:/home/ubuntu/linorobot2_ws/install/micro_ros_agent:/home/ubuntu/linorobot2_ws/install/micro_ros_msgs:/home/ubuntu/linorobot2_ws/install/linorobot2_viz:/home/ubuntu/linorobot2_ws/install/linorobot2_navigation:/home/ubuntu/linorobot2_ws/install/linorobot2_description:/home/ubuntu/linorobot2_ws/install/linorobot2_base:/home/ubuntu/linorobot2_ws/install/linorobot2:/home/ubuntu/linorobot2_ws/install/drive_base_msgs'}, 'shell': False}
+[2.754291] (mpu9250driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.790343] (mpu9250driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.818983] (-) TimerEvent: {}
+[2.919734] (-) TimerEvent: {}
+[3.020475] (-) TimerEvent: {}
+[3.103215] (mpu9250driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.111079] (mpu9250driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.120646] (-) TimerEvent: {}
+[3.221348] (-) TimerEvent: {}
+[3.322052] (-) TimerEvent: {}
+[3.419351] (mpu9250driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.422296] (-) TimerEvent: {}
+[3.458820] (mpu9250driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.461048] (mpu9250driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.473930] (mpu9250driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.522423] (-) TimerEvent: {}
+[3.623142] (-) TimerEvent: {}
+[3.723938] (-) TimerEvent: {}
+[3.807921] (mpu9250driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.811536] (mpu9250driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.824053] (-) TimerEvent: {}
+[3.853689] (emmanuel) StdoutLine: {'line': b'running egg_info\n'}
+[3.855710] (emmanuel) StdoutLine: {'line': b'creating ../../build/emmanuel/emmanuel.egg-info\n'}
+[3.856575] (emmanuel) StdoutLine: {'line': b'writing ../../build/emmanuel/emmanuel.egg-info/PKG-INFO\n'}
+[3.857611] (emmanuel) StdoutLine: {'line': b'writing dependency_links to ../../build/emmanuel/emmanuel.egg-info/dependency_links.txt\n'}
+[3.858293] (emmanuel) StdoutLine: {'line': b'writing entry points to ../../build/emmanuel/emmanuel.egg-info/entry_points.txt\n'}
+[3.858852] (emmanuel) StdoutLine: {'line': b'writing requirements to ../../build/emmanuel/emmanuel.egg-info/requires.txt\n'}
+[3.859332] (emmanuel) StdoutLine: {'line': b'writing top-level names to ../../build/emmanuel/emmanuel.egg-info/top_level.txt\n'}
+[3.872732] (emmanuel) StdoutLine: {'line': b"writing manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'\n"}
+[3.924324] (-) TimerEvent: {}
+[4.015050] (emmanuel) StdoutLine: {'line': b"reading manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'\n"}
+[4.018595] (emmanuel) StdoutLine: {'line': b"writing manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'\n"}
+[4.019474] (emmanuel) StdoutLine: {'line': b'running build\n'}
+[4.020190] (emmanuel) StdoutLine: {'line': b'running build_py\n'}
+[4.020988] (emmanuel) StdoutLine: {'line': b'creating /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build\n'}
+[4.021575] (emmanuel) StdoutLine: {'line': b'creating /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib\n'}
+[4.022211] (emmanuel) StdoutLine: {'line': b'creating /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel\n'}
+[4.022800] (emmanuel) StdoutLine: {'line': b'copying emmanuel/__init__.py -> /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel\n'}
+[4.023334] (emmanuel) StdoutLine: {'line': b'copying emmanuel/encoder.py -> /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel\n'}
+[4.024050] (emmanuel) StdoutLine: {'line': b'copying emmanuel/motors.py -> /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel\n'}
+[4.024770] (-) TimerEvent: {}
+[4.025666] (emmanuel) StdoutLine: {'line': b'running install\n'}
+[4.029056] (emmanuel) StdoutLine: {'line': b'running install_lib\n'}
+[4.038117] (emmanuel) StdoutLine: {'line': b'running install_data\n'}
+[4.040713] (emmanuel) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.048002] (emmanuel) StdoutLine: {'line': b"removing '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.048764] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/top_level.txt'\n"}
+[4.049743] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/requires.txt'\n"}
+[4.050145] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/dependency_links.txt'\n"}
+[4.051260] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/SOURCES.txt'\n"}
+[4.051988] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/PKG-INFO'\n"}
+[4.052765] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/entry_points.txt'\n"}
+[4.053840] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/zip-safe'\n"}
+[4.055321] (emmanuel) StderrLine: {'line': b"error removing /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info: [Errno 39] Directory not empty: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info'\n"}
+[4.056567] (emmanuel) StdoutLine: {'line': b'Copying ../../build/emmanuel/emmanuel.egg-info to /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info\n'}
+[4.057669] (emmanuel) StderrLine: {'line': b"error: [Errno 13] Permission denied: '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info/top_level.txt'\n"}
+[4.125128] (-) TimerEvent: {}
+[4.156509] (emmanuel) CommandEnded: {'returncode': 1}
+[4.158921] (emmanuel) JobEnded: {'identifier': 'emmanuel', 'rc': 1}
+[4.180596] (mpu9250driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.218883] (mpu9250driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.220502] (mpu9250driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.225285] (-) TimerEvent: {}
+[4.284154] (mpu9250driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[4.325455] (-) TimerEvent: {}
+[4.426252] (-) TimerEvent: {}
+[4.497436] (mpu9250driver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.498090] (mpu9250driver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.526447] (-) TimerEvent: {}
+[4.627278] (-) TimerEvent: {}
+[4.727949] (-) TimerEvent: {}
+[4.828675] (-) TimerEvent: {}
+[4.929318] (-) TimerEvent: {}
+[5.029996] (-) TimerEvent: {}
+[5.130654] (-) TimerEvent: {}
+[5.223276] (mpu9250driver) StdoutLine: {'line': b'-- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[5.230791] (-) TimerEvent: {}
+[5.331411] (-) TimerEvent: {}
+[5.432071] (-) TimerEvent: {}
+[5.532717] (-) TimerEvent: {}
+[5.633337] (-) TimerEvent: {}
+[5.734052] (-) TimerEvent: {}
+[5.803551] (mpu9250driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.834212] (-) TimerEvent: {}
+[5.924081] (mpu9250driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[5.934358] (-) TimerEvent: {}
+[6.035073] (-) TimerEvent: {}
+[6.135821] (-) TimerEvent: {}
+[6.236625] (-) TimerEvent: {}
+[6.337333] (-) TimerEvent: {}
+[6.438070] (-) TimerEvent: {}
+[6.538927] (-) TimerEvent: {}
+[6.639786] (-) TimerEvent: {}
+[6.740532] (-) TimerEvent: {}
+[6.757220] (mpu9250driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[6.840707] (-) TimerEvent: {}
+[6.941376] (-) TimerEvent: {}
+[7.031125] (mpu9250driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[7.041504] (-) TimerEvent: {}
+[7.142220] (-) TimerEvent: {}
+[7.242868] (-) TimerEvent: {}
+[7.343595] (-) TimerEvent: {}
+[7.444280] (-) TimerEvent: {}
+[7.545011] (-) TimerEvent: {}
+[7.645706] (-) TimerEvent: {}
+[7.746492] (-) TimerEvent: {}
+[7.769220] (mpu9250driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.846641] (-) TimerEvent: {}
+[7.947260] (-) TimerEvent: {}
+[8.048000] (-) TimerEvent: {}
+[8.148725] (-) TimerEvent: {}
+[8.249422] (-) TimerEvent: {}
+[8.259977] (mpu9250driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[8.301313] (mpu9250driver) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[8.349578] (-) TimerEvent: {}
+[8.423927] (mpu9250driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.430701] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.449739] (-) TimerEvent: {}
+[8.550455] (-) TimerEvent: {}
+[8.651286] (-) TimerEvent: {}
+[8.752145] (-) TimerEvent: {}
+[8.783291] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.784230] (mpu9250driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.852317] (-) TimerEvent: {}
+[8.953204] (-) TimerEvent: {}
+[9.054128] (-) TimerEvent: {}
+[9.106286] (mpu9250driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[9.107278] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[9.154316] (-) TimerEvent: {}
+[9.255287] (-) TimerEvent: {}
+[9.356564] (-) TimerEvent: {}
+[9.457352] (-) TimerEvent: {}
+[9.472233] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[9.473047] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[9.557509] (-) TimerEvent: {}
+[9.658269] (-) TimerEvent: {}
+[9.759049] (-) TimerEvent: {}
+[9.786828] (mpu9250driver) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.790278] (mpu9250driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.859293] (-) TimerEvent: {}
+[9.960049] (-) TimerEvent: {}
+[10.060757] (-) TimerEvent: {}
+[10.161491] (-) TimerEvent: {}
+[10.262213] (-) TimerEvent: {}
+[10.362845] (-) TimerEvent: {}
+[10.463488] (-) TimerEvent: {}
+[10.547991] (mpu9250driver) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[10.563647] (-) TimerEvent: {}
+[10.664340] (-) TimerEvent: {}
+[10.765074] (-) TimerEvent: {}
+[10.865738] (-) TimerEvent: {}
+[10.966417] (-) TimerEvent: {}
+[11.067061] (-) TimerEvent: {}
+[11.167776] (-) TimerEvent: {}
+[11.268455] (-) TimerEvent: {}
+[11.286754] (mpu9250driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.334656] (mpu9250driver) StdoutLine: {'line': b'-- Generating done\n'}
+[11.342016] (mpu9250driver) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver\n'}
+[11.359863] (mpu9250driver) JobEnded: {'identifier': 'mpu9250driver', 'rc': 'SIGINT'}
+[11.368611] (-) TimerEvent: {}
+[11.372390] (-) EventReactorShutdown: {}

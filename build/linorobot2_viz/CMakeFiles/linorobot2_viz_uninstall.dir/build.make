@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rex/Emmanuel_Jr_robot/src/linorobot2_viz
+CMAKE_SOURCE_DIR = /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2_viz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz
+CMAKE_BINARY_DIR = /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz
 
 # Utility rule file for linorobot2_viz_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz
 include CMakeFiles/linorobot2_viz_uninstall.dir/progress.make
 
 CMakeFiles/linorobot2_viz_uninstall:
-	/usr/bin/cmake -P /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 linorobot2_viz_uninstall: CMakeFiles/linorobot2_viz_uninstall
 linorobot2_viz_uninstall: CMakeFiles/linorobot2_viz_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/linorobot2_viz_uninstall.dir/clean:
 .PHONY : CMakeFiles/linorobot2_viz_uninstall.dir/clean
 
 CMakeFiles/linorobot2_viz_uninstall.dir/depend:
-	cd /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rex/Emmanuel_Jr_robot/src/linorobot2_viz /home/rex/Emmanuel_Jr_robot/src/linorobot2_viz /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz /home/rex/Emmanuel_Jr_robot/build/linorobot2_viz/CMakeFiles/linorobot2_viz_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2_viz /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2_viz /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_viz/CMakeFiles/linorobot2_viz_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/linorobot2_viz_uninstall.dir/depend
 

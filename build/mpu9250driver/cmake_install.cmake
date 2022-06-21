@@ -1,8 +1,8 @@
-# Install script for directory: /home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver
+# Install script for directory: /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rex/Emmanuel_Jr_robot/install/mpu9250driver")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Emmanuel_Jr_robot/install/mpu9250driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mpu9250driver/mpu9250driver"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mpu9250driver" TYPE EXECUTABLE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/mpu9250driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/mpu9250driver" TYPE EXECUTABLE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/mpu9250driver")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mpu9250driver/mpu9250driver" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/mpu9250driver/mpu9250driver")
     file(RPATH_CHANGE
@@ -59,17 +59,17 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/" TYPE DIRECTORY FILES
-    "/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/launch"
-    "/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/params"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/launch"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/params"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mpu9250driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mpu9250driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mpu9250driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mpu9250driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -77,7 +77,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -85,47 +85,47 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/packages/mpu9250driver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_index/share/ament_index/resource_index/packages/mpu9250driver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver/cmake" TYPE FILE FILES
-    "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_core/mpu9250driverConfig.cmake"
-    "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_core/mpu9250driverConfig-version.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_core/mpu9250driverConfig.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_core/mpu9250driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mpu9250driver" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/lib/cmake_install.cmake")
+  include("/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/lib/cmake_install.cmake")
 
 endif()
 
@@ -137,5 +137,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

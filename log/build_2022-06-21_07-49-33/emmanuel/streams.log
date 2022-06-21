@@ -1,0 +1,21 @@
+[2.135s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/src/emmanuel': PYTHONPATH=/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/emmanuel build --build-base /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build install --prefix /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel --record /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log --single-version-externally-managed
+[2.836s] running egg_info
+[2.838s] writing ../../build/emmanuel/emmanuel.egg-info/PKG-INFO
+[2.839s] writing dependency_links to ../../build/emmanuel/emmanuel.egg-info/dependency_links.txt
+[2.840s] writing entry points to ../../build/emmanuel/emmanuel.egg-info/entry_points.txt
+[2.840s] writing requirements to ../../build/emmanuel/emmanuel.egg-info/requires.txt
+[2.841s] writing top-level names to ../../build/emmanuel/emmanuel.egg-info/top_level.txt
+[2.967s] reading manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'
+[2.971s] writing manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'
+[2.971s] running build
+[2.971s] running build_py
+[2.973s] running install
+[2.976s] running install_lib
+[2.981s] running install_data
+[2.983s] running install_egg_info
+[2.989s] removing '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info' (and everything under it)
+[2.990s] Copying ../../build/emmanuel/emmanuel.egg-info to /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info
+[2.994s] running install_scripts
+[3.053s] Installing motor_run script to /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/emmanuel
+[3.054s] writing list of installed files to '/home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log'
+[3.145s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/src/emmanuel' returned '0': PYTHONPATH=/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/emmanuel build --build-base /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build install --prefix /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel --record /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log --single-version-externally-managed

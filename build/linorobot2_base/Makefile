@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base
+CMAKE_SOURCE_DIR = /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/linorobot2_base
+CMAKE_BINARY_DIR = /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rex/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles /home/rex/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rex/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

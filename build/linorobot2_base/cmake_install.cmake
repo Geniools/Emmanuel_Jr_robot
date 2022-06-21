@@ -1,8 +1,8 @@
-# Install script for directory: /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base
+# Install script for directory: /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rex/Emmanuel_Jr_robot/install/linorobot2_base")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_base")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,15 +38,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE DIRECTORY FILES "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE DIRECTORY FILES "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/linorobot2_base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/linorobot2_base")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/linorobot2_base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/linorobot2_base")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -62,42 +62,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/packages/linorobot2_base")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_index/share/ament_index/resource_index/packages/linorobot2_base")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base/cmake" TYPE FILE FILES
-    "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_core/linorobot2_baseConfig.cmake"
-    "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_core/linorobot2_baseConfig-version.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_core/linorobot2_baseConfig.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/ament_cmake_core/linorobot2_baseConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_base" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_base/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -108,5 +108,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rex/Emmanuel_Jr_robot/build/linorobot2_base/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_base/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

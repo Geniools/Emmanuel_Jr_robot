@@ -1,0 +1,70 @@
+[0.064s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_description -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description
+[0.393s] -- The C compiler identification is GNU 9.4.0
+[0.655s] -- The CXX compiler identification is GNU 9.4.0
+[0.679s] -- Check for working C compiler: /usr/bin/cc
+[1.023s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.027s] -- Detecting C compiler ABI info
+[1.378s] -- Detecting C compiler ABI info - done
+[1.421s] -- Detecting C compile features
+[1.423s] -- Detecting C compile features - done
+[1.437s] -- Check for working CXX compiler: /usr/bin/c++
+[1.844s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.849s] -- Detecting CXX compiler ABI info
+[2.266s] -- Detecting CXX compiler ABI info - done
+[2.305s] -- Detecting CXX compile features
+[2.307s] -- Detecting CXX compile features - done
+[2.341s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.514s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.515s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.260s] -- Found urdf: 2.5.2 (/opt/ros/galactic/share/urdf/cmake)
+[4.295s] -- Configuring done
+[4.311s] -- Generating done
+[4.321s] -- Build files have been written to: /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description
+[4.357s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_description -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description
+[4.370s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description -- -j4 -l4
+[4.876s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --build /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description -- -j4 -l4
+[5.274s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description
+[5.407s] -- Install configuration: ""
+[5.407s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/launch
+[5.412s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/launch/description.launch.py
+[5.415s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf
+[5.419s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/sensors
+[5.421s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/sensors/depth_sensor.urdf.xacro
+[5.425s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/sensors/imu.urdf.xacro
+[5.442s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/sensors/generic_laser.urdf.xacro
+[5.446s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/sensors/laser.urdf.xacro
+[5.448s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/4wd_properties.urdf.xacro
+[5.451s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/controllers
+[5.453s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/controllers/diff_drive.urdf.xacro
+[5.456s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/controllers/omni_drive.urdf.xacro
+[5.458s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/controllers/skid_steer.urdf.xacro
+[5.478s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/robots
+[5.483s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/robots/mecanum.urdf.xacro
+[5.485s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/robots/4wd.urdf.xacro
+[5.487s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/robots/2wd.urdf.xacro
+[5.489s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/robots/square.urdf.xacro
+[5.498s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mecanum_properties.urdf.xacro
+[5.509s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mech
+[5.514s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mech/mecanum_wheel.urdf.xacro
+[5.517s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mech/base.urdf.xacro
+[5.519s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mech/wheel.urdf.xacro
+[5.521s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/mech/caster_wheel.urdf.xacro
+[5.523s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/urdf/2wd_properties.urdf.xacro
+[5.545s] -- Up-to-date: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/rviz
+[5.549s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/rviz/description.rviz
+[5.552s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/ament_index/resource_index/package_run_dependencies/linorobot2_description
+[5.554s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/ament_index/resource_index/parent_prefix_path/linorobot2_description
+[5.556s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/environment/ament_prefix_path.sh
+[5.557s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/environment/ament_prefix_path.dsv
+[5.559s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/environment/path.sh
+[5.560s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/environment/path.dsv
+[5.582s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/local_setup.bash
+[5.583s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/local_setup.sh
+[5.584s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/local_setup.zsh
+[5.586s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/local_setup.dsv
+[5.587s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/package.dsv
+[5.588s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/ament_index/resource_index/packages/linorobot2_description
+[5.613s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/cmake/linorobot2_descriptionConfig.cmake
+[5.614s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/cmake/linorobot2_descriptionConfig-version.cmake
+[5.616s] -- Installing: /home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_description/share/linorobot2_description/package.xml
+[5.648s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel:/opt/ros/galactic /usr/bin/cmake --install /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_description

@@ -1,8 +1,8 @@
-# Install script for directory: /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation
+# Install script for directory: /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rex/Emmanuel_Jr_robot/install/linorobot2_navigation")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Emmanuel_Jr_robot/install/linorobot2_navigation")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,19 +39,19 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE DIRECTORY FILES
-    "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/launch"
-    "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/rviz"
-    "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/config"
-    "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/maps"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/launch"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/rviz"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/config"
+    "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/maps"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/linorobot2_navigation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/linorobot2_navigation")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/linorobot2_navigation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/linorobot2_navigation")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -67,42 +67,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation/environment" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation/environment" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/packages/linorobot2_navigation")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_index/share/ament_index/resource_index/packages/linorobot2_navigation")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation/cmake" TYPE FILE FILES
-    "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_core/linorobot2_navigationConfig.cmake"
-    "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_core/linorobot2_navigationConfig-version.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_core/linorobot2_navigationConfig.cmake"
+    "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/ament_cmake_core/linorobot2_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/linorobot2_navigation" TYPE FILE FILES "/home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2_navigation/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -113,5 +113,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rex/Emmanuel_Jr_robot/build/linorobot2_navigation/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/Emmanuel_Jr_robot/build/linorobot2_navigation/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

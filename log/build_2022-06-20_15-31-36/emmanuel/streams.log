@@ -1,0 +1,24 @@
+[2.553s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/src/emmanuel': PYTHONPATH=/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/emmanuel build --build-base /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build install --prefix /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel --record /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log --single-version-externally-managed
+[3.432s] running egg_info
+[3.434s] writing ../../build/emmanuel/emmanuel.egg-info/PKG-INFO
+[3.435s] writing dependency_links to ../../build/emmanuel/emmanuel.egg-info/dependency_links.txt
+[3.435s] writing entry points to ../../build/emmanuel/emmanuel.egg-info/entry_points.txt
+[3.436s] writing requirements to ../../build/emmanuel/emmanuel.egg-info/requires.txt
+[3.437s] writing top-level names to ../../build/emmanuel/emmanuel.egg-info/top_level.txt
+[3.561s] reading manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'
+[3.564s] writing manifest file '../../build/emmanuel/emmanuel.egg-info/SOURCES.txt'
+[3.564s] running build
+[3.565s] running build_py
+[3.566s] copying emmanuel/motors.py -> /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel
+[3.567s] running install
+[3.570s] running install_lib
+[3.574s] copying /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build/lib/emmanuel/motors.py -> /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel
+[3.576s] byte-compiling /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel/motors.py to motors.cpython-38.pyc
+[3.584s] running install_data
+[3.587s] running install_egg_info
+[3.592s] removing '/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info' (and everything under it)
+[3.594s] Copying ../../build/emmanuel/emmanuel.egg-info to /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages/emmanuel-0.0.0-py3.8.egg-info
+[3.598s] running install_scripts
+[3.658s] Installing motor_run script to /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/emmanuel
+[3.660s] writing list of installed files to '/home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log'
+[3.754s] Invoked command in '/home/ubuntu/Emmanuel_Jr_robot/src/emmanuel' returned '0': PYTHONPATH=/home/ubuntu/Emmanuel_Jr_robot/install/emmanuel/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/emmanuel build --build-base /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/build install --prefix /home/ubuntu/Emmanuel_Jr_robot/install/emmanuel --record /home/ubuntu/Emmanuel_Jr_robot/build/emmanuel/install.log --single-version-externally-managed

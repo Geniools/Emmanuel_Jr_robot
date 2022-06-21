@@ -1,0 +1,40 @@
+[0.998s] Invoking command in '/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Emmanuel_Jr_robot/install/mpu9250driver
+[1.911s] -- The C compiler identification is GNU 9.4.0
+[2.701s] -- The CXX compiler identification is GNU 9.4.0
+[2.737s] -- Check for working C compiler: /usr/bin/cc
+[3.050s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.058s] -- Detecting C compiler ABI info
+[3.366s] -- Detecting C compiler ABI info - done
+[3.406s] -- Detecting C compile features
+[3.408s] -- Detecting C compile features - done
+[3.421s] -- Check for working CXX compiler: /usr/bin/c++
+[3.755s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.758s] -- Detecting CXX compiler ABI info
+[4.127s] -- Detecting CXX compiler ABI info - done
+[4.166s] -- Detecting CXX compile features
+[4.167s] -- Detecting CXX compile features - done
+[4.231s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[4.444s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.445s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.170s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[5.750s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.871s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[6.704s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.978s] -- Found FastRTPS: /opt/ros/galactic/include  
+[7.716s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.207s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[8.248s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[8.371s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.377s] -- Looking for pthread.h
+[8.730s] -- Looking for pthread.h - found
+[8.731s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.053s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.054s] -- Looking for pthread_create in pthreads
+[9.419s] -- Looking for pthread_create in pthreads - not found
+[9.420s] -- Looking for pthread_create in pthread
+[9.734s] -- Looking for pthread_create in pthread - found
+[9.737s] -- Found Threads: TRUE  
+[10.495s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[11.233s] -- Configuring done
+[11.281s] -- Generating done
+[11.289s] -- Build files have been written to: /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver

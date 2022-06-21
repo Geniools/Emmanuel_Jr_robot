@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2
+CMAKE_SOURCE_DIR = /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/linorobot2
+CMAKE_BINARY_DIR = /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/rex/Emmanuel_Jr_robot/build/linorobot2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2 /home/rex/Emmanuel_Jr_robot/src/linorobot2/linorobot2 /home/rex/Emmanuel_Jr_robot/build/linorobot2 /home/rex/Emmanuel_Jr_robot/build/linorobot2 /home/rex/Emmanuel_Jr_robot/build/linorobot2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2 /home/ubuntu/Emmanuel_Jr_robot/src/linorobot2/linorobot2 /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2 /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2 /home/ubuntu/Emmanuel_Jr_robot/build/linorobot2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

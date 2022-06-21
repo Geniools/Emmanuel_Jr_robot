@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver
+CMAKE_SOURCE_DIR = /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/mpu9250driver
+CMAKE_BINARY_DIR = /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver
 
 # Utility rule file for mpu9250driver_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rex/Emmanuel_Jr_robot/build/mpu9250driver
 include CMakeFiles/mpu9250driver_uninstall.dir/progress.make
 
 CMakeFiles/mpu9250driver_uninstall:
-	/usr/bin/cmake -P /home/rex/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 mpu9250driver_uninstall: CMakeFiles/mpu9250driver_uninstall
 mpu9250driver_uninstall: CMakeFiles/mpu9250driver_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/mpu9250driver_uninstall.dir/clean:
 .PHONY : CMakeFiles/mpu9250driver_uninstall.dir/clean
 
 CMakeFiles/mpu9250driver_uninstall.dir/depend:
-	cd /home/rex/Emmanuel_Jr_robot/build/mpu9250driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver /home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver /home/rex/Emmanuel_Jr_robot/build/mpu9250driver /home/rex/Emmanuel_Jr_robot/build/mpu9250driver /home/rex/Emmanuel_Jr_robot/build/mpu9250driver/CMakeFiles/mpu9250driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver /home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/CMakeFiles/mpu9250driver_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mpu9250driver_uninstall.dir/depend
 

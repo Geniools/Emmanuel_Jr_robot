@@ -1,8 +1,8 @@
-# Install script for directory: /home/rex/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib
+# Install script for directory: /home/ubuntu/Emmanuel_Jr_robot/src/ros2_mpu9250_driver/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rex/Emmanuel_Jr_robot/install/mpu9250driver")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Emmanuel_Jr_robot/install/mpu9250driver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/lib/i2c/cmake_install.cmake")
-  include("/home/rex/Emmanuel_Jr_robot/build/mpu9250driver/lib/mpu9250sensor/cmake_install.cmake")
+  include("/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/lib/i2c/cmake_install.cmake")
+  include("/home/ubuntu/Emmanuel_Jr_robot/build/mpu9250driver/lib/mpu9250sensor/cmake_install.cmake")
 
 endif()
 
