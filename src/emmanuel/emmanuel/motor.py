@@ -275,7 +275,6 @@ class EmmanuelMotionMotors(Node):
             self.isPulseIncreased = False
 
         # self.get_logger().info("Light sensor: {}".format(lightSensorValue))
-        return lightSensorValue
 
     def updateMovingVelocity(self):
         self.movingVelocity = self.pulseCounter * self.PULSE_WIDTH
