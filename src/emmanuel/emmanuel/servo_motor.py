@@ -18,7 +18,7 @@ class EmmanuelServoMotor(Node):
         self.servo2 = Servo(13)
 
         # Subscribe to node receiving commands for the front arms and head
-        self.create_subscription(String, "servo_command", self.servo_command_callback, 2)
+        self.create_subscription(String, "servo_command", self.servo_command_callback, 5)
 
     def servo_command_callback(self, msg):
         command = msg.data
@@ -31,25 +31,28 @@ class EmmanuelServoMotor(Node):
             self.get_logger().info("Moving head left")
             self.moveHeadLeft()
         if command == "hmid":
-            self.get_logger().info("Returning initial position")
+            self.get_logger().info("Returning head initial position")
             self.headMid()
 
         if command == "up":
             self.liftArms()
         if command == "mid":
-            pass
-
-        sleep(2)
-        self.head.mid()
+            self.midArms()
 
     def moveHeadRight(self):
-        self.head.max()
+        # self.head.min()
+        for val in range(10):
+            self.head.value = val / 10 * -1
+            sleep(0.5)
 
     def headMid(self):
         self.head.mid()
 
     def moveHeadLeft(self):
-        self.head.min()
+        # self.head.max()
+        for val in range(10):
+            self.head.value = val / 10
+            sleep(0.5)
 
     def liftArms(self):
         for i in range(0, 10):
