@@ -61,8 +61,8 @@ def generate_launch_description():
         # Writing our custom node
         Node(
             package='emmanuel',
-            executable='motor',
-            name='motor',
+            executable='motor_controller',
+            name='motor_controller',
             output='screen'
         ),
 
