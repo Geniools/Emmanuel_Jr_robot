@@ -207,8 +207,8 @@ class EmmanuelMotionMotors(Node):
         self.leftPulseCounter = 0
 
     def correctSpeed(self):
-        error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft) * 100
-        error_right = (fabs(self.targetVelocityRight) - self.velocityRight) * 100
+        error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft) * 10
+        error_right = (fabs(self.targetVelocityRight) - self.velocityRight) * 10
 
         targetPWM_left = (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
                 self.KI * self.sumSpeedErrorLeft)
