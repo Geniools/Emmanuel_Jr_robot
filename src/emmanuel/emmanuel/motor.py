@@ -126,7 +126,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(self.updatePulseTimer, self.correctSpeed)
+        self.adjustSpeed = self.create_timer(0.2, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
