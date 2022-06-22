@@ -1,5 +1,5 @@
 build/*
 log/*
 install/*
-*/linorobot2_gazebo/*
-*/linorobot2_viz/*
+src/linorobot2/linorobot2_gazebo/*
+src/linorobot2_viz/*
