@@ -308,7 +308,9 @@ def main(args=None):
         rclpy.spin(motorNode)
     except KeyboardInterrupt:
         # Prevent error in case of "Ctrl+C"
-        pass
+        print("Closing because of keyboard interrupt")
+    except Exception:
+        print("An exception occurred" + str(Exception))
 
     motorNode.cleanup()
     motorNode.destroy_node()
