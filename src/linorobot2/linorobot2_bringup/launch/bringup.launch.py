@@ -58,6 +58,7 @@ def generate_launch_description():
         #     output='screen',
         #     arguments=['serial', '--dev', LaunchConfiguration("base_serial_port")]
         # ),
+
         # Writing our custom node
         Node(
             package='emmanuel',

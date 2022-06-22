@@ -88,6 +88,7 @@ class EmmanuelMotionMotors(Node):
 
         # Subscribing to the topic "cmd_vel" (getting linear and angular velocity)
         self.create_subscription(Twist, "cmd_vel", self.callback_received_coordinates, 10)
+
         # Publishing to the topic "odom" (getting the odometry)
         self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
 
@@ -97,8 +98,13 @@ class EmmanuelMotionMotors(Node):
         # Robot moving speed
         self.velocityLeft = 0
         self.velocityRight = 0
+        # Wheelbase - distance between the wheels
+        self.wheelbase = 19.5 / 100  # Convert cm -> meters
+        # Target velocities
+        self.targetVelocityLeft = 0
+        self.targetVelocityRight = 0
         # Distance between two pulses
-        self.PULSE_WIDTH = 2.5 / 100  # cm / meters
+        self.PULSE_WIDTH = 2.5 / 100  # distance between two pulses (in cm) / meters
         # Pulse counters (light sensors will count the pulses)
         self.leftPulseCounter = 0
         self.rightPulseCounter = 0
@@ -112,10 +118,6 @@ class EmmanuelMotionMotors(Node):
         self.previousSpeedErrorRight = 0
         self.sumSpeedErrorLeft = 0
         self.sumSpeedErrorRight = 0
-        # Linear velocity
-        self.linearVelocity = 0
-        # Angular velocity
-        self.angularVelocity = 0
 
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
@@ -150,23 +152,27 @@ class EmmanuelMotionMotors(Node):
         gp.setup(self.S_P4, gp.OUT)
 
         # Getting the linear and angular velocity
-        self.linearVelocity = msg.linear.x
-        self.angularVelocity = msg.angular.z
+        linearVelocity = msg.linear.x
+        angularVelocity = msg.angular.z
 
-        # # Converting the linear and angular velocity to the motor speeds
-        # left_motor_speed = linear_velocity - angular_velocity * self.wheelbase / 2
-        # right_motor_speed = linear_velocity + angular_velocity * self.wheelbase / 2
-
-        # self.changePWMLeftMotor(75)
-        # self.changePWMRightMotor(75)
+        # Adjusting each wheel speed based on angular speed
+        delta = self.wheelbase * angularVelocity
+        self.targetVelocityRight = linearVelocity + delta
+        self.targetVelocityLeft = linearVelocity - delta
 
         # Checking if the linear velocity is positive or negative
-        if self.linearVelocity > 0:
+        # Based on it determine which direction the robot has to move
+        if linearVelocity > 0:
             self.moveForward()
-        elif self.linearVelocity < 0:
+        elif linearVelocity < 0:
             self.moveBackwards()
         else:
-            self.stopRobot()
+            if angularVelocity > 0:
+                self.turnLeft()
+            elif angularVelocity < 0:
+                self.turnRight()
+            else:
+                self.stopRobot()
 
     def updatePulses(self):
         lightSensorValueLeft = gp.input(self.lightSensorLeft)
@@ -191,14 +197,14 @@ class EmmanuelMotionMotors(Node):
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
         # Reset the pulse counter after the previous counter has been printed
-        self.get_logger().info("Pulses right: {}".format(self.rightPulseCounter))
-        self.get_logger().info("Speed right: {}".format(self.velocityRight))
+        # self.get_logger().info("Pulses right: {}".format(self.rightPulseCounter))
+        # self.get_logger().info("Speed right: {}".format(self.velocityRight))
         self.rightPulseCounter = 0
         self.leftPulseCounter = 0
 
     def correctSpeed(self):
-        error_left = fabs(self.linearVelocity) - self.velocityLeft
-        error_right = fabs(self.linearVelocity) - self.velocityRight
+        error_left = fabs(self.targetVelocityLeft) - self.velocityLeft
+        error_right = fabs(self.targetVelocityRight) - self.velocityRight
 
         targetPWM_left = (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
                 self.KI * self.sumSpeedErrorLeft)
@@ -208,7 +214,7 @@ class EmmanuelMotionMotors(Node):
         targetPWM_left = max(min(100, targetPWM_left), 0)
         targetPWM_right = max(min(100, targetPWM_right), 0)
 
-        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
+        # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
         self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
