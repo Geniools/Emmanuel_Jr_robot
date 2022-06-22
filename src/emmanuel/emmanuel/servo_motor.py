@@ -43,7 +43,7 @@ class EmmanuelServoMotor(Node):
         # self.head.min()
         for val in range(10):
             self.head.value = val / 10 * -1
-            sleep(0.5)
+            sleep(0.1)
 
     def headMid(self):
         self.head.mid()
@@ -52,7 +52,7 @@ class EmmanuelServoMotor(Node):
         # self.head.max()
         for val in range(10):
             self.head.value = val / 10
-            sleep(0.5)
+            sleep(0.1)
 
     def liftArms(self):
         for i in range(0, 10):
