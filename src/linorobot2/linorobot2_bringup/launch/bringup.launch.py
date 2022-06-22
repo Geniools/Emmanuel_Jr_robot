@@ -40,24 +40,24 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument(
-            name='base_serial_port', 
+            name='base_serial_port',
             default_value='/dev/ttyACM0',
             description='Linorobot Base Serial Port'
         ),
 
-       DeclareLaunchArgument(
-            name='joy', 
+        DeclareLaunchArgument(
+            name='joy',
             default_value='false',
             description='Use Joystick'
         ),
 
-        Node(
-            package='micro_ros_agent',
-            executable='micro_ros_agent',
-            name='micro_ros_agent',
-            output='screen',
-            arguments=['serial', '--dev', LaunchConfiguration("base_serial_port")]
-        ),
+        # Node(
+        #     package='micro_ros_agent',
+        #     executable='micro_ros_agent',
+        #     name='micro_ros_agent',
+        #     output='screen',
+        #     arguments=['serial', '--dev', LaunchConfiguration("base_serial_port")]
+        # ),
 
         Node(
             package='robot_localization',
