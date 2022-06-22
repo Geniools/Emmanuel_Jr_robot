@@ -1,4 +1,0 @@
-[submodule "src/linorobot2"]
-	path = src/linorobot2
-	url = https://github.com/linorobot/linorobot2
-	branch = galactic

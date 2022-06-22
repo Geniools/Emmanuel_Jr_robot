@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/emmanuelJr/emmanuelJr/rpi-rotary-encoder-python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/linorobot2_viz" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/navigation2" vcs="Git" />
   </component>
 </project>
