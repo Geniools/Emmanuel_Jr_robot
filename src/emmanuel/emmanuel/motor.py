@@ -198,6 +198,8 @@ class EmmanuelMotionMotors(Node):
         self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
+        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
+
         # Reset the pulse counter after the previous counter has been printed
         # self.get_logger().info("Pulses right: {}".format(self.rightPulseCounter))
         # self.get_logger().info("Speed right: {}".format(self.velocityRight))
