@@ -218,7 +218,7 @@ class EmmanuelMotionMotors(Node):
         targetPWM_left = max(min(100, targetPWM_left), 0)
         targetPWM_right = max(min(100, targetPWM_right), 0)
 
-        # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
+        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
         self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
