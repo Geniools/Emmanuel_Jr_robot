@@ -110,9 +110,9 @@ class EmmanuelMotionMotors(Node):
         self.rightPulseCounter = 0
 
         # PID constants
-        self.KP = 15
-        self.KD = 10
-        self.KI = 5
+        self.KP = 5
+        self.KD = 2.5
+        self.KI = 1
         # PID error variables
         self.previousSpeedErrorLeft = 0
         self.previousSpeedErrorRight = 0
