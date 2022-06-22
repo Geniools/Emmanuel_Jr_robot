@@ -126,7 +126,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(0.1, self.correctSpeed)
+        self.adjustSpeed = self.create_timer(0.001, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -173,6 +173,8 @@ class EmmanuelMotionMotors(Node):
                 self.turnRight()
             else:
                 self.stopRobot()
+
+        self.get_logger().info(f"Target: left: {self.targetVelocityLeft}, right: {self.targetVelocityRight}")
 
     def updatePulses(self):
         lightSensorValueLeft = gp.input(self.lightSensorLeft)
