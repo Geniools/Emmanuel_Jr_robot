@@ -3,4 +3,4 @@ log/*
 install/*
 src/linorobot2/linorobot2_gazebo/*
 src/linorobot2_viz
-.idea/*
+*.idea
