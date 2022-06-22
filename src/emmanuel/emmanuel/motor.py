@@ -110,9 +110,9 @@ class EmmanuelMotionMotors(Node):
         self.rightPulseCounter = 0
 
         # PID constants
-        self.KP = 5
-        self.KD = 2.5
-        self.KI = 1
+        self.KP = 10
+        self.KD = 8
+        self.KI = 4
         # PID error variables
         self.previousSpeedErrorLeft = 0
         self.previousSpeedErrorRight = 0
@@ -207,8 +207,8 @@ class EmmanuelMotionMotors(Node):
         self.leftPulseCounter = 0
 
     def correctSpeed(self):
-        error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft) * 10
-        error_right = (fabs(self.targetVelocityRight) - self.velocityRight) * 10
+        error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft)
+        error_right = (fabs(self.targetVelocityRight) - self.velocityRight)
 
         targetPWM_left = (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
                 self.KI * self.sumSpeedErrorLeft)
