@@ -1,13 +1,15 @@
 #!/bin/usr/python3
 
 import RPi.GPIO as gp
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, TransformStamped, TwistWithCovariance
 from geometry_msgs.msg import Pose
 from nav_msgs.msg import Odometry
+from sensor_msgs.msg import JointState
 from tf2_ros import TransformBroadcaster
+from tf_transformations import quaternion_from_euler
 from rclpy.node import Node
 import rclpy
-from math import fabs
+from math import fabs, sin, cos
 
 
 class EmmanuelMotionMotors(Node):
@@ -91,6 +93,30 @@ class EmmanuelMotionMotors(Node):
 
         # Publishing to the topic "odom" (getting the odometry)
         self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
+        self.joint_pub = self.create_publisher(JointState, "joint_states", 10)
+
+        self.prev_update_time = self.get_clock().now().to_msg()
+        self.current_time = self.get_clock().now().to_msg()
+
+        self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
+        joint_state = JointState()
+
+        self.odom_trans = TransformStamped()
+        self.odom_trans.header.frame_id = 'odom'
+        self.odom_trans.child_frame_id = 'base_link'
+
+        self.odometry = Odometry()
+        self.odometry.header.frame_id = 'odom'
+        self.odometry.child_frame_id = 'base_link'
+
+        self.tw_msg = TwistWithCovariance()
+
+        self.x = 0
+        self.y = 0
+        self.dth = 0
+
+        # Publishing the odometry
+        self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
 
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreasedLeft = False
@@ -122,9 +148,6 @@ class EmmanuelMotionMotors(Node):
         self.targetPWMLeft = 30
         self.targetPWMRight = 30
 
-        # Publishing the odometry
-        self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
-
         self.pulseCounterTimer = self.create_timer(0.001, self.updatePulses)
 
         self.updatePulseTimer = 0.5
@@ -135,11 +158,37 @@ class EmmanuelMotionMotors(Node):
         # self.tf_broadcaster = TransformBroadcaster()
 
     def callback_publish_odometry(self):
-        # Getting the odometry
-        odom = Odometry()
-        odom.header.stamp = self.get_clock().now().to_msg()
-        odom.header.frame_id = "odom"
-        odom.child_frame_id = "base_link"
+        self.current_time = self.get_clock().now().to_msg()
+        dt = (self.current_time - self.prev_update_time)
+        delta_th = self.tw_msg.twist.angular.z * dt
+
+        delta_x = self.tw_msg.twist.linear.x * cos(delta_th) * dt
+        delta_y = self.tw_msg.twist.linear.x * sin(delta_th) * dt
+
+        self.x += delta_x
+        self.y += delta_y
+        self.dth += delta_th
+
+        self.odometry.pose.pose.position.x = self.x
+        self.odometry.pose.pose.position.y = self.y
+        self.odometry.pose.pose.position.z = 0
+        self.odometry.pose.pose.orientation = quaternion_from_euler(0, 0, self.dth)  # roll,pitch,yaw
+
+        self.odometry.twist.twist.linear.x = self.tw_msg.twist.linear.x
+        self.odometry.twist.twist.linear.y = 0
+        self.odometry.twist.twist.linear.z = 0
+        self.odometry.twist.twist.angular.x = 0
+        self.odometry.twist.twist.angular.y = 0
+        self.odometry.twist.twist.angular.z = self.tw_msg.twist.angular.z
+        self.odometry.header.stamp = self.current_time
+        self.odometryPublihser.publish(self.odometry)
+
+        self.odom_trans.transform.header.stamp = self.current_time
+        self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
+        self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
         self.get_logger().info("Received coordinates: {}".format(msg))
@@ -310,9 +359,6 @@ class EmmanuelMotionMotors(Node):
 
         self.s_LM.stop()
         self.s_RM.stop()
-
-    def NHLStenden(self):
-        print("Coding is fun")
 
 
 def main(args=None):
