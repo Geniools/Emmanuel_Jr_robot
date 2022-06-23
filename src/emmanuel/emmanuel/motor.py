@@ -93,7 +93,7 @@ class EmmanuelMotionMotors(Node):
         self.create_subscription(Twist, "cmd_vel", self.callback_received_coordinates, 10)
 
         # Publishing to the topic "odom" (getting the odometry)
-        self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
+        self.odometryPublihser = self.create_publisher(Odometry, "odom", 10)
         self.joint_pub = self.create_publisher(JointState, "joint_states", 10)
 
         # self.prev_update_time = self.get_clock().now().to_msg()
@@ -162,12 +162,12 @@ class EmmanuelMotionMotors(Node):
         # self.tf_broadcaster = TransformBroadcaster()
 
     def callback_publish_odometry(self):
-        self.current_time = time.time()
+        current_time = time.time()
 
         # drive_pub_frequency = current_time - self.prev_update_time
         # self.current_time = self.get_clock().now().to_msg()
 
-        dt = (self.current_time - self.prev_update_time)
+        dt = (current_time - self.prev_update_time)
         delta_th = self.tw_msg.twist.angular.z * dt
 
         delta_x = self.tw_msg.twist.linear.x * cos(delta_th) * dt
@@ -188,7 +188,7 @@ class EmmanuelMotionMotors(Node):
         self.odometry.twist.twist.angular.x = 0
         self.odometry.twist.twist.angular.y = 0
         self.odometry.twist.twist.angular.z = self.tw_msg.twist.angular.z
-        self.odometry.header.stamp = self.current_time
+        self.odometry.header.stamp = current_time
         self.odometryPublihser.publish(self.odometry)
 
         # self.odom_trans.transform.header.stamp = self.current_time
