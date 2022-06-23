@@ -250,6 +250,8 @@ class EmmanuelMotionMotors(Node):
         lightSensorValueLeft = gp.input(self.lightSensorLeft)
         lightSensorValueRight = gp.input(self.lightSensorRight)
 
+        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
+
         # Increasing pulse for the left wheel
         if lightSensorValueLeft == 0 and self.isPulseIncreasedLeft is False:
             self.leftPulseCounter += 1
@@ -268,10 +270,10 @@ class EmmanuelMotionMotors(Node):
         self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
-        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
+        # self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
         # Reset the pulse counter after the previous counter has been printed
-        self.get_logger().info("Pulses left: {}, right: {}".format(self.rightPulseCounter, self.leftPulseCounter))
+        # self.get_logger().info("Pulses left: {}, right: {}".format(self.rightPulseCounter, self.leftPulseCounter))
         self.rightPulseCounter = 0
         self.leftPulseCounter = 0
 
@@ -290,9 +292,9 @@ class EmmanuelMotionMotors(Node):
         targetPWM_left = max(min(100, self.targetPWMLeft), 0)
         targetPWM_right = max(min(100, self.targetPWMRight), 0)
 
-        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
+        # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
-        # self.changePWMRightMotor(targetPWM_right)
+        self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
 
         self.previousSpeedErrorLeft = error_left
