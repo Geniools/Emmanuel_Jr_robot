@@ -192,7 +192,7 @@ class EmmanuelMotionMotors(Node):
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
         self.odometry.twist.twist.angular.z = self.tw_msg.twist.angular.z
-        self.odometry.header.stamp = current_time
+        self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odometryPublihser.publish(self.odometry)
 
         # self.odom_trans.transform.header.stamp = self.current_time
