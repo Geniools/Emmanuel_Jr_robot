@@ -179,7 +179,7 @@ class EmmanuelMotionMotors(Node):
 
         self.odometry.pose.pose.position.x = self.x
         self.odometry.pose.pose.position.y = self.y
-        self.odometry.pose.pose.position.z = 0
+        self.odometry.pose.pose.position.z = 0.0
         self.odometry.pose.pose.orientation = quaternion_from_euler(0, 0, self.dth)  # roll,pitch,yaw
 
         self.odometry.twist.twist.linear.x = self.tw_msg.twist.linear.x
