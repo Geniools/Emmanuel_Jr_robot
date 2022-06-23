@@ -187,10 +187,10 @@ class EmmanuelMotionMotors(Node):
         self.odometry.pose.pose.orientation.w = quaternion[3]
 
         self.odometry.twist.twist.linear.x = self.tw_msg.twist.linear.x
-        self.odometry.twist.twist.linear.y = 0
-        self.odometry.twist.twist.linear.z = 0
-        self.odometry.twist.twist.angular.x = 0
-        self.odometry.twist.twist.angular.y = 0
+        self.odometry.twist.twist.linear.y = 0.0
+        self.odometry.twist.twist.linear.z = 0.0
+        self.odometry.twist.twist.angular.x = 0.0
+        self.odometry.twist.twist.angular.y = 0.0
         self.odometry.twist.twist.angular.z = self.tw_msg.twist.angular.z
         self.odometry.header.stamp = current_time
         self.odometryPublihser.publish(self.odometry)
