@@ -96,15 +96,16 @@ class EmmanuelMotionMotors(Node):
         self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
         self.joint_pub = self.create_publisher(JointState, "joint_states", 10)
 
-        self.prev_update_time = self.get_clock().now().to_msg()
-        self.current_time = self.get_clock().now().to_msg()
+        # self.prev_update_time = self.get_clock().now().to_msg()
+        self.prev_update_time = time.time()
+        # self.current_time = self.get_clock().now().to_msg()
 
-        self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
-        joint_state = JointState()
-
-        self.odom_trans = TransformStamped()
-        self.odom_trans.header.frame_id = 'odom'
-        self.odom_trans.child_frame_id = 'base_link'
+        # self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
+        # joint_state = JointState()
+        #
+        # self.odom_trans = TransformStamped()
+        # self.odom_trans.header.frame_id = 'odom'
+        # self.odom_trans.child_frame_id = 'base_link'
 
         self.odometry = Odometry()
         self.odometry.header.frame_id = 'odom'
@@ -162,8 +163,10 @@ class EmmanuelMotionMotors(Node):
 
     def callback_publish_odometry(self):
         self.current_time = time.time()
+
         # drive_pub_frequency = current_time - self.prev_update_time
         # self.current_time = self.get_clock().now().to_msg()
+
         dt = (self.current_time - self.prev_update_time)
         delta_th = self.tw_msg.twist.angular.z * dt
 
@@ -188,13 +191,13 @@ class EmmanuelMotionMotors(Node):
         self.odometry.header.stamp = self.current_time
         self.odometryPublihser.publish(self.odometry)
 
-        self.odom_trans.transform.header.stamp = self.current_time
-        self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
-        self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
-        self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
-        self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
+        # self.odom_trans.transform.header.stamp = self.current_time
+        # self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        # self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        # self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        # self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
 
-        self.broadcaster.sendTransform(self.odom_trans)
+        # self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
         self.get_logger().info("Received coordinates: {}".format(msg))
