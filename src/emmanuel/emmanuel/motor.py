@@ -119,8 +119,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorLeft = 0
         self.sumSpeedErrorRight = 0
         # Initial PWD
-        self.targetPWMLeft = 50
-        self.targetPWMRight = 50
+        self.targetPWMLeft = 30
+        self.targetPWMRight = 30
 
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
@@ -201,7 +201,7 @@ class EmmanuelMotionMotors(Node):
         self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
-        # self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
+        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
         # Reset the pulse counter after the previous counter has been printed
         # self.get_logger().info("Pulses right: {}".format(self.rightPulseCounter))
