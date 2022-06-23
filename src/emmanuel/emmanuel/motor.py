@@ -104,27 +104,30 @@ class EmmanuelMotionMotors(Node):
         self.targetVelocityLeft = 0
         self.targetVelocityRight = 0
         # Distance between two pulses
-        self.PULSE_WIDTH = 2.5 / 100  # distance between two pulses (in cm) / meters
+        self.PULSE_WIDTH = 1 / 100  # distance between two pulses (in cm) / meters
         # Pulse counters (light sensors will count the pulses)
         self.leftPulseCounter = 0
         self.rightPulseCounter = 0
 
         # PID constants
-        self.KP = 10
-        self.KD = 8
-        self.KI = 4
+        self.KP = 6
+        self.KD = 3
+        self.KI = 1.5
         # PID error variables
         self.previousSpeedErrorLeft = 0
         self.previousSpeedErrorRight = 0
         self.sumSpeedErrorLeft = 0
         self.sumSpeedErrorRight = 0
+        # Initial PWD
+        self.targetPWMLeft = 50
+        self.targetPWMRight = 50
 
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
 
-        self.pulseCounterTimer = self.create_timer(0.01, self.updatePulses)
+        self.pulseCounterTimer = self.create_timer(0.001, self.updatePulses)
 
-        self.updatePulseTimer = 1
+        self.updatePulseTimer = 0.5
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
         self.adjustSpeed = self.create_timer(0.2, self.correctSpeed)
         #
@@ -156,7 +159,7 @@ class EmmanuelMotionMotors(Node):
         angularVelocity = msg.angular.z
 
         # Adjusting each wheel speed based on angular speed
-        delta = self.wheelbase * angularVelocity
+        delta = self.wheelbase * angularVelocity / 2
         self.targetVelocityRight = fabs(linearVelocity + delta)
         self.targetVelocityLeft = fabs(linearVelocity - delta)
 
@@ -210,13 +213,13 @@ class EmmanuelMotionMotors(Node):
         error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft)
         error_right = (fabs(self.targetVelocityRight) - self.velocityRight)
 
-        targetPWM_left = (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
+        self.targetPWMLeft += (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
                 self.KI * self.sumSpeedErrorLeft)
-        targetPWM_right = (self.KP * error_right) + (self.KD * self.previousSpeedErrorRight) + (
+        self.targetPWMRight += (self.KP * error_right) + (self.KD * self.previousSpeedErrorRight) + (
                 self.KI * self.sumSpeedErrorRight)
 
-        targetPWM_left = max(min(100, targetPWM_left), 0)
-        targetPWM_right = max(min(100, targetPWM_right), 0)
+        targetPWM_left = max(min(100, self.targetPWMLeft), 0)
+        targetPWM_right = max(min(100, self.targetPWMRight), 0)
 
         # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
@@ -308,6 +311,9 @@ class EmmanuelMotionMotors(Node):
 
         self.s_LM.stop()
         self.s_RM.stop()
+
+    def NHLStenden(self):
+        print("Coding is fun")
 
 
 def main(args=None):
