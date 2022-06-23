@@ -93,19 +93,19 @@ class EmmanuelMotionMotors(Node):
         self.create_subscription(Twist, "cmd_vel", self.callback_received_coordinates, 10)
 
         # Publishing to the topic "odom" (getting the odometry)
-        self.odometryPublihser = self.create_publisher(Odometry, "odom", 10)
+        self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
         self.joint_pub = self.create_publisher(JointState, "joint_states", 10)
 
         # self.prev_update_time = self.get_clock().now().to_msg()
         self.prev_update_time = time.time()
         # self.current_time = self.get_clock().now().to_msg()
 
-        # self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
-        # joint_state = JointState()
-        #
-        # self.odom_trans = TransformStamped()
-        # self.odom_trans.header.frame_id = 'odom'
-        # self.odom_trans.child_frame_id = 'base_link'
+        self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
+        joint_state = JointState()
+
+        self.odom_trans = TransformStamped()
+        self.odom_trans.header.frame_id = 'odom'
+        self.odom_trans.child_frame_id = 'base_link'
 
         self.odometry = Odometry()
         self.odometry.header.frame_id = 'odom'
@@ -119,6 +119,8 @@ class EmmanuelMotionMotors(Node):
 
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
+        # Setting up the transform broadcaster
+        self.tf_broadcaster = TransformBroadcaster()
 
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreasedLeft = False
@@ -162,8 +164,6 @@ class EmmanuelMotionMotors(Node):
         self.adjustSpeed = self.create_timer(0.3, self.correctSpeed)
         # self.create_timer(1, self.displayVelocity)
         #
-        # # Setting up the transform broadcaster
-        # self.tf_broadcaster = TransformBroadcaster()
 
     def displayVelocity(self):
         self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
@@ -202,13 +202,13 @@ class EmmanuelMotionMotors(Node):
         self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odometryPublihser.publish(self.odometry)
 
-        # self.odom_trans.transform.header.stamp = self.current_time
-        # self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
-        # self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
-        # self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
-        # self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
+        self.odom_trans.transform.header.stamp = self.get_clock().now().to_msg()
+        self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
 
-        # self.broadcaster.sendTransform(self.odom_trans)
+        self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
         self.get_logger().info("Received coordinates: {}".format(msg))
