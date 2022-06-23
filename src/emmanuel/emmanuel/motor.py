@@ -188,6 +188,7 @@ class EmmanuelMotionMotors(Node):
         self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
         self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
         self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
+        
         self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
@@ -370,8 +371,8 @@ def main(args=None):
     except KeyboardInterrupt:
         # Prevent error in case of "Ctrl+C"
         print("Closing because of keyboard interrupt")
-    except Exception:
-        print("An exception occurred" + str(Exception))
+    except Exception as e:
+        print("An exception occurred: " + e)
 
     motorNode.cleanup()
     motorNode.destroy_node()
