@@ -120,11 +120,12 @@ class EmmanuelMotionMotors(Node):
         # Publishing the odometry
         self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
         # Setting up the transform broadcaster
-        self.tf_broadcaster = TransformBroadcaster()
+        # self.tf_broadcaster = TransformBroadcaster()
 
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreasedLeft = False
         self.isPulseIncreasedRight = False
+
         # Robot moving speed
         self.velocityLeft = 0
         self.velocityRight = 0
@@ -171,14 +172,16 @@ class EmmanuelMotionMotors(Node):
     def callback_publish_odometry(self):
         current_time = time.time()
 
+        linearVelocity = (self.velocityLeft + self.velocityRight) / 2
+        angularVelocity = (self.velocityRight - self.velocityLeft) / self.wheelbase
         # drive_pub_frequency = current_time - self.prev_update_time
         # self.current_time = self.get_clock().now().to_msg()
 
         dt = (current_time - self.prev_update_time)
-        delta_th = self.tw_msg.twist.angular.z * dt
+        delta_th = angularVelocity * dt
 
-        delta_x = self.tw_msg.twist.linear.x * cos(delta_th) * dt
-        delta_y = self.tw_msg.twist.linear.x * sin(delta_th) * dt
+        delta_x = linearVelocity * cos(delta_th) * dt
+        delta_y = linearVelocity * sin(delta_th) * dt
 
         self.x += delta_x
         self.y += delta_y
@@ -187,28 +190,30 @@ class EmmanuelMotionMotors(Node):
         self.odometry.pose.pose.position.x = self.x
         self.odometry.pose.pose.position.y = self.y
         self.odometry.pose.pose.position.z = 0.0
+
         quaternion = quaternion_from_euler(0, 0, self.dth)  # roll,pitch,yaw
         self.odometry.pose.pose.orientation.x = quaternion[0]
         self.odometry.pose.pose.orientation.y = quaternion[1]
         self.odometry.pose.pose.orientation.z = quaternion[2]
         self.odometry.pose.pose.orientation.w = quaternion[3]
 
-        self.odometry.twist.twist.linear.x = self.tw_msg.twist.linear.x
+        self.odometry.twist.twist.linear.x = linearVelocity
         self.odometry.twist.twist.linear.y = 0.0
         self.odometry.twist.twist.linear.z = 0.0
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
-        self.odometry.twist.twist.angular.z = self.tw_msg.twist.angular.z
+        self.odometry.twist.twist.angular.z = angularVelocity
+
         self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odometryPublihser.publish(self.odometry)
 
-        self.odom_trans.transform.header.stamp = self.get_clock().now().to_msg()
-        self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
-        self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
-        self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
-        self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
-
-        self.broadcaster.sendTransform(self.odom_trans)
+        # self.odom_trans.transform.header.stamp = self.get_clock().now().to_msg()
+        # self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        # self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        # self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        # self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
+        #
+        # self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
         self.get_logger().info("Received coordinates: {}".format(msg))
