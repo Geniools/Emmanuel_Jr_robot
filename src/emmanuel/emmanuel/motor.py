@@ -149,8 +149,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight = 0
 
         # Initial PWD
-        self.targetPWMLeft = 30
-        self.targetPWMRight = 30
+        self.targetPWMLeft = 40
+        self.targetPWMRight = 40
 
         # Robot is moving
         self.isMoving = False
@@ -229,8 +229,8 @@ class EmmanuelMotionMotors(Node):
 
         # Adjusting each wheel speed based on angular speed
         delta = self.wheelbase * angularVelocity / 2
-        self.targetVelocityRight = fabs(linearVelocity + delta)
-        self.targetVelocityLeft = fabs(linearVelocity - delta)
+        self.targetVelocityRight = fabs(linearVelocity - delta)
+        self.targetVelocityLeft = fabs(linearVelocity + delta)
 
         # Checking if the linear velocity is positive or negative
         # Based on it determine which direction the robot has to move
@@ -337,7 +337,7 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, True)
         gp.output(self.S_P4, False)
 
-    def turnRight(self):
+    def turnLeft(self):
         gp.output(self.F_P1, True)
         gp.output(self.F_P2, False)
 
@@ -350,7 +350,7 @@ class EmmanuelMotionMotors(Node):
         gp.output(self.S_P3, False)
         gp.output(self.S_P4, True)
 
-    def turnLeft(self):
+    def turnRight(self):
         gp.output(self.F_P1, False)
         gp.output(self.F_P2, True)
 
