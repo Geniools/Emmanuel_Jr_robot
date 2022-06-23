@@ -1,4 +1,5 @@
 #!/bin/usr/python3
+import time
 
 import RPi.GPIO as gp
 from geometry_msgs.msg import Twist, TransformStamped, TwistWithCovariance
@@ -139,11 +140,13 @@ class EmmanuelMotionMotors(Node):
         self.KP = 6
         self.KD = 3
         self.KI = 1.5
+
         # PID error variables
         self.previousSpeedErrorLeft = 0
         self.previousSpeedErrorRight = 0
         self.sumSpeedErrorLeft = 0
         self.sumSpeedErrorRight = 0
+
         # Initial PWD
         self.targetPWMLeft = 30
         self.targetPWMRight = 30
@@ -158,7 +161,9 @@ class EmmanuelMotionMotors(Node):
         # self.tf_broadcaster = TransformBroadcaster()
 
     def callback_publish_odometry(self):
-        self.current_time = self.get_clock().now().to_msg()
+        self.current_time = time.time()
+        # drive_pub_frequency = current_time - self.prev_update_time
+        # self.current_time = self.get_clock().now().to_msg()
         dt = (self.current_time - self.prev_update_time)
         delta_th = self.tw_msg.twist.angular.z * dt
 
@@ -188,7 +193,7 @@ class EmmanuelMotionMotors(Node):
         self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
         self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
         self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
-        
+
         self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
