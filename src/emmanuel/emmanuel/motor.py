@@ -129,7 +129,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 0.5
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(0.2, self.correctSpeed)
+        self.adjustSpeed = self.create_timer(0.3, self.correctSpeed)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
@@ -221,7 +221,7 @@ class EmmanuelMotionMotors(Node):
         targetPWM_left = max(min(100, self.targetPWMLeft), 0)
         targetPWM_right = max(min(100, self.targetPWMRight), 0)
 
-        # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
+        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
         self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
