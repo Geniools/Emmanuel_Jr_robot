@@ -160,9 +160,13 @@ class EmmanuelMotionMotors(Node):
         self.updatePulseTimer = 0.5
         self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
         self.adjustSpeed = self.create_timer(0.3, self.correctSpeed)
+        self.create_timer(1, self.displayVelocity)
         #
         # # Setting up the transform broadcaster
         # self.tf_broadcaster = TransformBroadcaster()
+
+    def displayVelocity(self):
+        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
     def callback_publish_odometry(self):
         current_time = time.time()
@@ -249,8 +253,6 @@ class EmmanuelMotionMotors(Node):
     def updatePulses(self):
         lightSensorValueLeft = gp.input(self.lightSensorLeft)
         lightSensorValueRight = gp.input(self.lightSensorRight)
-
-        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
         # Increasing pulse for the left wheel
         if lightSensorValueLeft == 0 and self.isPulseIncreasedLeft is False:
