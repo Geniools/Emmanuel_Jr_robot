@@ -204,8 +204,7 @@ class EmmanuelMotionMotors(Node):
         self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
         # Reset the pulse counter after the previous counter has been printed
-        # self.get_logger().info("Pulses right: {}".format(self.rightPulseCounter))
-        # self.get_logger().info("Speed right: {}".format(self.velocityRight))
+        self.get_logger().info("Pulses left: {}, right: {}".format(self.rightPulseCounter, self.leftPulseCounter))
         self.rightPulseCounter = 0
         self.leftPulseCounter = 0
 
