@@ -152,6 +152,9 @@ class EmmanuelMotionMotors(Node):
         self.targetPWMLeft = 30
         self.targetPWMRight = 30
 
+        # Robot is moving
+        self.isMoving = False
+
         self.pulseCounterTimer = self.create_timer(0.001, self.updatePulses)
 
         self.updatePulseTimer = 0.5
@@ -227,6 +230,7 @@ class EmmanuelMotionMotors(Node):
 
         # Checking if the linear velocity is positive or negative
         # Based on it determine which direction the robot has to move
+        self.isMoving = True
         if linearVelocity > 0:
             self.moveForward()
         elif linearVelocity < 0:
@@ -237,6 +241,7 @@ class EmmanuelMotionMotors(Node):
             elif angularVelocity < 0:
                 self.turnRight()
             else:
+                self.isMoving = False
                 self.stopRobot()
 
         self.get_logger().info(f"Target: left: {self.targetVelocityLeft}, right: {self.targetVelocityRight}")
@@ -271,6 +276,9 @@ class EmmanuelMotionMotors(Node):
         self.leftPulseCounter = 0
 
     def correctSpeed(self):
+        if self.isMoving is False:
+            return
+
         error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft)
         error_right = (fabs(self.targetVelocityRight) - self.velocityRight)
 
