@@ -234,6 +234,8 @@ class EmmanuelMotionMotors(Node):
 
         # Checking if the linear velocity is positive or negative
         # Based on it determine which direction the robot has to move
+        self.targetPWMRight = 30
+        self.targetPWMLeft = 30
         self.isMoving = True
         if linearVelocity > 0:
             self.moveForward()
