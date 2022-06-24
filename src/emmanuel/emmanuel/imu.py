@@ -21,10 +21,11 @@ class EmmanuelIMU(Node):
         # # or load your own caliberation file
         # self.imu.loadCalibDataFromFile("/home/pi/calib_real_bolder.json")
 
-        self.create_timer(0.001, self.updateSensorInfo)
+        self.create_timer(0.1, self.updateSensorInfo)
         self.create_timer(1, self.updateSensorInfo)
 
     def updateSensorInfo(self):
+        self.get_logger().info("Update sensor")
         self.imu.readSensor()
         currTime = time.time()
         for i in range(10):
