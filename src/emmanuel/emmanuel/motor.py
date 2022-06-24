@@ -272,27 +272,40 @@ class EmmanuelMotionMotors(Node):
         if self.isMoving is False:
             return
 
-        error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft)
-        error_right = (fabs(self.targetVelocityRight) - self.velocityRight)
+        # error_left = (fabs(self.targetVelocityLeft) - self.velocityLeft)
+        # error_right = (fabs(self.targetVelocityRight) - self.velocityRight)
+        #
+        # self.targetPWMLeft += (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
+        #         self.KI * self.sumSpeedErrorLeft)
+        # self.targetPWMRight += (self.KP * error_right) + (self.KD * self.previousSpeedErrorRight) + (
+        #         self.KI * self.sumSpeedErrorRight)
+        #
+        # targetPWM_left = max(min(100, self.targetPWMLeft), 0)
+        # targetPWM_right = max(min(100, self.targetPWMRight), 0)
 
-        self.targetPWMLeft += (self.KP * error_left) + (self.KD * self.previousSpeedErrorLeft) + (
-                self.KI * self.sumSpeedErrorLeft)
-        self.targetPWMRight += (self.KP * error_right) + (self.KD * self.previousSpeedErrorRight) + (
-                self.KI * self.sumSpeedErrorRight)
+        targetPWM_left = self.targetPWMLeft
+        targetPWM_right = self.targetPWMRight
 
-        targetPWM_left = max(min(100, self.targetPWMLeft), 0)
-        targetPWM_right = max(min(100, self.targetPWMRight), 0)
+        if self.targetVelocityRight > self.velocityRight:
+            targetPWM_right += 1
+        else:
+            targetPWM_right -= 1
+
+        if self.targetVelocityLeft > self.velocityLeft:
+            targetPWM_left += 1
+        else:
+            targetPWM_left -= 1
 
         self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
         self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
 
-        self.previousSpeedErrorLeft = error_left
-        self.previousSpeedErrorRight = error_right
-
-        self.sumSpeedErrorLeft += error_left
-        self.sumSpeedErrorRight += error_right
+        # self.previousSpeedErrorLeft = error_left
+        # self.previousSpeedErrorRight = error_right
+        #
+        # self.sumSpeedErrorLeft += error_left
+        # self.sumSpeedErrorRight += error_right
 
     def changePWMLeftMotor(self, pwm):
         self.s_RM.ChangeDutyCycle(pwm)
