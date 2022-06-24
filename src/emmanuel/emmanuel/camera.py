@@ -1,6 +1,6 @@
 #!/bin/usr/python3
 import rclpy
-from rclpy import Node
+from rclpy.node import Node
 
 
 class EmmanuelCamera(Node):

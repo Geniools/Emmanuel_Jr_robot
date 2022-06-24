@@ -94,14 +94,8 @@ class EmmanuelMotionMotors(Node):
 
         # Publishing to the topic "odom" (getting the odometry)
         self.odometryPublihser = self.create_publisher(Odometry, "odom/unfiltered", 10)
-        self.joint_pub = self.create_publisher(JointState, "joint_states", 10)
 
-        # self.prev_update_time = self.get_clock().now().to_msg()
         self.prev_update_time = time.time()
-        # self.current_time = self.get_clock().now().to_msg()
-
-        self.broadcaster = TransformBroadcaster(self, 10)  # odom frame broadcaster
-        joint_state = JointState()
 
         self.odom_trans = TransformStamped()
         self.odom_trans.header.frame_id = 'odom'
@@ -111,16 +105,9 @@ class EmmanuelMotionMotors(Node):
         self.odometry.header.frame_id = 'odom'
         self.odometry.child_frame_id = 'base_link'
 
-        self.tw_msg = TwistWithCovariance()
-
         self.x = 0
         self.y = 0
         self.dth = 0
-
-        # Publishing the odometry
-        self.odometryTimer = self.create_timer(0.5, self.callback_publish_odometry)
-        # Setting up the transform broadcaster
-        # self.tf_broadcaster = TransformBroadcaster()
 
         # Check for prevening the increment of a pulse if the sensor returns the same value twice
         self.isPulseIncreasedLeft = False
@@ -129,13 +116,17 @@ class EmmanuelMotionMotors(Node):
         # Robot moving speed
         self.velocityLeft = 0
         self.velocityRight = 0
+
         # Wheelbase - distance between the wheels
         self.wheelbase = 19.5 / 100  # Convert cm -> meters
+
         # Target velocities
         self.targetVelocityLeft = 0
         self.targetVelocityRight = 0
+
         # Distance between two pulses
         self.PULSE_WIDTH = 1 / 100  # distance between two pulses (in cm) / meters
+
         # Pulse counters (light sensors will count the pulses)
         self.leftPulseCounter = 0
         self.rightPulseCounter = 0
@@ -160,11 +151,12 @@ class EmmanuelMotionMotors(Node):
 
         self.pulseCounterTimer = self.create_timer(0.001, self.updatePulses)
 
-        self.updatePulseTimer = 0.5
-        self.displayPulseCounter = self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.adjustSpeed = self.create_timer(0.3, self.correctSpeed)
+        self.updatePulseTimer = 1
+        self.create_timer(self.updatePulseTimer, self.updateVelocity)
+        self.create_timer(0.3, self.correctSpeed)
+        # Publishing the odometry
+        self.odometryTimer = self.create_timer(self.updatePulseTimer, self.callback_publish_odometry)
         # self.create_timer(1, self.displayVelocity)
-        #
 
     def displayVelocity(self):
         self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
@@ -174,8 +166,6 @@ class EmmanuelMotionMotors(Node):
 
         linearVelocity = (self.velocityLeft + self.velocityRight) / 2
         angularVelocity = (self.velocityRight - self.velocityLeft) / self.wheelbase
-        # drive_pub_frequency = current_time - self.prev_update_time
-        # self.current_time = self.get_clock().now().to_msg()
 
         dt = (current_time - self.prev_update_time)
         delta_th = angularVelocity * dt
@@ -206,14 +196,6 @@ class EmmanuelMotionMotors(Node):
 
         self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odometryPublihser.publish(self.odometry)
-
-        # self.odom_trans.transform.header.stamp = self.get_clock().now().to_msg()
-        # self.odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
-        # self.odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
-        # self.odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
-        # self.odom_trans.transform.rotation = self.odometry.pose.pose.orientation  # includes x,y,z,w
-        #
-        # self.broadcaster.sendTransform(self.odom_trans)
 
     def callback_received_coordinates(self, msg):
         self.get_logger().info("Received coordinates: {}".format(msg))
