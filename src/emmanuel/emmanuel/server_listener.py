@@ -4,7 +4,8 @@ from rclpy.node import Node
 
 
 class EmmanuelGoalExecutor(None):
-    pass
+    def __int__(self):
+        super().__init__("EmmanuelServerListenerNode")
 
 
 def main(args=None):

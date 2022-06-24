@@ -4,7 +4,8 @@ from rclpy.node import Node
 
 
 class EmmanuelSpeaker(Node):
-    pass
+    def __int__(self):
+        super().__init__("EmmanuelSpeakerNode")
 
 
 def main(args=None):
