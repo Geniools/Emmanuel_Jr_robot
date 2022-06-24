@@ -24,7 +24,8 @@ setup(
             'servo_controller = emmanuel.servo_motor:main',
             'speaker_controller = emmanuel.speaker:main',
             'camera_stream = emmanuel.camera:main',
-            'server_goal_listener = emmanuel.server_listener:main'
+            'server_goal_listener = emmanuel.server_listener:main',
+            'imu_controller = emmanuel.imu:main'
         ],
     },
 )

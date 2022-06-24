@@ -125,16 +125,16 @@ class EmmanuelMotionMotors(Node):
         self.targetVelocityRight = 0
 
         # Distance between two pulses
-        self.PULSE_WIDTH = 1 / 100  # distance between two pulses (in cm) / meters
+        self.PULSE_WIDTH = 2 / 100  # distance between two pulses (in cm) / meters
 
         # Pulse counters (light sensors will count the pulses)
         self.leftPulseCounter = 0
         self.rightPulseCounter = 0
 
         # PID constants
-        self.KP = 6
-        self.KD = 3
-        self.KI = 1.5
+        self.KP = 4
+        self.KD = 2
+        self.KI = 1
 
         # PID error variables
         self.previousSpeedErrorLeft = 0
@@ -143,8 +143,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight = 0
 
         # Initial PWD
-        self.targetPWMLeft = 70
-        self.targetPWMRight = 70
+        self.targetPWMLeft = 60
+        self.targetPWMRight = 60
 
         # Robot is moving
         self.isMoving = False
