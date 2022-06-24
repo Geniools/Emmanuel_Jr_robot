@@ -21,7 +21,10 @@ setup(
     entry_points={
         'console_scripts': [
             'motor_controller = emmanuel.motor:main',
-            'servo_controller = emmanuel.servo_motor:main'
+            'servo_controller = emmanuel.servo_motor:main',
+            'speaker_controller = emmanuel.speaker:main',
+            'camera_stream = emmanuel.camera:main',
+            'server_goal_listener = emmanuel.server_listener:main'
         ],
     },
 )

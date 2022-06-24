@@ -152,8 +152,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight = 0
 
         # Initial PWD
-        self.targetPWMLeft = 40
-        self.targetPWMRight = 40
+        self.targetPWMLeft = 70
+        self.targetPWMRight = 70
 
         # Robot is moving
         self.isMoving = False
