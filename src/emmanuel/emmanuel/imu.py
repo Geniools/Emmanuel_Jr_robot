@@ -42,6 +42,8 @@ class EmmanuelIMU(Node):
     def printValues(self):
         self.get_logger().info(
             f"roll: {self.sensorfusion.roll}, pitch: {self.sensorfusion.pitch}, yaw: {self.sensorfusion.yaw}")
+        self.get_logger().info(
+            f"roll: {self.imu.roll}, pitch: {self.imu.pitch}, yaw: {self.imu.yaw}")
 
 
 def main(args=None):
