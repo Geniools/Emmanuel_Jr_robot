@@ -87,6 +87,36 @@ def generate_launch_description():
         ),
 
         Node(
+            package='emmanuel',
+            executable='servo_controller',
+            name='servo_controller',
+            output='screen'
+        ),
+
+        Node(
+            package='emmanuel',
+            executable='speaker_controller',
+            name='speaker_controller',
+            output='screen'
+        ),
+
+        Node(
+            package='emmanuel',
+            executable='camera_stream',
+            name='camera_stream',
+            output='screen'
+        ),
+
+        Node(
+            package='emmanuel',
+            executable='server_goal_listener',
+            name='server_goal_listener',
+            output='screen'
+        ),
+
+        # ==========================
+
+        Node(
             package='robot_localization',
             executable='ekf_node',
             name='ekf_filter_node',
