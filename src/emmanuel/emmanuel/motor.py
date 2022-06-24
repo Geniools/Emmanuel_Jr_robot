@@ -153,7 +153,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.create_timer(0.001, self.correctSpeed)
+        self.create_timer(0.3, self.correctSpeed)
         # Publishing the odometry
         self.odometryTimer = self.create_timer(self.updatePulseTimer, self.callback_publish_odometry)
         # self.create_timer(1, self.displayVelocity)
