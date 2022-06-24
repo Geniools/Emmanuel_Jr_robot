@@ -291,33 +291,33 @@ class EmmanuelMotionMotors(Node):
 
         if rightDiff > 0.5:
             if rightDiff > 1:
-                targetPWM_right += 3
+                targetPWM_right += 5
             else:
-                targetPWM_right += 1
+                targetPWM_right += 2
         else:
             if rightDiff < -1.0:
-                targetPWM_right -= 3
+                targetPWM_right -= 5
             else:
-                targetPWM_right -= 1
+                targetPWM_right -= 2
 
         if leftDiff > 0.5:
             if leftDiff > 1:
-                targetPWM_left += 3
+                targetPWM_left += 5
             else:
-                targetPWM_left += 1
+                targetPWM_left += 2
         else:
             if leftDiff < -1.0:
-                targetPWM_left -= 3
+                targetPWM_left -= 5
             else:
-                targetPWM_left -= 1
+                targetPWM_left -= 2
 
-        self.targetPWMLeft = targetPWM_left
-        self.targetPWMRight = targetPWM_right
+        self.targetPWMLeft = max(100, targetPWM_left)
+        self.targetPWMRight = max(100, targetPWM_right)
 
         self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
-        self.changePWMRightMotor(targetPWM_right)
-        self.changePWMLeftMotor(targetPWM_left)
+        self.changePWMRightMotor(self.targetPWM_right)
+        self.changePWMLeftMotor(self.targetPWM_left)
 
         # self.previousSpeedErrorLeft = error_left
         # self.previousSpeedErrorRight = error_right
