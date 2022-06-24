@@ -316,8 +316,8 @@ class EmmanuelMotionMotors(Node):
 
         self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
 
-        self.changePWMRightMotor(self.targetPWM_right)
-        self.changePWMLeftMotor(self.targetPWM_left)
+        self.changePWMRightMotor(self.targetPWMRight)
+        self.changePWMLeftMotor(self.targetPWMLeft)
 
         # self.previousSpeedErrorLeft = error_left
         # self.previousSpeedErrorRight = error_right
