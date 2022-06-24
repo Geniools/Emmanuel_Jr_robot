@@ -143,8 +143,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight = 0
 
         # Initial PWD
-        self.targetPWMLeft = 60
-        self.targetPWMRight = 60
+        self.targetPWMLeft = 50
+        self.targetPWMRight = 50
 
         # Robot is moving
         self.isMoving = False
@@ -153,7 +153,7 @@ class EmmanuelMotionMotors(Node):
 
         self.updatePulseTimer = 1
         self.create_timer(self.updatePulseTimer, self.updateVelocity)
-        self.create_timer(0.3, self.correctSpeed)
+        self.create_timer(0.001, self.correctSpeed)
         # Publishing the odometry
         self.odometryTimer = self.create_timer(self.updatePulseTimer, self.callback_publish_odometry)
         # self.create_timer(1, self.displayVelocity)
@@ -187,12 +187,12 @@ class EmmanuelMotionMotors(Node):
         self.odometry.pose.pose.orientation.z = quaternion[2]
         self.odometry.pose.pose.orientation.w = quaternion[3]
 
-        self.odometry.twist.twist.linear.x = linearVelocity
+        self.odometry.twist.twist.linear.x = linearVelocity * -1
         self.odometry.twist.twist.linear.y = 0.0
         self.odometry.twist.twist.linear.z = 0.0
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
-        self.odometry.twist.twist.angular.z = angularVelocity
+        self.odometry.twist.twist.angular.z = angularVelocity * -1
 
         self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odometryPublihser.publish(self.odometry)
