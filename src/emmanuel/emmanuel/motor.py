@@ -143,8 +143,8 @@ class EmmanuelMotionMotors(Node):
         self.sumSpeedErrorRight = 0
 
         # Initial PWD
-        self.targetPWMLeft = 50
-        self.targetPWMRight = 50
+        self.targetPWMLeft = 40
+        self.targetPWMRight = 40
 
         # Robot is moving
         self.isMoving = False
@@ -221,8 +221,8 @@ class EmmanuelMotionMotors(Node):
 
         # Checking if the linear velocity is positive or negative
         # Based on it determine which direction the robot has to move
-        self.targetPWMRight = 50
-        self.targetPWMLeft = 50
+        self.targetPWMRight = 40
+        self.targetPWMLeft = 40
         self.isMoving = True
         if linearVelocity > 0:
             self.moveForward()
@@ -283,8 +283,8 @@ class EmmanuelMotionMotors(Node):
         targetPWM_left = max(min(100, self.targetPWMLeft), 0)
         targetPWM_right = max(min(100, self.targetPWMRight), 0)
 
-        # self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
-
+        self.get_logger().info("Target PWM: left: {}, right: {}".format(targetPWM_left, targetPWM_right))
+s
         self.changePWMRightMotor(targetPWM_right)
         self.changePWMLeftMotor(targetPWM_left)
 
