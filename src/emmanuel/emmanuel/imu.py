@@ -13,7 +13,7 @@ class EmmanuelIMU(Node):
         super().__init__("Emmanuel_IMU")
         address = 0x68
         bus = smbus.SMBus(1)
-        self.sensorfusion = madgwick.Madgwick(0.5)
+        # self.sensorfusion = madgwick.Madgwick(0.5)
         self.imu = MPU9250.MPU9250(bus, address)
         self.imu.begin()
         # self.imu.caliberateGyro()

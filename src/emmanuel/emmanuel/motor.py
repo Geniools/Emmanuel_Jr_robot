@@ -221,8 +221,8 @@ class EmmanuelMotionMotors(Node):
 
         # Checking if the linear velocity is positive or negative
         # Based on it determine which direction the robot has to move
-        self.targetPWMRight = 70
-        self.targetPWMLeft = 70
+        self.targetPWMRight = 50
+        self.targetPWMLeft = 50
         self.isMoving = True
         if linearVelocity > 0:
             self.moveForward()
@@ -261,7 +261,7 @@ class EmmanuelMotionMotors(Node):
         self.velocityLeft = self.leftPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
         self.velocityRight = self.rightPulseCounter * self.PULSE_WIDTH / self.updatePulseTimer
 
-        # self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
+        self.get_logger().info(f"Actual speed: left: {self.velocityLeft}, right: {self.velocityRight}")
 
         # Reset the pulse counter after the previous counter has been printed
         self.get_logger().info("Pulses left: {}, right: {}".format(self.rightPulseCounter, self.leftPulseCounter))
